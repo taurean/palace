@@ -8,7 +8,6 @@
 - added templates for Articles, Videos, Daily notes, Weekly notes, and Basic notes
 - Added a collection note for Articles
 - updated workspace config to layout panels
--
 
 ## v0.1.0
 - added plugins and plugin configurations
