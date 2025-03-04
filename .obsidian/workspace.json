@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "7d70f62db5692402",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "0593a33cb1106aeb",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "013e95fe63cab157",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -23,8 +23,24 @@
               "icon": "lucide-file",
               "title": "Home"
             }
+          },
+          {
+            "id": "72233c1c7b20263a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "curtain/Home.md",
+                "mode": "source",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "27e0cbe2972d62cc",
@@ -90,6 +107,26 @@
       {
         "id": "7981d4fd21923f7e",
         "type": "tabs",
+        "dimension": 16.223231667748212,
+        "children": [
+          {
+            "id": "438f120bc7634e65",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "curtain/Home.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Home"
+            }
+          }
+        ]
+      },
+      {
+        "id": "450e262449d23af9",
+        "type": "tabs",
+        "dimension": 53.27709279688514,
         "children": [
           {
             "id": "47a8a3f2f18e72b1",
@@ -125,35 +162,6 @@
             }
           },
           {
-            "id": "a14d97a98942e2e9",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "a4d48d8bb6ca4e61",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
             "id": "a02352f47382b8de",
             "type": "leaf",
             "state": {
@@ -167,7 +175,15 @@
               "icon": "lucide-list",
               "title": "Outline of Home"
             }
-          },
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "17541f17a1ce9f99",
+        "type": "tabs",
+        "dimension": 30.499675535366645,
+        "children": [
           {
             "id": "c91488fdcb0e76f8",
             "type": "leaf",
@@ -202,9 +218,29 @@
       "advanced-random-note:Open random note modal": false
     }
   },
-  "active": "013e95fe63cab157",
+  "active": "72233c1c7b20263a",
   "lastOpenFiles": [
-    "README.md",
-    "curtain/Home.md"
+    "curtain/template/Article.md",
+    "almanac/2025-03-04.md",
+    "curtain/template/Daily Note.md",
+    "curtain/template/Video.md",
+    "curtain/template/Weekly Note.md",
+    "testing.md",
+    "2025-W09.md",
+    "curtain/Home.md",
+    "test.md",
+    "curtain/collection/Articles Collection.md",
+    "curtain/clipper-templates/obsidian-web-clipper-settings.json",
+    "curtain/clipper-templates/video-clipper.json",
+    "curtain/clipper-templates/article-clipper.json",
+    "curtain/clipper-templates",
+    "curtain/ClipperSettings/article-clipper.json",
+    "curtain/ClipperSettings/video-clipper.json",
+    "clipped/A Post Alumni guide to bluesky - Backstage.md",
+    "curtain/ClipperSettings/obsidian-web-clipper-settings.json",
+    "curtain/ClipperSettings",
+    "curtain/Web Clipper/obsidian-web-clipper-settings.json",
+    "curtain/Web Clipper",
+    "README.md"
   ]
 }
