@@ -1,10 +1,10 @@
 {
-    "shouldConfirmBeforeCreate": true,
-    "weekStart": "locale",
-    "wordsPerDot": 250,
-    "showWeeklyNote": true,
-    "weeklyNoteFormat": "",
-    "weeklyNoteTemplate": "curtain/template/Weekly Note",
-    "weeklyNoteFolder": "almanac/",
-    "localeOverride": "system-default"
+  "shouldConfirmBeforeCreate": true,
+  "weekStart": "locale",
+  "wordsPerDot": 250,
+  "showWeeklyNote": true,
+  "weeklyNoteFormat": "",
+  "weeklyNoteTemplate": "curtain/template/Weekly Note",
+  "weeklyNoteFolder": "almanac/",
+  "localeOverride": "system-default"
 }

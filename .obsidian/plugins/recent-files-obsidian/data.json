@@ -1,6 +1,15 @@
 {
-    "recentFiles": [],
-    "omittedPaths": [],
-    "omittedTags": [],
-    "omitBookmarks": false
+  "recentFiles": [
+    {
+      "basename": "Home",
+      "path": "curtain/Home.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "omitBookmarks": false
 }

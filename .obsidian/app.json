@@ -1,10 +1,10 @@
 {
-    "promptDelete": false,
-    "alwaysUpdateLinks": true,
-    "trashOption": "local",
-    "attachmentFolderPath": "curtain/attachment",
-    "showInlineTitle": false,
-    "propertiesInDocument": "visible",
-    "defaultViewMode": "preview",
-    "showLineNumber": true
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "trashOption": "local",
+  "attachmentFolderPath": "curtain/attachment",
+  "showInlineTitle": false,
+  "propertiesInDocument": "visible",
+  "defaultViewMode": "preview",
+  "showLineNumber": true
 }
