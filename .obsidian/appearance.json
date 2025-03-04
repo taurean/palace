@@ -1,0 +1,11 @@
+{
+    "enabledCssSnippets": ["stock-charts", "callouts"],
+    "showViewHeader": false,
+    "nativeMenus": false,
+    "translucency": true,
+    "interfaceFontFamily": "",
+    "textFontFamily": "",
+    "monospaceFontFamily": "",
+    "baseFontSize": 18,
+    "showRibbon": false
+}
