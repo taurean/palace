@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Article",
+	"behavior": "create",
+	"noteContentFormat": "# {{title}}\nby {{\"a comma separated list of author(s) of this article. Each author should be formatted like this [[author name]]. if there is more than one, separate each by a comma and end with the word `and` using an Oxford comma.\"}}\n\n> [!summary]\n> {{\"a simple and easy to digest summary of what this article contains, no longer than 1-3 sentences. Keep this summary as approachable and short as possible. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]]\"}}.\n\n**[Read this on {{site}}]({{url}})**\n\n## TLDR;\n{{\"provide 1-6 bullet points of short dependent clause sentences touching on the topics covered in this article. Make sure to include bullet points in markdown format. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]].\"}}\n\n### Recap\n{{\"provide an approachable distilled version of the pages content that is detailed and formatted in obsidian markdown. The root level heading level should be an h4 as this will be added below an h3. Breakdown the distilled version into headings and paragraphs. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]].\"}}\n\n## My notes:\n%% Enter notes below this line %%\n\n---\n## Quotes: \n%% Query: Backlinks %%\n```dataview\nlist \nfrom\n\t[[]]\nwhere\n\t!contains(contains, \"fragment\") AND !contains(file.folder, \"curtain\") AND contains(entityIs, [[Quotes Collection|Quotes]])\nsort file.ctime asc\n```",
+	"properties": [
+		{
+			"name": "aliases",
+			"value": "",
+			"type": "multitext"
+		},
+		{
+			"name": "publish",
+			"value": "true",
+			"type": "checkbox"
+		},
+		{
+			"name": "creationDate",
+			"value": "{{time}}",
+			"type": "datetime"
+		},
+		{
+			"name": "entityIs",
+			"value": "[[Articles Collection|Articles]]",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{\\\"a comma separated list of author(s) of this article. Each author should be formatted like this [[author name]]. Do not add any characters near or around the square brackets\\\"}}",
+			"type": "multitext"
+		},
+		{
+			"name": "publisher",
+			"value": "[[{{site}}]]",
+			"type": "multitext"
+		},
+		{
+			"name": "publishDate",
+			"value": "{{published}}",
+			"type": "date"
+		},
+		{
+			"name": "source",
+			"value": "{{url}}",
+			"type": "multitext"
+		},
+		{
+			"name": "topics",
+			"value": "{{\\\"a comma separated list of topics covered by this article. tags should be no more than two words and should be connected with a hyphen, no spaces. The list should end without any symbols including a period. Do not include any symbols other than a dash (-) in each tag, including the last tag. No more than 5, do not include words in the title like this: first, second-item, third\\\"\\\"}}.",
+			"type": "multitext"
+		},
+		{
+			"name": "contains",
+			"value": "clipping",
+			"type": "multitext"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{title}}",
+	"path": "clipped"
+}
