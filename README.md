@@ -22,3 +22,7 @@
 4. In **General**, find the section titled **Vaults**, type in the exact name of your vault and _press enter_.
 5. Go to the Interpreter settings page and add your preferred AI Provider and AI model.
     - You will need your own API key
+
+---
+
+_curious what changes are being planned? view the [Project Board](https://github.com/users/taurean/projects/3) • please file an issue if something isn't working as intended_
