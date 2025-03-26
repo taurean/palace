@@ -1,147 +1,227 @@
 {
-    "command-palette:open": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "P"
-        }
-    ],
-    "app:delete-file": [
-        {
-            "modifiers": ["Alt", "Ctrl", "Mod"],
-            "key": "\\"
-        }
-    ],
-    "editor:delete-paragraph": [],
-    "file-explorer:move-file": [
-        {
-            "modifiers": ["Mod"],
-            "key": "M"
-        }
-    ],
-    "app:go-back": [
-        {
-            "modifiers": ["Mod", "Alt"],
-            "key": "ArrowLeft"
-        },
-        {
-            "modifiers": ["Mod"],
-            "key": "ArrowLeft"
-        }
-    ],
-    "app:go-forward": [
-        {
-            "modifiers": ["Mod", "Alt"],
-            "key": "ArrowRight"
-        },
-        {
-            "modifiers": ["Mod"],
-            "key": "ArrowRight"
-        }
-    ],
-    "workspace:new-tab": [],
-    "obsidian-outliner:fold": [],
-    "obsidian-outliner:move-list-item-down": [
-        {
-            "modifiers": ["Mod"],
-            "key": "ArrowDown"
-        }
-    ],
-    "obsidian-outliner:move-list-item-up": [
-        {
-            "modifiers": ["Mod"],
-            "key": "ArrowUp"
-        }
-    ],
-    "obsidian-outliner:unfold": [],
-    "switcher:open": [
-        {
-            "modifiers": ["Mod"],
-            "key": "P"
-        }
-    ],
-    "editor:toggle-comments": [],
-    "editor:toggle-source": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "E"
-        }
-    ],
-    "app:toggle-left-sidebar": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "/"
-        }
-    ],
-    "app:toggle-right-sidebar": [
-        {
-            "modifiers": ["Mod"],
-            "key": "/"
-        }
-    ],
-    "file-explorer:open": [
-        {
-            "modifiers": ["Mod"],
-            "key": "O"
-        }
-    ],
-    "homepage:open-homepage": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "H"
-        }
-    ],
-    "dataview-publisher:update-blocks-and-publish": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "U"
-        }
-    ],
-    "daily-notes": [
-        {
-            "modifiers": ["Mod"],
-            "key": "D"
-        }
-    ],
-    "daily-notes:goto-prev": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "D"
-        }
-    ],
-    "webviewer:open": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "B"
-        }
-    ],
-    "templater-obsidian:insert-templater": [
-        {
-            "modifiers": ["Mod"],
-            "key": "T"
-        }
-    ],
-    "templater-obsidian:create-new-note-from-template": [
-        {
-            "modifiers": ["Alt"],
-            "key": "n"
-        },
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "N"
-        }
-    ],
-    "workspace:undo-close-pane": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "T"
-        }
-    ],
-    "file-explorer:new-file-in-new-pane": [],
-    "workspace:close-window": [],
-    "advanced-random-note:open-random-note": [
-        {
-            "modifiers": ["Mod", "Shift"],
-            "key": "R"
-        }
-    ]
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "app:delete-file": [
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl",
+        "Mod"
+      ],
+      "key": "\\"
+    }
+  ],
+  "editor:delete-paragraph": [],
+  "file-explorer:move-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "app:go-back": [
+    {
+      "modifiers": [
+        "Mod",
+        "Alt"
+      ],
+      "key": "ArrowLeft"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowLeft"
+    }
+  ],
+  "app:go-forward": [
+    {
+      "modifiers": [
+        "Mod",
+        "Alt"
+      ],
+      "key": "ArrowRight"
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "workspace:new-tab": [],
+  "obsidian-outliner:fold": [],
+  "obsidian-outliner:move-list-item-down": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "obsidian-outliner:move-list-item-up": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "obsidian-outliner:unfold": [],
+  "switcher:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "editor:toggle-comments": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "E"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "/"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "/"
+    }
+  ],
+  "file-explorer:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "O"
+    }
+  ],
+  "homepage:open-homepage": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "dataview-publisher:update-blocks-and-publish": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "U"
+    }
+  ],
+  "daily-notes": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "D"
+    }
+  ],
+  "daily-notes:goto-prev": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "webviewer:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "templater-obsidian:create-new-note-from-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "n"
+    },
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "N"
+    }
+  ],
+  "workspace:undo-close-pane": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "T"
+    }
+  ],
+  "file-explorer:new-file-in-new-pane": [],
+  "workspace:close-window": [],
+  "advanced-random-note:open-random-note": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:insert-templater": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "templater-obsidian:replace-in-file-templater": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ]
 }
