@@ -1,15 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Home",
-      "path": "curtain/Home.md"
-    },
-    {
       "basename": "README",
       "path": "README.md"
+    },
+    {
+      "basename": "Directory",
+      "path": "curtain/Directory.md"
+    },
+    {
+      "basename": "Home",
+      "path": "curtain/Home.md"
     }
   ],
   "omittedPaths": [],
   "omittedTags": [],
+  "updateOn": "file-open",
   "omitBookmarks": false
 }

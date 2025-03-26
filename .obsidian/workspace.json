@@ -15,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "curtain/Home.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
@@ -25,18 +25,18 @@
             }
           },
           {
-            "id": "72233c1c7b20263a",
+            "id": "69e0c4d57d382192",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "curtain/Home.md",
-                "mode": "source",
-                "source": true,
+                "file": "README.md",
+                "mode": "preview",
+                "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "README"
             }
           }
         ],
@@ -92,13 +92,22 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "024c20fd4611926d",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "27e0cbe2972d62cc",
@@ -115,10 +124,39 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "curtain/Home.md"
+                "file": "README.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Home"
+              "title": "File properties for README"
+            }
+          },
+          {
+            "id": "c8359c756321268e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9d68f7e796068dc2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ]
@@ -167,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "curtain/Home.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Home"
+              "title": "Outline of README"
             }
           }
         ],
@@ -198,8 +236,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,16 +255,20 @@
       "advanced-random-note:Open random note modal": false
     }
   },
-  "active": "72233c1c7b20263a",
+  "active": "69e0c4d57d382192",
   "lastOpenFiles": [
+    "curtain/Directory.md",
+    "curtain/Hotkeys.md",
+    "curtain/Home.md",
+    "almanac/2025-W12.md",
+    "curtain/templater-templates",
     "curtain/template/Article.md",
     "almanac/2025-03-04.md",
     "curtain/template/Daily Note.md",
     "curtain/template/Video.md",
-    "curtain/template/Weekly Note.md",
+    "curtain/templater-templates/Weekly Note.md",
     "testing.md",
     "2025-W09.md",
-    "curtain/Home.md",
     "test.md",
     "curtain/collection/Articles Collection.md",
     "curtain/clipper-templates/obsidian-web-clipper-settings.json",
@@ -240,7 +281,6 @@
     "curtain/ClipperSettings/obsidian-web-clipper-settings.json",
     "curtain/ClipperSettings",
     "curtain/Web Clipper/obsidian-web-clipper-settings.json",
-    "curtain/Web Clipper",
     "README.md"
   ]
 }

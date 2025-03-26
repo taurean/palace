@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "curtain/template",
+  "templates_folder": "curtain/Templater Templates",
   "templates_pairs": [
     [
       "",
@@ -33,5 +33,6 @@
   ],
   "startup_templates": [
     ""
-  ]
+  ],
+  "intellisense_render": 1
 }
