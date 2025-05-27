@@ -1,0 +1,23 @@
+formulas:
+  Untitled: ""
+display: {}
+views:
+  - type: table
+    name: Articles All
+    filters:
+      and:
+        - contains(property.entityIs, "[[Articles Collection|Articles]]")
+        - not(contains(file.folder, "curtain/template"))
+    order:
+      - Rating
+      - file.name
+      - author
+      - publisher
+    sort:
+      - column: formula.test
+        direction: DESC
+      - column: formula.author
+        direction: DESC
+    columnSize:
+      file.name: 252
+      property.author: 145
