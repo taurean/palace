@@ -1,6 +1,8 @@
 # Palace Obsidian Vault Template ![GitHub Release](https://img.shields.io/github/v/release/taurean/palace?include_prereleases&style=flat-square)
 
-**Palace** is a starter vault for [Obsidian.md](https://obsidian.md). This file is mainly just to give the [Github Repo](https://github.com/taurean/palace) context and can be deleted. For more information, check out [Palace.md](/curtain/Palace.md). At it's core, Palace is an opinionated approach to organizing and using Obsidian with some files and configurations to make it a bit easier.
+**Palace** is a system and set of starter files to create a vault in [Obsidian]() with staying power. It's designed to be thorough, opinionated, and most importantly to be a start point for you to modify it how you need obsidian to work. 
+
+This README is here to give the [Github Repo](https://github.com/taurean/palace) context and can be deleted. If you want to read more about the folder structure, bases, templates, hotkeys, plugins, and more, check out the [Palace docs](/curtain/Palace.md). 
 
 **To download the latest version of Palace, check out the [Releases page for the repo](https://github.com/taurean/palace/releases)**.
 
@@ -9,7 +11,6 @@
 2. Extract the zip and move the folder to the directory you would like it to live on your machine
 3. Open obsidian and use the "open folder" option to find your vault location
 4. The first time you do this, you'll be prompted with "Do you trust the author of this vault?", select "**Trust author and enable plugins**"
-
 
 ### Web clipper
 1. Download your browsers extension
@@ -22,7 +23,3 @@
 4. In **General**, find the section titled **Vaults**, type in the exact name of your vault and _press enter_.
 5. Go to the Interpreter settings page and add your preferred AI Provider and AI model.
     - You will need your own API key
-
----
-
-_curious what changes are being planned? view the [Project Board](https://github.com/users/taurean/projects/3) • please file an issue if something isn't working as intended_
