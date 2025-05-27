@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "e5f7d4c2a9a13f6f",
         "type": "tabs",
         "children": [
           {
@@ -25,18 +25,18 @@
             }
           },
           {
-            "id": "69e0c4d57d382192",
+            "id": "def52cb35e90f144",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": false,
+                "file": "curtain/Changelog.md",
+                "mode": "source",
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Changelog"
             }
           }
         ],
@@ -116,7 +116,7 @@
       {
         "id": "7981d4fd21923f7e",
         "type": "tabs",
-        "dimension": 16.223231667748212,
+        "dimension": 51.64967006598681,
         "children": [
           {
             "id": "438f120bc7634e65",
@@ -124,10 +124,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "README.md"
+                "file": "curtain/Changelog.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for README"
+              "title": "File properties for Changelog"
             }
           },
           {
@@ -144,27 +144,13 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
-          },
-          {
-            "id": "9d68f7e796068dc2",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
         ]
       },
       {
         "id": "450e262449d23af9",
         "type": "tabs",
-        "dimension": 53.27709279688514,
+        "dimension": 24.175164967006598,
         "children": [
           {
             "id": "47a8a3f2f18e72b1",
@@ -172,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "curtain/Home.md",
+                "file": "curtain/Changelog.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -182,7 +168,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Home"
+              "title": "Backlinks for Changelog"
             }
           },
           {
@@ -191,12 +177,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "curtain/Home.md",
+                "file": "curtain/Changelog.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Home"
+              "title": "Outgoing links from Changelog"
             }
           },
           {
@@ -205,22 +191,34 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "curtain/Changelog.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Changelog"
+            }
+          },
+          {
+            "id": "fcba75b9f8f6a81a",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "curtain/Changelog.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
-        "id": "17541f17a1ce9f99",
+        "id": "4fe68e28f47bd4c0",
         "type": "tabs",
-        "dimension": 30.499675535366645,
+        "dimension": 24.175164967006598,
         "children": [
           {
             "id": "c91488fdcb0e76f8",
@@ -236,7 +234,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 338.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -255,32 +253,43 @@
       "advanced-random-note:Open random note modal": false
     }
   },
-  "active": "69e0c4d57d382192",
+  "active": "def52cb35e90f144",
   "lastOpenFiles": [
-    "curtain/Directory.md",
-    "curtain/Hotkeys.md",
+    "curtain/Road to 1.0.md",
+    "Note Relationship Structure.canvas",
+    "curtain/Palace.md",
+    "README.md",
     "curtain/Home.md",
-    "almanac/2025-W12.md",
-    "curtain/templater-templates",
-    "curtain/template/Article.md",
-    "almanac/2025-03-04.md",
-    "curtain/template/Daily Note.md",
+    "curtain/Directory.md",
+    "curtain/Changelog.md",
+    "Test Issue.md",
+    "Test Article.md",
+    "curtain/template/Weekly Note.md",
+    "curtain/template/Website.md",
+    "curtain/template/Video Game Genre.md",
+    "curtain/template/Video Game.md",
     "curtain/template/Video.md",
-    "curtain/templater-templates/Weekly Note.md",
-    "testing.md",
-    "2025-W09.md",
-    "test.md",
-    "curtain/collection/Articles Collection.md",
+    "curtain/template/Trip.md",
+    "curtain/template/Table (Partial).md",
+    "curtain/template/Stock Trade.md",
+    "curtain/template/Stock.md",
+    "curtain/template/Software.md",
+    "curtain/template/Show Genre.md",
+    "curtain/template/Show Episode.md",
+    "curtain/template/Show.md",
+    "curtain/template/Recipe.md",
+    "curtain/template/Recent Entries (Partial).md",
+    "curtain/template/Quote.md",
+    "curtain/template/Quest Line.md",
+    "curtain/bases/Articles.base",
+    "curtain/bases/Comic Issues.base",
+    "curtain/bases",
+    "curtain/templater-templates",
     "curtain/clipper-templates/obsidian-web-clipper-settings.json",
     "curtain/clipper-templates/video-clipper.json",
     "curtain/clipper-templates/article-clipper.json",
     "curtain/clipper-templates",
     "curtain/ClipperSettings/article-clipper.json",
-    "curtain/ClipperSettings/video-clipper.json",
-    "clipped/A Post Alumni guide to bluesky - Backstage.md",
-    "curtain/ClipperSettings/obsidian-web-clipper-settings.json",
-    "curtain/ClipperSettings",
-    "curtain/Web Clipper/obsidian-web-clipper-settings.json",
-    "README.md"
+    "curtain/ClipperSettings/video-clipper.json"
   ]
 }
