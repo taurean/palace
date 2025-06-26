@@ -1,22 +1,14 @@
 # Home
-[[Palace|Vault Docs]] • [[Directory]] • [[Publish Home|Public Home]]
+[[Palace|Vault Docs]] • [[directory]] • [[publish|Public Home]]
 
-%% If there are certain notes you open often, pin it here %%
+
 ## Pinned
+%% If there are certain notes you open often, pin it here %%
+
 -
 
 ## Latest Notes
-```dataview
-TABLE without id
-	file.link as "Note title",
-	choice(entityIs, entityIs, "Note") as Type
-WHERE
-	!contains(file.folder, "curtain") AND
-	!contains(file.folder, "sample")
-
-SORT file.ctime desc
-limit 8
-```
+![[all notes.base]]
 
 ## Quests
 

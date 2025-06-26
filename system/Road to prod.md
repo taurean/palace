@@ -19,7 +19,7 @@ for each entity, the following is needed:
 - Base
 - Template
 - Sample
-- Description in [[Directory]]
+- Description in [[directory]]
 
 ### todo:
 - [ ] Albums
