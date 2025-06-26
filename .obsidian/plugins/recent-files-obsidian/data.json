@@ -5,12 +5,76 @@
       "path": "README.md"
     },
     {
-      "basename": "Directory",
-      "path": "curtain/Directory.md"
+      "basename": "getting-started",
+      "path": "system/getting-started.md"
     },
     {
-      "basename": "Home",
-      "path": "curtain/Home.md"
+      "basename": "home",
+      "path": "home.md"
+    },
+    {
+      "basename": "publish",
+      "path": "publish.md"
+    },
+    {
+      "basename": "plugins",
+      "path": "system/plugins.md"
+    },
+    {
+      "basename": "Road to prod",
+      "path": "system/Road to prod.md"
+    },
+    {
+      "basename": "directory",
+      "path": "directory.md"
+    },
+    {
+      "basename": "hotkeys",
+      "path": "system/hotkeys.md"
+    },
+    {
+      "basename": "changelog",
+      "path": "system/changelog.md"
+    },
+    {
+      "basename": "Article",
+      "path": "system/templates/Article.md"
+    },
+    {
+      "basename": "Comic Issues Collection",
+      "path": "collections/Comic Issues Collection.md"
+    },
+    {
+      "basename": "Album Genre",
+      "path": "system/templates/Album Genre.md"
+    },
+    {
+      "basename": "Album",
+      "path": "system/templates/Album.md"
+    },
+    {
+      "basename": "all notes",
+      "path": "system/bases/all notes.base"
+    },
+    {
+      "basename": "Albums",
+      "path": "system/bases/Albums.base"
+    },
+    {
+      "basename": "Articles",
+      "path": "system/bases/Articles.base"
+    },
+    {
+      "basename": "Directory of Directories",
+      "path": "system/bases/Directory of Directories.base"
+    },
+    {
+      "basename": "Articles Collection",
+      "path": "collections/Articles Collection.md"
+    },
+    {
+      "basename": "Albums Collection",
+      "path": "collections/Albums Collection.md"
     }
   ],
   "omittedPaths": [],

@@ -2,9 +2,11 @@
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "trashOption": "local",
-  "attachmentFolderPath": "curtain/attachment",
+  "attachmentFolderPath": "system/attachment",
   "showInlineTitle": false,
   "propertiesInDocument": "visible",
   "defaultViewMode": "preview",
-  "showLineNumber": true
+  "showLineNumber": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "notes"
 }

@@ -1,4 +1,4 @@
 {
-    "folder": "curtain/template/",
-    "timeFormat": "h:mma"
+  "folder": "system/templates/",
+  "timeFormat": "h:mma"
 }

@@ -2,7 +2,7 @@
   "version": 4,
   "homepages": {
     "Main Homepage": {
-      "value": "curtain/Home",
+      "value": "home",
       "kind": "File",
       "openOnStartup": true,
       "openMode": "Replace all open notes",

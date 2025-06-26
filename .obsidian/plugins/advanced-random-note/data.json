@@ -1,7 +1,7 @@
 {
-    "queries": [],
-    "disabledFolders": "curtain/attachment\ncurtain/collection\ncurtain/template",
-    "debug": false,
-    "openType": "Active Leaf",
-    "setActive": true
+  "queries": [],
+  "disabledFolders": "system/attachment\nsystem/collection\nsystem/template",
+  "debug": false,
+  "openType": "Active Leaf",
+  "setActive": true
 }
