@@ -1,6 +1,6 @@
 # Changelog
 ## v0.4.0
-- 
+- updated folder structure to be a bit easier to understand. `curtain/` is now `system`. some of the old folders/files in `system` have been moved out to be more visible.
 
 ## v0.3.0
 ==May 2025==: *I've let this sit for a few months while I use my own version of this in my daily life. I'm coming back and making some tweaks including starting to use the upcoming **[bases](https://help.obsidian.md/bases)** feature.*
