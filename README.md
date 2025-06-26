@@ -1,8 +1,8 @@
-# Palace Obsidian Vault Template ![GitHub Release](https://img.shields.io/github/v/release/taurean/palace?include_prereleases&style=flat-square)
+# Palace Obsidian Vault Template [![GitHub Release](https://img.shields.io/github/v/release/taurean/palace?include_prereleases&style=flat-square)](https://github.com/taurean/palace/tags)
 
 **Palace** is a system and set of starter files to create a vault in [Obsidian]() with staying power. It's designed to be thorough, opinionated, and most importantly to be a start point for you to modify it how you need obsidian to work. 
 
-This README is here to give the [Github Repo](https://github.com/taurean/palace) context and can be deleted. If you want to read more about the folder structure, bases, templates, hotkeys, plugins, and more, check out the [Palace docs](/curtain/Palace.md). 
+This README is here to give the [Github Repo](https://github.com/taurean/palace) context and can be deleted. If you want to read more about the folder structure, bases, templates, hotkeys, plugins, and more, check out the [Palace docs](/system/getting-started.md). 
 
 **To download the latest version of Palace, check out the [Releases page for the repo](https://github.com/taurean/palace/releases)**.
 
