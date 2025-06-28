@@ -1,4 +1,17 @@
 # Changelog
+## v0.5.0
+- **New Features**
+  - Added toggle comment hotkey for quick commenting/uncommenting
+  - Maps now automatically include a "contains" property for better organization
+- **Improvements**
+  - Simplified plugin set by removing unnecessary plugins to keep Palace more streamlined
+  - Updated Obsidian workspace configuration for better user experience
+  - Reorganized collections and system folders for improved structure
+- **Maintenance**
+  - Cleaned up work-in-progress search bases
+  - Updated README and project documentation
+  - Improved development workflow setup
+
 ## v0.4.0
 - updated folder structure to be a bit easier to understand. `curtain/` is now `system`. some of the old folders/files in `system` have been moved out to be more visible.
 
