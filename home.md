@@ -8,7 +8,7 @@
 -
 
 ## Latest Notes
-![[all notes.base]]
+%% ![[all notes.base]] %%
 
 ## Quests
 
