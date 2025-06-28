@@ -1,21 +1,17 @@
 [
-  "obsidian-charts",
   "dataview",
   "obsidian-enhancing-export",
   "obsidian-hider",
   "obsidian-leaflet-plugin",
   "obsidian-minimal-settings",
-  "obsidian-old-note-admonitor",
   "obsidian-outliner",
   "url-into-selection",
-  "quickadd",
-  "recent-files-obsidian",
   "homepage",
   "obsidian42-brat",
   "dataview-publisher",
   "checkbox-time-tracker",
   "nldates-obsidian",
   "templater-obsidian",
-  "calendar",
-  "advanced-random-note"
+  "advanced-random-note",
+  "calendar"
 ]
