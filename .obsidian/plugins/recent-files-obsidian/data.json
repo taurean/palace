@@ -5,16 +5,36 @@
       "path": "README.md"
     },
     {
-      "basename": "getting-started",
-      "path": "system/getting-started.md"
+      "basename": "publish",
+      "path": "publish.md"
     },
     {
       "basename": "home",
       "path": "home.md"
     },
     {
-      "basename": "publish",
-      "path": "publish.md"
+      "basename": "directory",
+      "path": "directory.md"
+    },
+    {
+      "basename": "Album",
+      "path": "system/templates/Album.md"
+    },
+    {
+      "basename": "Albums Collection",
+      "path": "collections/Albums Collection.md"
+    },
+    {
+      "basename": "Directory of Directories",
+      "path": "system/bases/Directory of Directories.base"
+    },
+    {
+      "basename": "changelog",
+      "path": "system/changelog.md"
+    },
+    {
+      "basename": "getting-started",
+      "path": "system/getting-started.md"
     },
     {
       "basename": "plugins",
@@ -25,16 +45,8 @@
       "path": "system/Road to prod.md"
     },
     {
-      "basename": "directory",
-      "path": "directory.md"
-    },
-    {
       "basename": "hotkeys",
       "path": "system/hotkeys.md"
-    },
-    {
-      "basename": "changelog",
-      "path": "system/changelog.md"
     },
     {
       "basename": "Article",
@@ -49,10 +61,6 @@
       "path": "system/templates/Album Genre.md"
     },
     {
-      "basename": "Album",
-      "path": "system/templates/Album.md"
-    },
-    {
       "basename": "all notes",
       "path": "system/bases/all notes.base"
     },
@@ -65,16 +73,8 @@
       "path": "system/bases/Articles.base"
     },
     {
-      "basename": "Directory of Directories",
-      "path": "system/bases/Directory of Directories.base"
-    },
-    {
       "basename": "Articles Collection",
       "path": "collections/Articles Collection.md"
-    },
-    {
-      "basename": "Albums Collection",
-      "path": "collections/Albums Collection.md"
     }
   ],
   "omittedPaths": [],

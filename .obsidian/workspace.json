@@ -25,14 +25,14 @@
             }
           },
           {
-            "id": "e433b76d041fcc5d",
+            "id": "f0de761e1aab903e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "README.md",
                 "mode": "preview",
-                "source": true,
+                "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
@@ -116,7 +116,7 @@
       {
         "id": "7981d4fd21923f7e",
         "type": "tabs",
-        "dimension": 51.64967006598681,
+        "dimension": 68.11708860759495,
         "children": [
           {
             "id": "438f120bc7634e65",
@@ -158,13 +158,23 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "5e8d9dbf16634963",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
           }
         ]
       },
       {
         "id": "450e262449d23af9",
         "type": "tabs",
-        "dimension": 24.175164967006598,
+        "dimension": 31.882911392405063,
         "children": [
           {
             "id": "47a8a3f2f18e72b1",
@@ -228,23 +238,6 @@
           }
         ],
         "currentTab": 3
-      },
-      {
-        "id": "4fe68e28f47bd4c0",
-        "type": "tabs",
-        "dimension": 24.175164967006598,
-        "children": [
-          {
-            "id": "c91488fdcb0e76f8",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -268,34 +261,35 @@
       "advanced-random-note:Open random note modal": false
     }
   },
-  "active": "e433b76d041fcc5d",
+  "active": "f0de761e1aab903e",
   "lastOpenFiles": [
-    "system/getting-started.md",
     "README.md",
-    "home.md",
-    "Palace.md",
+    "CLAUDE.md",
     "publish.md",
+    "home.md",
+    "directory.md",
+    "system/templates/Album.md",
+    "collections/Albums Collection.md",
+    "system/bases/Directory of Directories.base",
+    "system/changelog.md",
+    "system/getting-started.md",
+    "Palace.md",
     "system",
     "Untitled.md",
     "notes",
     "system/plugins.md",
     "system/Road to prod.md",
-    "directory.md",
     "system/hotkeys.md",
-    "system/changelog.md",
     "system/templates/Article.md",
     "collections/Comic Issues Collection.md",
     "Testing.md",
     "curtain/bases/Comic Issues.base",
     "testing.md",
     "system/templates/Album Genre.md",
-    "system/templates/Album.md",
     "system/bases/all notes.base",
     "system/bases/Albums.base",
     "system/bases/Articles.base",
-    "system/bases/Directory of Directories.base",
     "collections/Articles Collection.md",
-    "collections/Albums Collection.md",
     "curtain/bases/Directory of Directories.md",
     "test.md",
     "Note Relationship Structure.canvas",
@@ -303,7 +297,6 @@
     "Test Article.md",
     "system/templates/Weekly Note.md",
     "system/templates/Website.md",
-    "system/templates/Video Game Genre.md",
     "system/bases",
     "system/templater-templates",
     "curtain/clipper-templates/obsidian-web-clipper-settings.json"
