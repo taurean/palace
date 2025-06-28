@@ -30,13 +30,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": false,
+                "file": "system/templates/Table (Partial).md",
+                "mode": "source",
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Table (Partial)"
             }
           }
         ],
@@ -92,16 +92,6 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "024c20fd4611926d",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
-            }
           }
         ]
       }
@@ -124,10 +114,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "curtain/Directory.md"
+                "file": "system/templates/Table (Partial).md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Directory"
+              "title": "File properties for Table (Partial)"
             }
           },
           {
@@ -230,7 +220,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "curtain/Directory.md"
+                "file": "system/templates/Table (Partial).md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -241,8 +231,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5,
-    "collapsed": true
+    "width": 338.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,14 +252,20 @@
   },
   "active": "f0de761e1aab903e",
   "lastOpenFiles": [
+    "system/templates/Fragment Backlink (Partial).md",
+    "system/templates/Fragment Note.md",
+    "system/templates/Map (Partial).md",
+    "home.md",
+    "system/bases/Directory of Directories.base",
+    "system/bases/Articles.base",
+    "system/bases/all notes.base",
+    "system/bases/Albums.base",
+    "publish.md",
+    "directory.md",
     "README.md",
     "CLAUDE.md",
-    "publish.md",
-    "home.md",
-    "directory.md",
     "system/templates/Album.md",
     "collections/Albums Collection.md",
-    "system/bases/Directory of Directories.base",
     "system/changelog.md",
     "system/getting-started.md",
     "Palace.md",
@@ -286,17 +281,11 @@
     "curtain/bases/Comic Issues.base",
     "testing.md",
     "system/templates/Album Genre.md",
-    "system/bases/all notes.base",
-    "system/bases/Albums.base",
-    "system/bases/Articles.base",
     "collections/Articles Collection.md",
     "curtain/bases/Directory of Directories.md",
     "test.md",
     "Note Relationship Structure.canvas",
     "Test Issue.md",
-    "Test Article.md",
-    "system/templates/Weekly Note.md",
-    "system/templates/Website.md",
     "system/bases",
     "system/templater-templates",
     "curtain/clipper-templates/obsidian-web-clipper-settings.json"
