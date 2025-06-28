@@ -84,7 +84,15 @@
       "key": "P"
     }
   ],
-  "editor:toggle-comments": [],
+  "editor:toggle-comments": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
   "editor:toggle-source": [
     {
       "modifiers": [
