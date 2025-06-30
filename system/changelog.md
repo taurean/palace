@@ -1,4 +1,11 @@
 # Changelog
+
+## v0.6.0
+- Update Album template and add sample album note
+- Update Road to prod with expanded entity todo list
+- Add Album template for Obsidian notes
+- Update types in .obsidian/types.json
+- Remove empty collections and templates
 ## v0.5.0
 - **New Features**
   - Added toggle comment hotkey for quick commenting/uncommenting
