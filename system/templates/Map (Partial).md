@@ -1,4 +1,0 @@
----
-contains:
-  - map
----
