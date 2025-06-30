@@ -4,8 +4,8 @@ Currently, I have not found a way to neatly support updating your own personal v
 ## Docs
 - [ ] Hotkeys
 - [ ] Organizing Entities
-- [ ] Home
-- [ ] Publish Home
+- [ ] Home.md
+- [ ] Publish.md
 - [ ] Template vs Templater Templates
 - [ ] Plugins + configs
 - [ ] Quests
@@ -13,52 +13,258 @@ Currently, I have not found a way to neatly support updating your own personal v
 - [ ] "Almanac"
 - [ ] Creating your own entities and entity alts (Celebrity would be a sibling of Person, not a subset of person. Its just the person template with more information. they are there to help save time, not add more complex structure)
 
-## Entities
-for each entity, the following is needed:
-- Collection
-- Base
-- Template
-- Sample
-- Description in [[directory]]
-
 ### todo:
 - [ ] Albums
+	- [ ] collection
+		- [ ] genre example
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Articles
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Books
+	- [ ] collection
+		- [ ] genre
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Cities
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Comic Issues
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Comic Series
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Companies
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Concepts
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Countries
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Course Lessons
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Courses
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Daily Notes
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Drafts
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Emails
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Events
+	- [ ] collection
+		- [ ] type (eg. conference)
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Food
-- [ ] Genres
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Health Records
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+		- [ ] Glasses prescription
+	- [ ] sample
+	- [ ] description
 - [ ] Journal Entries
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Meetings
+	- [ ] collection
+		- [ ] type: interview or therapy
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Movies
+	- [ ] collection
+		- [ ] genre example
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Objects
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+		- [ ] watches or fragrances
+	- [ ] sample
+	- [ ] description
 - [ ] People
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+		- [ ] coworkers, fictional characters, celebrities, historical figures
+	- [ ] sample
+	- [ ] description
 - [ ] Person Groups
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Places
+	- [ ] collection
+		- [ ] cafes, parks, neighborhoods
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Playlists
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Podcast Episodes
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Podcasts
+	- [ ] collection
+		- [ ] genre or type?
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
+- [ ] Protocols
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Quest Lines
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Quests
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Quotes
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Recipes
-- [ ] Show Episodes
+	- [ ] collection
+		- [ ] type: (lunch, dessert, drink, sauce, etc)
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
+- [ ] Show Seasons
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Shows
+	- [ ] collection
+		- [ ] genres
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Software
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Stock Trades
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Trips
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Video Games
+	- [ ] collection
+		- [ ] genres
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Videos
+	- [ ] collection
+		- [ ] genre
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
 - [ ] Websites
+	- [ ] collection
+	- [ ] base
+	- [ ] template
+	- [ ] sample
+	- [ ] description
