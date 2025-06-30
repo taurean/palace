@@ -13,13 +13,16 @@ Currently, I have not found a way to neatly support updating your own personal v
 - [ ] "Almanac"
 - [ ] Creating your own entities and entity alts (Celebrity would be a sibling of Person, not a subset of person. Its just the person template with more information. they are there to help save time, not add more complex structure)
 
-### todo:
+### tasks:
+- [ ] modify default graph w/ colors and exclusions
+
+### Note kinds:
 - [ ] Albums
 	- [ ] collection
 		- [ ] genre example
 	- [ ] base
-	- [ ] template
-	- [ ] sample
+	- [x] template
+	- [x] sample
 	- [ ] description
 - [ ] Articles
 	- [ ] collection
