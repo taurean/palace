@@ -13,8 +13,8 @@
         "location": "multitext",
         "permalink": "text",
         "publish": "checkbox",
+        "publish-date": "date",
         "rating": "number",
-        "release-date": "date",
         "tags": "tags",
         "unlisted": "checkbox"
     }
