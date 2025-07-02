@@ -1,0 +1,56 @@
+{
+    "schemaVersion": "0.1.0",
+    "name": "Book",
+    "behavior": "create",
+    "noteContentFormat": "# {{\"Title of the book\"}}\n\n> [!abstract] details\n> | Author | Publisher | Release Date | # of Pages | ISBN |\n> | --- | --- | --- | --- | --- |\n> | {{\"author or list of authors, formatted like this: `[[Author Name]]`. separate authors by commas as needed\"}} | {{\"publisher of this book, wrapped in brackets like this: `[[Publisher]]`\"}} | {{\"The date this book was published in YYYY-MM-DD format\"|Date:\"YYYY-MM-DD\"}} | {{\"Number of pages formatted like this: 100 pages\"}} | {{\"ISBN Number without any additional information before or after it, like this if ISBN-13: `978-3-16-148410-0` or if its ISBN-10: `0-306-40615-2`\"}} | \n> \n> {{\"a short easy to digest summary that captures the plot of this book, written in a way that indicates why you would want to read it\"}}\n> \n\n## Quotes\n\n%% notes here %%\n\n## Tags\n\n{{\"create a list of hashtags. the hashtags should be a list of genres and topics covered by this book. tags should be no more than two words and should be connected with a hyphen, no spaces. Do not include any symbols other than the hashtag starting the tag and the comma separating each tag. List Genre's from least to most specific. for example, fiction and then speculative fiction\". No more than 12, do not include words in the title.  like this: #first, #second-item, #third\"}}\n\n---\n\n## Review: ★★★★★☆☆☆☆☆",
+    "properties": [
+        {
+            "name": "aliases",
+            "value": "",
+            "type": "multitext"
+        },
+        {
+            "name": "kind",
+            "value": "[[Books Collection|Books]]",
+            "type": "text"
+        },
+        {
+            "name": "creator",
+            "value": "{{\\\"a comma separated list of author(s) of this book. Each author should be formatted like this [[author name]]. Do not add any characters near or around the square brackets\\\"}}",
+            "type": "multitext"
+        },
+        {
+            "name": "genre",
+            "value": "{{\\\"a comma separated list of the genres of this book. Keep the genre list as short as possible, limited to 6 genre's. List Genre's from least to most specific. for example, fiction and then speculative fiction\\\"}}",
+            "type": "multitext"
+        },
+        {
+            "name": "publish-date",
+            "value": "{{\\\"The date this book was published in YYYY-MM-DD format\\\"|Date:\\\"YYYY-MM-DD\\\"}}",
+            "type": "date"
+        },
+        {
+            "name": "finished",
+            "value": "",
+            "type": "checkbox"
+        },
+        {
+            "name": "rating",
+            "value": "",
+            "type": "number"
+        },
+        {
+            "name": "liked",
+            "value": "",
+            "type": "text"
+        },
+        {
+            "name": "tags",
+            "value": "{{\\\"a comma separated list of topics covered by this book. tags should be no more than two words and should be connected with a hyphen, no spaces. The list should end without any symbols including a period. Do not include any symbols other than a dash (-) in each tag, including the last tag. No more than 5, do not include words in the title like this: first, second-item, third\\\"\\\"}}",
+            "type": "multitext"
+        }
+    ],
+    "triggers": ["{{schema:book}}"],
+    "noteNameFormat": "{{\"Title of the book\"}}",
+    "path": "clipped"
+}
