@@ -53,13 +53,13 @@ the `permalink` property is used if you want to alter the slug of a note when us
 _type: **checkbox**_
 by default, the Obsidian Publish plugin is configured to not publish any notes unless you publish them in the plugin's modal dialog. If you include `publish: true`, that note will be automatically selected for publishing the next time you open that dialog.
 
+## `publish-date`
+_type: **date**_
+the `publish-date` property is used to indicate the official date that media was released. 
+
 ## `rating`
 _type: **number**_
 the `rating` property is for you evaluating content, primarily media. The scale is always whole numbers between 1 and 5. 
-
-## `release-date`
-_type: **date**_
-the `release-date` property is used to indicate the official date that media was released. 
 
 ## `tags`
 _type: **tags**_
