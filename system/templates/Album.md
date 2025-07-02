@@ -3,7 +3,7 @@ aliases:
 kind: "[[Albums Collection|Albums]]"
 creator:
 genre: []
-release-date:
+publish-date:
 finished:
 rating:
 liked:
@@ -12,12 +12,17 @@ liked:
 # {{title}}
 
 > [!abstract] details 
-> | Artist     | Label     | Release Date | 
-> | --- | --- | --- |
-> | [[artist]] | [[label]] | date |
-> [view on record.club]()
+> | Artist | Label | Release Date | Run Time |
+> | --- | --- | --- | --- |
+> | [[artist]] | [[label]] | date | XXmin |
+> [view on record.club](https://)
 
 ## Favorite Tracks
-- 
+-  
+
+## Tags
+#genre
+
+---
 
 ## Review: ★★★★★☆☆☆☆☆
