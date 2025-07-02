@@ -2,7 +2,10 @@
 aliases:
   - Albums
 kind: "[[directory|Collection]]"
-description: albums, EPs, records, etc
+description: A curated collection of album notes featuring complete musical works, listening experiences, standout tracks, and music discoveries.
 ---
-
 # Albums Collection
+
+
+## Jazz
+
