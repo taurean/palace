@@ -23,20 +23,22 @@ Currently, I have not found a way to neatly support updating your own personal v
 	- [ ] base
 	- [x] template
 	- [x] sample
-	- [ ] description
+	- [x] description
 - [ ] Articles
 	- [ ] collection
 	- [ ] base
-	- [ ] template
-	- [ ] sample
-	- [ ] description
+	- [x] template
+	- [x] clipper-template
+	- [x] sample
+	- [x] description
 - [ ] Books
 	- [ ] collection
 		- [ ] genre
 	- [ ] base
-	- [ ] template
-	- [ ] sample
-	- [ ] description
+	- [x] template
+	- [x] clipper-template
+	- [x] sample
+	- [x] description
 - [ ] Cities
 	- [ ] collection
 	- [ ] base
@@ -47,18 +49,21 @@ Currently, I have not found a way to neatly support updating your own personal v
 	- [ ] collection
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Comic Series
 	- [ ] collection
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Companies
 	- [ ] collection
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Concepts
@@ -114,6 +119,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 	- [ ] collection
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Health Records
@@ -141,6 +147,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 		- [ ] genre example
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Objects
@@ -148,6 +155,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 	- [ ] base
 	- [ ] template
 		- [ ] watches or fragrances
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] People
@@ -218,6 +226,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 		- [ ] type: (lunch, dessert, drink, sauce, etc)
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Show Seasons
@@ -231,6 +240,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 		- [ ] genres
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Software
@@ -256,6 +266,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 		- [ ] genres
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Videos
@@ -263,6 +274,7 @@ Currently, I have not found a way to neatly support updating your own personal v
 		- [ ] genre
 	- [ ] base
 	- [ ] template
+	- [ ] clipper-template
 	- [ ] sample
 	- [ ] description
 - [ ] Websites
