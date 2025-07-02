@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.7.0
+- Update note type documentation and roadmap progress
+- Created a new template for Obsidian clipper to clip books
+- Added examples of book and article notes
+- Added collection notes for albums, articles, and books
+- Added templates for books and albums
+- Updated Article Clipper template structure and properties
+- Renamed `release-date` property to `publish-date` in types documentation and configuration
+- Removed old clipper template for videos as part of template reorganization
+
 ## v0.6.0
 - Update Album template and add sample album note
 - Update Road to prod with expanded entity todo list
