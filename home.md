@@ -1,118 +1,103 @@
 # Home
-[[Palace|Vault Docs]] • [[directory]] • [[publish|Public Home]]
+[[Palace|Vault Docs]] • [[directory]] • [[public|Public Home]]
 
 
 ## Pinned
-%% If there are certain notes you open often, pin it here %%
+%%
+@TODO: INSERT BASE HERE
+filter to folder: notes/_pinned
 
--
+COLUMNS:
+- title
+- kind
+
+%%
+![[_all.base]]
 
 ## Latest Notes
-%% ![[all notes.base]] %%
+%%
+@TODO: INSERT BASE HERE
+all notes that could be created by user.
+filter to latest 8 or something
+
+COLUMNS:
+- title
+- kind
+
+%%
+![[_all.base]]
+
+## Watch list
+%%
+@TODO: INSERT BASE HERE
+all notes with kind = album, books, comic Issues, movies, podcast episodes, show seasons, video games
+**AND** finished = false
+
+limit to latest 5 or something
+
+COLUMNS:
+- title as "Title"
+- kind as "Media"
+- publish-date as "released on"
+
+%%
+![[_all.base]]
 
 ## Quests
+[[Quests Collection|view all quests]]
+%%
+@TODO: INSERT BASE HERE
+all notes with kind = quest
+limit to latest 3 or something
 
-```dataview
-TABLE without id
-	file.link as Title,
-	choice(questLine, questLine, "") as Parent-quest,
-	choice(completed = true, "✅", "⬚") as "Finished"
-WHERE
-	contains(entityIs, [[Quests Collection|Quests]]) AND
-	!contains(file.folder, "curtain") AND
-	!contains(file.folder, "sample")
+COLUMNS:
+- title as "Quest Line"
+- finished (render as "✅" or " ")
 
-SORT file.ctime desc
-LIMIT 5
-```
+%%
+![[_all.base]]
 
-```dataview
-TABLE without id
-	file.link as "Quest line",
-	due as Due,
-	choice(completed = true, "✅", "⬚") as "Finished"
-WHERE
-	contains(entityIs, [[Quest Lines Collection|Quest Lines]]) AND
-	!contains(file.folder, "curtain") AND
-	!contains(file.folder, "sample")
-
-SORT file.ctime desc
-LIMIT 3
-```
 
 ## Drafts
-```dataview
-TABLE without id
-	file.link as Title,
-	choice(publish = true, "✅", "⬚") as "Published"
-WHERE
-	contains(entityIs, [[Drafts Collection|Drafts]]) AND
-	!contains(file.folder, "curtain") AND
-	!contains(file.folder, "sample")
+[[Drafts Collection|view all drafts]]
+%%
+@TODO: INSERT BASE HERE
+all notes with kind = draft
+limit to latest 4 or something
 
-SORT file.ctime desc
-LIMIT 5
-```
+COLUMNS:
+- title
+- published (render as "✅" or " ")
+
+%%
+![[_all.base]]
+
 
 ## Recent Media
-```dataview
-TABLE without id
-	file.link as "Media title",
-	choice(entityIs = [[Albums Collection|Albums]], [[Albums Collection|Album]],
-		choice(entityIs = [[Books Collection|Books]], [[Books Collection|Book]],
-			choice(entityIs = [[Show Episodes Collection|Show Episodes]], [[Show Episodes Collection|Show Episode]],
-			    choice(entityIs = [[Podcasts Episodes Collection|Podcasts Episodes]], [[Podcasts Episodes Collection|Podcasts Episode]],
-					choice(entityIs = [[Movies Collection|Movies]], [[Movies Collection|Movie]],
-					   choice(entityIs = [[Comic Issues Collection|Comic Issues]], [[Comic Issues Collection|Comic Issue]],
-							choice(entityIs = [[Performances Collection|Performances]], [[Performances Collection|Performance]],
-							    choice(entityIs = [[Video Games Collection|Video Games]], [[Video Games Collection|Video Game]],
-									"?"
-								)
-							)
-						)
-					)
-				)
-			)
-		)
-	) as "Media",
-	choice(round(rating) = null, "",
-	    choice(rating <= 1, "★☆☆☆☆",
-			choice(rating = 2, "★★☆☆☆",
-                choice(rating = 3, "★★★☆☆",
-                    choice(rating = 4, "★★★★☆",
-                        choice(rating <= 5, "★★★★★", "")
-                    )
-                )
-			)
-		)
-	) as "Rating"
-WHERE
-	!contains(file.folder, "curtain") AND
-	!contains(file.folder, "sample") AND
+%%
+@TODO: INSERT BASE HERE
+all notes with kind = album, books, comic Issues, movies, podcast episodes, show seasons, video games
 
-	(contains(entityIs, [[Albums Collection|Albums]]) OR
-	contains(entityIs, [[Books Collection|Books]]) OR
-	contains(entityIs, [[Show Episodes Collection|Show Episodes]]) OR
-	contains(entityIs, [[Podcasts Episodes Collection|Podcasts Episodes]]) OR
-	contains(entityIs, [[Movies Collection|Movies]]) OR
-	contains(entityIs, [[Comic Issues Collection|Comic Issues]]) OR
-	contains(entityIs, [[Performances Collection|Performances]]) OR
-	contains(entityIs, [[Video Games Collection|Video Games]]))
+limit to latest 10 or something
 
-SORT file.ctime desc
-LIMIT 6
-```
+COLUMNS:
+- title as "Title"
+- kind as "Media"
+- rating reformatted as stars
+- liked renamed "❤️", reformatted as either "❤️"  or " "
+
+%%
+![[_all.base]]
 
 ## Recent journal entries
-```dataview
-TABLE without id
-	file.link as "Entry title"
-WHERE
-	!contains(file.folder, "curtain") AND
-	!contains(file.folder, "sample") AND
-	contains(entityIs, [[Journal Entries Collection|Journal Entries]])
+%%
+@TODO: INSERT BASE HERE
+all notes with kind = journal entry
+limit to latest 3 or something
 
+COLUMNS:
+- file.ctime (created time) as "Title", link to note
+- file.links.length as "link count"
 
-SORT file.ctime desc
-LIMIT 3
-```
+%%
+![[_all.base]]

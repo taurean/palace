@@ -20,6 +20,10 @@ For capturing notes on written content across digital and print media, including
 [[Book|Template]] • [[The Alchemist|Demo]] • [[Books Collection|Collection]]
 For capturing comprehensive notes on literary works, including novels, short stories, novellas, anthologies, and other book-length or collected written narratives across fiction and non-fiction genres.
 
+### Cities
+[[City|Template]] • Demo • [[Cities Collection|Collection]]
+For tracking cities/towns and where they are located. By default, cities also include a list of places that are tagged inside of that city.
+
 
 ## Alt groupings
 *alt groupings are variations of other note kinds, expanding on them with more information*
@@ -27,7 +31,9 @@ For capturing comprehensive notes on literary works, including novels, short sto
 Template • Demo
 Description
 
-## Partials
-### Example
-Template • Demo
-Description
+## Generics & Partials
+Some notes don't fall under any of the previous Kinds, but there still might be some useful props to add or templated info to include. Palace comes with templates for that too.
+
+### Basic Note
+[[Basic Note|Template]] • [[Grocery List W27|Demo]]
+The simplest type of a note. You can use this when you are not sure what kind to use or when you know that this note wont ever fall under the other kinds. You can easily another "Kind" template afterwards, Obsidian will merge properties together (Don't add more than one kind though).

@@ -5,10 +5,6 @@ Notes in Palace usually have some combination of properties. Properties are larg
 _type: **aliases**_
 `aliases` is used for giving a note an alternative name. for example, one common use case is a note being named `Firstname Lastname.md`, setting an aliases called `Firstname` would also let you tag that note, including with auto complete. the end result would look like this `[[Firstname Lastname|Firstname]]`. 
 
-## `contains`
-_type: **multitext**_
-`contains` is used to add tags indicating that this note includes something you might consider special. For example, when you use the template for adding a map to a note, it also adds the `contains` property with `"map"` stored inside. That lets you quickly search and see what notes have maps in them.
-
 ## `cover`
 _type: **text**_
 When publishing via Obsidian Publish, you can use the `cover` property to provide a path that is used when previewing the link (eg. on social media or in messaging apps). The image path that you provide must lead to an image that is also published.
@@ -40,10 +36,6 @@ _type: **text**_
 ## `liked`
 _type: **checkbox**_
 sometimes you watch something you know is bad but you still really enjoyed it. Sometimes its something that you recognize as great but its just not for you. The `liked` property lets you capture that nuance, separating `rating` from what you enjoy.
-
-## `location`
-_type: **multitext**_
-the `location` property is specifically required for the [Leaflet](https://github.com/javalent/obsidian-leaflet) plugin. By adding the latitude and longitude in the `location` prop, you can add pins in maps for that place's exact location. 
 
 ## `permalink`
 _type: **text**_
