@@ -8,5 +8,23 @@
   "defaultViewMode": "preview",
   "showLineNumber": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "notes"
+  "newFileFolderPath": "notes",
+  "userIgnoreFilters": [
+    "system/templates/",
+    "system/templater-templates/",
+    "system/clipper-templates/",
+    "system/changelog.md",
+    "system/getting-started.md",
+    "system/hotkeys.md",
+    "system/plugins.md",
+    "system/road-to-prod.md",
+    "system/types.md",
+    "CLAUDE.md",
+    "CLAUDE.local.md",
+    "directory.md",
+    "home.md",
+    "public.md",
+    "README.md"
+  ],
+  "livePreview": false
 }

@@ -1,7 +1,6 @@
 {
     "types": {
         "aliases": "aliases",
-        "contains": "multitext",
         "cover": "text",
         "creator": "multitext",
         "cssclasses": "multitext",
@@ -10,12 +9,12 @@
         "genre": "multitext",
         "kind": "text",
         "liked": "checkbox",
-        "location": "multitext",
         "permalink": "text",
         "publish": "checkbox",
         "publish-date": "date",
         "rating": "number",
         "tags": "tags",
-        "unlisted": "checkbox"
+        "unlisted": "checkbox",
+        "region": "multitext"
     }
 }

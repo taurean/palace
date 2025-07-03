@@ -1,4 +1,4 @@
 {
-    "folder": "almanac/",
-    "template": "curtain/template/Daily Note"
+  "folder": "almanac/",
+  "template": "system/templates/Daily Note"
 }
