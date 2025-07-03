@@ -15,8 +15,8 @@
               "type": "markdown",
               "state": {
                 "file": "home.md",
-                "mode": "preview",
-                "source": false,
+                "mode": "source",
+                "source": true,
                 "backlinks": false
               },
               "pinned": true,
@@ -25,22 +25,43 @@
             }
           },
           {
-            "id": "f0de761e1aab903e",
+            "id": "4b47439042199338",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system/templates/Table (Partial).md",
+                "file": "view-later.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "view-later"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "f6e8ec34afccc669",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a4b0a13007980a1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "system/road-to-prod.md",
                 "mode": "source",
                 "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Table (Partial)"
+              "title": "road-to-prod"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +127,7 @@
       {
         "id": "7981d4fd21923f7e",
         "type": "tabs",
-        "dimension": 68.11708860759495,
+        "dimension": 68.11708860759494,
         "children": [
           {
             "id": "438f120bc7634e65",
@@ -114,10 +135,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "system/templates/Table (Partial).md"
+                "file": "view-later.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Table (Partial)"
+              "title": "File properties for view-later"
             }
           },
           {
@@ -164,7 +185,7 @@
       {
         "id": "450e262449d23af9",
         "type": "tabs",
-        "dimension": 31.882911392405063,
+        "dimension": 31.88291139240506,
         "children": [
           {
             "id": "47a8a3f2f18e72b1",
@@ -220,7 +241,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "system/templates/Table (Partial).md"
+                "file": "view-later.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -235,59 +256,60 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "random-note:Open random note": false,
-      "publish:Publish changes...": false,
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "homepage:Open homepage": false,
-      "obsidian42-brat:BRAT": false,
-      "templater-obsidian:Templater": false,
-      "advanced-random-note:Open random note modal": false
+      "daily-notes:Open today's daily note": false,
+      "audio-recorder:Start/stop recording": false,
+      "advanced-random-note:Open random note modal": true,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": true,
+      "random-note:Open random note": true,
+      "publish:Publish changes...": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": true,
+      "obsidian42-brat:BRAT": true,
+      "templater-obsidian:Templater": true
     }
   },
-  "active": "f0de761e1aab903e",
+  "active": "4b47439042199338",
   "lastOpenFiles": [
-    "system/templates/Fragment Backlink (Partial).md",
-    "system/templates/Fragment Note.md",
-    "system/templates/Map (Partial).md",
+    "system/road-to-prod.md",
+    "view-later.md",
+    "system/getting-started.md",
     "home.md",
-    "system/bases/Directory of Directories.base",
-    "system/bases/Articles.base",
-    "system/bases/all notes.base",
-    "system/bases/Albums.base",
-    "publish.md",
-    "directory.md",
-    "README.md",
-    "CLAUDE.md",
     "system/templates/Album.md",
     "collections/Albums Collection.md",
-    "system/changelog.md",
-    "system/getting-started.md",
-    "Palace.md",
-    "system",
-    "Untitled.md",
-    "notes",
-    "system/plugins.md",
-    "system/Road to prod.md",
-    "system/hotkeys.md",
-    "system/templates/Article.md",
-    "collections/Comic Issues Collection.md",
-    "Testing.md",
-    "curtain/bases/Comic Issues.base",
-    "testing.md",
-    "system/templates/Album Genre.md",
+    "directory.md",
+    "system/bases/_all.base",
+    "notes/_sample-notes/Oakland.md",
+    "collections/Cities Collection.md",
+    "system/bases/cities.base",
+    "notes/_sample-notes/Grocery List W27.md",
+    "notes/Some things I want to buy.md",
+    "system/templates/Basic Note.md",
+    "system/templates/City.md",
+    "system/types.md",
+    "clipped/_sample-clipped/Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago.md",
+    "notes/Brittany Howard.md",
+    "notes/oakland.md",
     "collections/Articles Collection.md",
-    "curtain/bases/Directory of Directories.md",
-    "test.md",
-    "Note Relationship Structure.canvas",
-    "Test Issue.md",
-    "system/bases",
-    "system/templater-templates",
-    "curtain/clipper-templates/obsidian-web-clipper-settings.json"
+    "collections/Books Collection.md",
+    "system/templates/Book.md",
+    "system/templates/Article.md",
+    "notes/_sample-notes/What Now.md",
+    "clipped/_sample-clipped/The Alchemist.md",
+    "README.md",
+    "public.md",
+    "CLAUDE.local.md",
+    "system/clipper-templates/book-clipper.json",
+    "Clippings",
+    "notes/_pinned",
+    "clipped/_sample-clipped",
+    "collections",
+    "system/templates",
+    "notes/_sample-notes",
+    "system/bases/Directory of Directories.base",
+    "Note Relationship Structure.canvas"
   ]
 }

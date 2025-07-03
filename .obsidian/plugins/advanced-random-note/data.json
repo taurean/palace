@@ -1,6 +1,6 @@
 {
   "queries": [],
-  "disabledFolders": "system/attachment\nsystem/collection\nsystem/template",
+  "disabledFolders": "collections/\nsystem/\nCLAUDE\nCLAUDE.local\nhome\npublic\nREADME\ndirectory",
   "debug": false,
   "openType": "Active Leaf",
   "setActive": true
