@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.8.0
+- **Major Configuration Updates**
+  - Updated Obsidian configuration settings for improved user experience
+  - Enhanced plugin configurations and core plugin settings
+  - Improved daily notes configuration with better template paths
+  - Updated property types configuration with new regional support
+- **New Templates and Collections**
+  - Added Cities Collection for tracking locations with geographic data
+  - Created City template with location properties and mapping integration
+  - Added Basic Note template for general purpose notes
+  - Enhanced Albums, Articles, and Books collections with better structure
+- **Content Organization**
+  - Added system bases for saved queries and data views
+  - Created sample notes including Oakland city example and Grocery List
+  - Introduced view-later.md for tracking unfinished media
+  - Renamed publish.md to public.md for better clarity
+- **System Improvements**
+  - Updated getting-started documentation with expanded guidance
+  - Enhanced directory structure and navigation
+  - Improved home dashboard with better media tracking
+  - Updated Types documentation with clearer property descriptions
+- **Plugin Cleanup**
+  - Removed obsolete Leaflet plugin files and configurations
+  - Streamlined plugin dependencies for better performance
+  - Updated Road to prod documentation (renamed from "Road to prod.md")
+
 ## v0.7.0
 - Update note type documentation and roadmap progress
 - Created a new template for Obsidian clipper to clip books
