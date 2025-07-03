@@ -1,0 +1,22 @@
+views:
+  - type: table
+    name: All Notes
+    filters:
+      and:
+        - '!file.folder.startsWith("system")'
+        - '!file.folder.startsWith("collections")'
+        - file.ext == "md"
+    order:
+      - file.name
+      - kind
+  - type: table
+    name: Recent
+    filters:
+      and:
+        - '!file.folder.startsWith("system")'
+        - '!file.folder.startsWith("collections")'
+        - file.ext == "md"
+    order:
+      - file.name
+      - kind
+    limit: 1

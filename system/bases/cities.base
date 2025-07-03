@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - '!file.folder.startsWith("system")'
+        - '!file.folder.startsWith("collections")'
+        - kind == link("Cities Collection", "Cities")
+    order:
+      - file.name
+      - region
+    columnSize:
+      file.name: 174
