@@ -1,5 +1,5 @@
 # Home
-[[Palace|Vault Docs]] • [[directory]] • [[public|Public Home]]
+[[getting-started|Getting Started]] • [[directory]] • [[public|Public Home]]
 
 
 ## Pinned
@@ -12,7 +12,7 @@ COLUMNS:
 - kind
 
 %%
-![[_all.base]]
+![[_all.base#Pinned]]
 
 ## Latest Notes
 %%
@@ -25,9 +25,9 @@ COLUMNS:
 - kind
 
 %%
-![[_all.base]]
+![[_all.base#Recent]]
 
-## Watch list
+## Media for later
 %%
 @TODO: INSERT BASE HERE
 all notes with kind = album, books, comic Issues, movies, podcast episodes, show seasons, video games
@@ -41,7 +41,7 @@ COLUMNS:
 - publish-date as "released on"
 
 %%
-![[_all.base]]
+![[_all.base#Media]]
 
 ## Quests
 [[Quests Collection|view all quests]]

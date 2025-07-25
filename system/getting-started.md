@@ -1,5 +1,5 @@
 # Getting started
-[[changelog]] • [[road-to-prod|Road to Prod]] • [[Directory]]
+[[changelog]] • [[Directory]]
 
 Obsidian is an incredibly powerful tool but it can feel daunting to get started. Palace is an _opinionated_ vault template that can hopefully provide some structure. 
 
@@ -7,11 +7,26 @@ Obsidian is an incredibly powerful tool but it can feel daunting to get started.
 > ```bash
 palace/
 ├── almanac/
+│   ├── day/
+│   │   └── 2025-12-31.md
+│   ├── month/
+│   │   └── 2025-12.md
+│   ├── week/
+│   │   └── 2025-W52.md
+│   └── year/
+│       └── 2025.md
 ├── clipped/
+│   ├── _sample-clipped/
+│   │   └── example-note.md
 │   ├── note1.md
 │   └── note2.md
 ├── collections/
+│   ├── Albums Collection.md
+│   └── Articles Collection.md
 ├── notes/
+│   ├── _pinned/
+│   ├── _sample-notes/
+│   │   └── example-note.md
 │   ├── note1.md
 │   └── note2.md
 ├── system/
@@ -24,7 +39,6 @@ palace/
 │   ├── getting-started.md
 │   ├── hotkeys.md
 │   ├── plugins.md
-│   ├── road-to-prod.md
 │   └── types.md
 ├── directory.md
 ├── home.md
@@ -34,23 +48,13 @@ palace/
 └── view-later.md
 > ```
 
-## Design decisions & opinions
-- ==you are writing for **you** to read this in three+ years. Write like you are excited to talk to your future self==.
-- [note properties](https://help.obsidian.md/properties) are for populating bases with data and filter results
-- all other data for people to read should be in the body of a note
-- most notes should have a "[[directory|kind]]" assigned to it in the properties
-- your obsidian vault should be structured for you to read it, not as an explicit database of information or as a comprehensive wikipedia dense with information.
-- keep "Kind"s simple. A note Kind should only have one parent level above it **_or_** one child level below it.
-- Keep kinds high level. You should (usually) avoid creating notes for specific songs or episodes, instead add them as sections to the album or season note.
-- [the graph](https://help.obsidian.md/plugins/graph) is for exploration, coupled with the [random note](https://help.obsidian.md/plugins/random-note) plugin you should periodically spend your time reflecting on old notes instead of doom scrolling.
-- star ratings should always be 1-5 with no half stars. Use the following rubric when rating content:
-	- **1 =  hall of fame bad.** This thing is cursed.
-	- **2 =  just bad.**  You won't go back to this or ever recommend it, but you're not actively trying to tell people unprompted that its bad either.
-	- **3 =  Good!** This is exactly what you were expecting and it was worth your time. You may not bring it up yourself but you'll happily recommend it to most people.
-	- **4 =  Great.** This exceeded your expectations. One of your conversation starters for the next week is "did you see/read/hear/try this??"
-	- **5 =  hall of fame great.** You'll look back on this in 10 years and you might even make this media your whole personality for a few weeks.
-- something being great and something being great *for you* are two different questions. You can mark something as [[types#`liked`|liked]] with a 1 star rating. You can *not* mark something as liked with a 5 star rating. 
-- ==**Palace is made to be modified**==. If there is a template missing, add it. If there is a property your template should have, add it. Palace is a starting point but *make it yours*.
+## How to think about Palace
+Palace is designed to help you take your unstructured thoughts, memories, and references, and give it just a bit of form. You shouldn't use this to build a perfect database or a comprehensive wiki. With anything that you write, you should keep in mind who will be reading it and Palace is no different. Write with you as the reader in mind, a few years down the road. 
+
+[[Palace decisions and opinions|Keep reading →]]
+
+
+
 ## Sections
 ### Almanac
 The almanac folder is specifically for housing notes that are anchored to a specific date. By default, notes created using the calendar plugin such as daily or weekly notes are automatically added to `almanac/`. This would also be a good place to put notes for quarters, years, or decades if the note is _about_ that date or time. If the note is about an event associated with a date (eg. 9/11), it should instead be in the `notes/` folder. 
@@ -88,8 +92,6 @@ you're reading that note now!
 the [[hotkeys]] note documents all of the modified hotkey combinations that is configured in Palace.
 #### plugins.md
 the [[plugins]] note documents all of the plugins that Palace depends on and usually some guidance on how you should use them or why.
-#### road-to-prod.md
-the [[road-to-prod|Road to Prod]] note is where I track all of the things that Palace should include and what has been completed so far. Once Palace reaches version 1 and I consider it "ready for production" (lol), I'll probably remove that file.
 #### types.md
 [Props](https://help.obsidian.md/properties) are a really useful feature built into obsidian that you can use to store metadata and even configure [bases](https://help.obsidian.md/bases). To keep things organized, I have tried to find the right balance of unique props for organizing all of that data. the [[types]] note file documents every type, why you might use it, and what kind of data is entered into it.
 ### directory.md
@@ -104,4 +106,4 @@ Similar to `publish.css`, the `publish.js` file also runs whenever your publishe
 the [[public]] note is very similar to your [[public|Home]] note, except this is what you can use as your "home" page if you publish via Obsidian Publish. If you know that you will never publish anything from your vault with Obsidian Publish, you can remove this file.
 
 ### view-later.md
-this [[view-later|note]] contains a list of all media that you haven't marked as finished yet. 
+this [[View Later|note]] contains a list of all media that you haven't marked as finished yet. 
