@@ -7,7 +7,7 @@ formulas:
   link: link(source,source.replace(/^(?:https?:\/\/)?(?:www\.)?(?:.*\.)?([^.\/]+)\.(?:[a-z]{2,3}(?:\.[a-z]{2,3})?|[a-z]{2,6})(?:\/.*)?$/, "$1 ↗").title())
   Untitled: link(source,source.replace(/^(?:https?:\/\/)?(?:www\.)?(?:.*\.)?([^.\/]+)\.(?:[a-z]{2,3}(?:\.[a-z]{2,3})?|[a-z]{2,6})(?:\/.*)?$/, "$1 ↗"))
 properties:
-  note.creator:
+  note.creators:
     displayName: author
   note.finished:
     displayName: read
@@ -21,7 +21,7 @@ views:
     order:
       - finished
       - file.name
-      - creator
+      - creators
       - publish-date
       - formula.link
     sort:
@@ -29,11 +29,11 @@ views:
         direction: DESC
       - property: publish-date
         direction: DESC
-      - property: creator
+      - property: creators
         direction: DESC
     columnSize:
       file.name: 153
-      note.creator: 126
+      note.creators: 126
   - type: table
     name: Read later
     filters:
@@ -42,14 +42,14 @@ views:
     order:
       - finished
       - file.name
-      - creator
+      - creators
       - publish-date
       - source
     sort:
       - property: publish-date
         direction: DESC
-      - property: creator
+      - property: creators
         direction: DESC
     columnSize:
       file.name: 153
-      note.creator: 126
+      note.creators: 126

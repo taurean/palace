@@ -9,9 +9,9 @@ _type: **aliases**_
 _type: **text**_
 When publishing via Obsidian Publish, you can use the `cover` property to provide a path that is used when previewing the link (eg. on social media or in messaging apps). The image path that you provide must lead to an image that is also published.
 
-## `creator`
+## `creators`
 _type: **multitext**_
-`creator` is used for listing the person, organization, or people for actively creating that piece of media.
+`creators` is used for listing the person, organization, or people for actively creating that piece of media.
 
 ## `cssclasses`
 _type: **multitext**_

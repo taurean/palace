@@ -13,7 +13,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
   - type: table
     name: Read later
     filters:
@@ -22,7 +22,7 @@ views:
     order:
       - finished
       - file.name
-      - creator
+      - creators
     rowHeight: medium
   - type: table
     name: Hall of Fame
@@ -35,7 +35,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
   - type: table
     name: Genre › sci-fi
     filters:
@@ -45,4 +45,4 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators

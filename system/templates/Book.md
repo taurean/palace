@@ -1,7 +1,7 @@
 ---
 aliases:
 kind: "[[Books|Books]]"
-creator:
+creators:
 genres: []
 publish-date:
 finished:

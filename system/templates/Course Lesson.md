@@ -2,15 +2,15 @@
 aliases:
 kind: "[[Course Lessons|Course Lessons]]"
 parent:
-creator:
+creators:
 entry:
 source:
 tags:
 finished:
 ---
 # {{title}}
-[[parent|← course title]] • [[Course Lessons|↖ Course Lessons]] 
+[[parent|← course title]] • [[Course Lessons|↖ Course Lessons]]
 
-> [!tldr] 
-> 
-> 
+> [!tldr]
+>
+>

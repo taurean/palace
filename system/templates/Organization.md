@@ -1,7 +1,7 @@
 ---
 aliases: []
 kind: "[[Organizations|Organizations]]"
-creator:
+creators:
 source:
 ---
 # {{title}}
@@ -9,6 +9,6 @@ source:
 
 > [!faq] Known for
 >
-> 
-> 
->  year founded: 
+>
+>
+>  year founded:

@@ -1,7 +1,7 @@
 ---
 aliases:
 kind: "[[Articles|Articles]]"
-creator:
+creators:
   - "[[Alex Lauer]]"
 publish-date: 2021-07-29
 source: https://www.insidehook.com/books/jrr-tolkien-sir-gawain-green-knight

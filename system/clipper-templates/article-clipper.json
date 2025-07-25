@@ -15,7 +15,7 @@
             "type": "text"
         },
         {
-            "name": "creator",
+            "name": "creators",
             "value": "{{\\\"a comma separated list of author(s) of this article. Do not add any characters near or around the square brackets. Each author should be formatted like this: [[author name]].\\\"}}",
             "type": "multitext"
         },

@@ -1,7 +1,7 @@
 ---
 aliases:
 kind: "[[Articles|Articles]]"
-creator:
+creators:
 publish-date:
 source:
 tags:
@@ -12,7 +12,7 @@ finished:
 by [[author]]
 
 > [!summary]
-> 
+>
 
 [[Articles|↖ Articles]] • **[Read this on Publisher](https://)**
 
@@ -20,13 +20,13 @@ by [[author]]
 %% add a comma separated list of topic tags below %%
 
 ## TLDR;
--  
+-
 ### Recap
 > [!tip]- What resonates
-> 
+>
 
 > [!question]- following up
-> 
+>
 
 #### Quotes
 

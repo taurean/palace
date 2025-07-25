@@ -1,7 +1,7 @@
 ---
 aliases: []
 kind: "[[collections/Comic Series|Comic Series]]"
-creator:
+creators:
   - "[[Matthew Rosenberg]]"
   - "[[Stefano Landini]]"
   - "[[Image Comics]]"

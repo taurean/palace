@@ -7,7 +7,7 @@ formulas:
 properties:
   file.name:
     displayName: organization
-  note.creator:
+  note.creators:
     displayName: founded by
   formula.external link:
     displayName: source
@@ -16,10 +16,10 @@ views:
     name: All organizations
     order:
       - file.name
-      - creator
+      - creators
       - formula.external link
     sort:
       - property: file.name
         direction: ASC
     columnSize:
-      note.creator: 422
+      note.creators: 422

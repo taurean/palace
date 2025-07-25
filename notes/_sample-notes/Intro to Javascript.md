@@ -1,7 +1,7 @@
 ---
 aliases:
 kind: "[[Courses|Courses]]"
-creator:
+creators:
   - "[[John teacherperson]]"
   - "[[Lesson corp]]"
 start-date: 2025-07-19

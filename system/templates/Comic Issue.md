@@ -3,7 +3,7 @@ aliases: []
 kind: "[[Comic Issues|Comic Issues]]"
 parent:
 entry:
-creator:
+creators:
 publish-date:
 finished:
 liked:
@@ -12,7 +12,7 @@ liked:
 [[Comic Issues|↖ Comic Issues]]
 
 > [!abstract] details
-> | Writer(s) | Artist(s) | Series | Issue Number | Publish Date | 
+> | Writer(s) | Artist(s) | Series | Issue Number | Publish Date |
 > | --- | --- | --- | --- | --- |
 > |  [[writer]]  |  [[artist]]  |  [[series]]  |  #  | date |
 
@@ -20,4 +20,4 @@ liked:
 > quick story recap
 
 ## Tags
-%% add topic tags here %% 
+%% add topic tags here %%

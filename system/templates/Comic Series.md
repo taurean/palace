@@ -1,7 +1,7 @@
 ---
 aliases: []
 kind: "[[collections/Comic Series|Comic Series]]"
-creator:
+creators:
 genres: []
 finished:
 rating:

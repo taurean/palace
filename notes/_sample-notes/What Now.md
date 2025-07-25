@@ -1,7 +1,7 @@
 ---
 aliases:
 kind: "[[Albums|Albums]]"
-creator:
+creators:
   - "[[Brittany Howard]]"
 genres:
   - soul

@@ -1,7 +1,7 @@
 ---
 aliases:
 kind: "[[Courses|Courses]]"
-creator:
+creators:
 start-date:
 end-date:
 tags:
@@ -10,8 +10,8 @@ rating:
 liked:
 ---
 # {{title}}
-[[Courses|↖ Courses]] 
+[[Courses|↖ Courses]]
 
-> [!tldr] 
-> 
-> 
+> [!tldr]
+>
+>

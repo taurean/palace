@@ -20,7 +20,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
       - publish-date
     sort:
       - property: formula.rating
@@ -41,7 +41,7 @@ views:
     order:
       - formula.liked
       - file.name
-      - creator
+      - creators
       - formula.rating
       - publish-date
     columnSize:
@@ -56,7 +56,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
       - publish-date
     columnSize:
       file.name: 151
@@ -70,7 +70,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
       - publish-date
     columnSize:
       file.name: 151
@@ -84,7 +84,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
       - publish-date
     columnSize:
       file.name: 151
@@ -100,7 +100,7 @@ views:
       - formula.liked
       - file.name
       - formula.rating
-      - creator
+      - creators
       - publish-date
     sort:
       - property: formula.rating

@@ -2,7 +2,7 @@
 aliases:
 kind: "[[Course Lessons|Course Lessons]]"
 parent: "[[Intro to Javascript]]"
-creator:
+creators:
   - "[[John teacherperson]]"
   - "[[Lesson corp]]"
 entry: 1
@@ -15,9 +15,9 @@ finished: true
 # Javascript Fundamentals
 [[Intro to Javascript|← Intro to Javascript]] • [[Course Lessons|↖ Course Lessons]]
 
-> [!tldr] 
+> [!tldr]
 >  Learned what JavaScript is, how to use browser console, basic variables
-> 
+>
 
 ## What is JS?
 
