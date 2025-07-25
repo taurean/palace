@@ -2,7 +2,7 @@
     "schemaVersion": "0.1.0",
     "name": "Article",
     "behavior": "create",
-    "noteContentFormat": "# {{title}}\nby {{\"a comma separated list of author(s) of this article. Each author should be formatted like this [[author name]]. if there is more than one, separate each by a comma and end with the word and using an Oxford comma.\"}}\n\n> [!summary]\n> {{\"a simple and easy to digest summary of what this article contains, no longer than 1-3 sentences. Keep this summary as approachable and short as possible. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]]\"}}\n\n**[Read this on {{site}}]({{url}})**\n\n## Topics\n{{\"create a list of hashtags. the hashtags should be a list of topics covered by this article. tags should be no more than two words and should be connected with a hyphen, no spaces. Do not include any symbols other than the hashtag starting the tag and the comma separating each tag. No more than 5, do not include words in the title.  like this: #first, #second-item, #third\"}}\n\n## TLDR;\n{{\"provide 1-6 bullet points of short dependent clause sentences touching on the topics covered in this article. Make sure to include bullet points in markdown format. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]].\"}}\n\n### Recap\n{{\"provide an approachable distilled version of the pages content that is detailed and formatted in obsidian markdown. The root level heading level should be an h4 as this will be added below an h3. Breakdown the distilled version into headings and paragraphs. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]].\"}}\n\n{{\"When analyzing the content, identify any significant quotes that should be highlighted verbatim. Only if you find genuinely important and noteworthy quotes, create a dedicated quotes section using markdown formatting with this exact structure: 1. Add the section heading: #### Quotes 2. For each quote, create a subheading using this pattern: ##### [Person Name] on [Topic] 3. Present the quote as a markdown blockquote using > 4. Add attribution below each quote: — [[Quoted Person Name]] Important: If there are no especially noteworthy quotes, do not include any quotes section at all. Do not add the ### Quotes heading or any related content. Return nothing for this section. All formatting must use proper markdown syntax. The output should follow this exact markdown pattern: Start with ### Quotes then for each quote use #### [Person] on [Topic] followed by > [quote text]. the person should be wrapped in double brackets `[[like this]]`. if the quoted person is the author of the article, commit the attribution and just set the heading as the topic. do not add an attribution below the quote.\"}}\n\n---\n\n***originally published by [[{{site}}]] on [[{{published|date:\"YYYY-MM-DD\"}}|{{published|date:\"MMMM D, YYYY\"}}]]***\n\n---\n## My notes:\n%% Enter notes below this line %%\n\n",
+    "noteContentFormat": "# {{title}}\nby {{\"a comma separated list of author(s) of this article. Each author should be formatted like this [[author name]]. if there is more than one, separate each by a comma and end with the word and using an Oxford comma.\"}}\n\n> [!summary]\n> {{\"a simple and easy to digest summary of what this article contains, no longer than 1-3 sentences. Keep this summary as approachable and short as possible. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]]\"}}\n\n[[Articles Collection|↖ Articles]] • **[Read this on {{site}}]({{url}})**\n\n## Topics\n{{\"create a list of hashtags. the hashtags should be a list of topics covered by this article. the tags should be general enough to likely be matched with other notes without being overly general. tags should be no more than two words and should be connected with a hyphen, no spaces. Do not include any symbols other than the hashtag starting the tag and the comma separating each tag. No more than 5, do not include words in the title.  like this: #first, #second-item, #third\"}}\n\n## TLDR;\n{{\"provide 1-6 bullet points of short dependent clause sentences touching on the topics covered in this article. Make sure to include bullet points in markdown format. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]].\"}}\n\n### Recap\n\n> [!tip]- What resonates\n> {{\"From this article, identify one specific quote, observation, or idea that would likely stand out to a thoughtful reader. Write 1-2 sentences explaining what it is and why it's noteworthy. Focus on something concrete and meaningful rather than the main thesis\"}}\n\n> [!question]- following up\n> {{\"Based on this article, generate one thoughtful question or area of curiosity that would naturally emerge for an engaged reader. Write 1-2 sentences posing this as a genuine question worth exploring further - either a practical extension or a more abstract angle the article suggests\"}}\n\n{{\"provide an approachable distilled version of the pages content that is detailed and formatted in obsidian markdown. The root level heading level should be an h4 as this will be added below an h3. Breakdown the distilled version into headings and paragraphs. Only where it makes sense with a high degree of confidence, wrap proper nouns that would link to new notes in obsidian using double brackets [[like this]].\"}}\n\n{{\"When analyzing the content, identify any significant quotes that should be highlighted verbatim. Only if you find genuinely important and noteworthy quotes, create a dedicated quotes section using markdown formatting with this exact structure: 1. Add the section heading: #### Quotes 2. For each quote, create a subheading using this pattern: ##### [Person Name] on [Topic] 3. Present the quote as a markdown blockquote using > 4. Add attribution below each quote: — [[Quoted Person Name]] Important: If there are no especially noteworthy quotes, do not include any quotes section at all. Do not add the ### Quotes heading or any related content. Return nothing for this section. All formatting must use proper markdown syntax. The output should follow this exact markdown pattern: Start with ### Quotes then for each quote use #### [Person] on [Topic] followed by > [quote text]. the person should be wrapped in double brackets `[[like this]]`. if the quoted person is the author of the article, commit the attribution and just set the heading as the topic. do not add an attribution below the quote.\"}}\n\n---\n\n***originally published by [[{{site}}]] on [[{{published|date:\"YYYY-MM-DD\"}}|{{published|date:\"MMMM D, YYYY\"}}]]***\n\n---\n## My notes:\n%% Enter notes below this line %%\n\n",
     "properties": [
         {
             "name": "aliases",
@@ -16,7 +16,7 @@
         },
         {
             "name": "creator",
-            "value": "{{\\\"a comma separated list of author(s) of this article. Each author should be formatted like this [[author name]]. Do not add any characters near or around the square brackets\\\"}}",
+            "value": "{{\\\"a comma separated list of author(s) of this article. Do not add any characters near or around the square brackets. Each author should be formatted like this: [[author name]].\\\"}}",
             "type": "multitext"
         },
         {
@@ -25,8 +25,13 @@
             "type": "date"
         },
         {
+            "name": "source",
+            "value": "{{url}}",
+            "type": "multitext"
+        },
+        {
             "name": "tags",
-            "value": "{{\\\"a comma separated list of topics covered by this article. tags should be no more than two words and should be connected with a hyphen, no spaces. The list should end without any symbols including a period. Do not include any symbols other than a dash (-) in each tag, including the last tag. No more than 5, do not include words in the title like this: first, second-item, third\\\"\\\"}}",
+            "value": "{{\\\"a comma separated list of topics covered by this article. the tags should be general enough to likely be matched with other notes without being overly general. tags should be no more than two words and should be connected with a hyphen, no spaces. The list should end without any symbols including a period. Do not include any symbols other than a dash (-) in each tag, including the last tag. No more than 5, do not include words in the title like this: first, second-item, third\\\"\\\"}}",
             "type": "multitext"
         },
         {
@@ -40,7 +45,15 @@
             "type": "checkbox"
         }
     ],
-    "triggers": ["{{schema:article}}"],
+    "triggers": [
+        "schema:@Article",
+        "schema:@BlogPosting",
+        "schema:@NewsArticle",
+        "schema:@ScholarlyArticle",
+        "schema:@TechArticle",
+        "schema:@Report",
+        "schema:@LiveBlogPosting"
+    ],
     "noteNameFormat": "{{title}}",
     "path": "clipped"
 }
