@@ -40,7 +40,7 @@ views:
     name: Genre › sci-fi
     filters:
       and:
-        - genre.contains("sci-fi")
+        - genres.contains("sci-fi")
     order:
       - formula.liked
       - file.name

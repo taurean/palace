@@ -51,7 +51,7 @@ views:
     name: Genre › Fantasy
     filters:
       and:
-        - genre.contains("fantasy")
+        - genres.contains("fantasy")
     order:
       - formula.liked
       - file.name

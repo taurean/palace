@@ -15,10 +15,10 @@ rating:
 liked:
 ---
 # Intro to Javascript
-[[Courses|↖ Courses]] 
+[[Courses|↖ Courses]]
 
-> [!tldr] 
+> [!tldr]
 > an example course about introducing javascript
-> 
+>
 
 ![[Courses.base#Current course lessons]]

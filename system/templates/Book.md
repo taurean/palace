@@ -2,7 +2,7 @@
 aliases:
 kind: "[[Books|Books]]"
 creator:
-genre: []
+genres: []
 publish-date:
 finished:
 rating:
@@ -13,12 +13,12 @@ tags:
 [[Books|↖ Books]]
 
 > [!abstract] details
-> | Author | Publisher | Release Date | # of Pages | ISBN | 
+> | Author | Publisher | Release Date | # of Pages | ISBN |
 > | --- | --- | --- | --- | --- |
 > | [[artist]] | [[label]] | date | 100 | isbnNumber |
-> 
+>
 > %% synopsis here %%
-> 
+>
 > [view on literal.club](https://)
 
 ## Quotes
@@ -27,7 +27,7 @@ tags:
 %% notes here %%
 
 ## Tags
-#genre
+#genres
 
 ---
 

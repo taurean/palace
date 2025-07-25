@@ -51,7 +51,7 @@ views:
     name: Genre › Electronic
     filters:
       and:
-        - genre.contains("electronic")
+        - genres.contains("electronic")
     order:
       - formula.liked
       - file.name
@@ -65,7 +65,7 @@ views:
     name: Genre › Jazz
     filters:
       and:
-        - genre.contains("jazz")
+        - genres.contains("jazz")
     order:
       - formula.liked
       - file.name
@@ -79,7 +79,7 @@ views:
     name: Genre › Soul
     filters:
       and:
-        - genre.contains("soul")
+        - genres.contains("soul")
     order:
       - formula.liked
       - file.name

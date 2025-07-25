@@ -2,7 +2,7 @@
 aliases: []
 kind: "[[collections/Comic Series|Comic Series]]"
 creator:
-genre: []
+genres: []
 finished:
 rating:
 liked:
@@ -19,10 +19,10 @@ liked:
 > quick story recap
 
 ## Series issues
-![[Comic Issues.base#Series Issues]] 
+![[Comic Issues.base#Series Issues]]
 
 ## Tags
-#genre
+#genres
 
 ---
 

@@ -3,7 +3,7 @@ Notes in Palace usually have some combination of properties. Properties are larg
 
 ## `aliases`
 _type: **aliases**_
-`aliases` is used for giving a note an alternative name. for example, one common use case is a note being named `Firstname Lastname.md`, setting an aliases called `Firstname` would also let you tag that note, including with auto complete. the end result would look like this `[[Firstname Lastname|Firstname]]`. 
+`aliases` is used for giving a note an alternative name. for example, one common use case is a note being named `Firstname Lastname.md`, setting an aliases called `Firstname` would also let you tag that note, including with auto complete. the end result would look like this `[[Firstname Lastname|Firstname]]`.
 
 ## `cover`
 _type: **text**_
@@ -19,7 +19,7 @@ this property takes each item you give it and adds that text as the name of CSS 
 
 ## `date`
 _type: **date**_
-the date property is generically available for any note that is related to one specific date. Otherwise, use `start-date` or `end-date`. 
+the date property is generically available for any note that is related to one specific date. Otherwise, use `start-date` or `end-date`.
 
 ## `description`
 _type: **text**_
@@ -37,9 +37,9 @@ the `entry` property is used to communicate where in a parent series this note f
 _type: **checkbox**_
 the `finished` property is used to indicate if *you* have finished reading/watching/consuming this specific media. It's a handy way to include notes to things you want to remember or write about while also creating a queue of stuff you are interested in checking out.
 
-## `genre`
+## `genres`
 _type: **multitext**_
-`genre` is used to for organizing media. This is specifically used for music, television, and literature.
+`genres` is used to for organizing media. This is specifically used for music, television, and literature.
 
 ## `kind`
 _type: **text**_
@@ -51,7 +51,7 @@ sometimes you watch something you know is bad but you still really enjoyed it. S
 
 ## `parent`
 _type: **text**_
-The `parent` property is used to indicate the parent note for this content. This could be a course, a tv series, a podcast, or a comic book series. 
+The `parent` property is used to indicate the parent note for this content. This could be a course, a tv series, a podcast, or a comic book series.
 
 ## `permalink`
 _type: **text**_
@@ -63,11 +63,11 @@ by default, the Obsidian Publish plugin is configured to not publish any notes u
 
 ## `publish-date`
 _type: **date**_
-the `publish-date` property is used to indicate the official date that media was released. 
+the `publish-date` property is used to indicate the official date that media was released.
 
 ## `rating`
 _type: **number**_
-the `rating` property is for you evaluating content, primarily media. The scale is always whole numbers between 1 and 5. 
+the `rating` property is for you evaluating content, primarily media. The scale is always whole numbers between 1 and 5.
 
 ## `region`
 _type: **multitext**_
@@ -75,7 +75,7 @@ _type: **multitext**_
 
 ## `source`
 _type: **text**_
-the `source` property is useful when the note is intrinsically tied to a URL of some kind. This is primarily for things like websites, articles, and videos. 
+the `source` property is useful when the note is intrinsically tied to a URL of some kind. This is primarily for things like websites, articles, and videos.
 
 ## `start-date`
 _type: **date**_

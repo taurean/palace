@@ -5,7 +5,7 @@ creator:
   - "[[Matthew Rosenberg]]"
   - "[[Stefano Landini]]"
   - "[[Image Comics]]"
-genre:
+genres:
   - sci-fi
   - comedy
 finished: false

@@ -20,7 +20,7 @@
             "type": "multitext"
         },
         {
-            "name": "genre",
+            "name": "genres",
             "value": "{{\\\"a comma separated list of the genres of this book. Keep the genre list as short as possible, limited to 6 genre's. List Genre's from least to most specific. for example, fiction and then speculative fiction\\\"}}",
             "type": "multitext"
         },
