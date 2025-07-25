@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.9.0
+- **File Switcher Enhancement**
+  - Added Obsidian file switcher configuration for improved navigation
+- **Template Improvements**
+  - Updated Article Clipper template with enhanced features and better structure
+  - Streamlined template links by removing "Collection" suffix for cleaner references
+- **Documentation Updates**
+  - Updated documentation structure and content throughout Palace vault
+  - Added Palace design decisions and opinions documentation
+  - Enhanced system documentation with clearer guidance
+- **Content Management**
+  - Added View Later document for tracking unfinished content and media
+  - Introduced sample notes for better user onboarding
+  - Added new collection base files for albums, articles, books, and cities
+- **Collections Enhancement**
+  - Added Comic Series and Comic Issues collections with templates
+  - Created Course Lessons collection with base configuration and template
+  - Added Courses collection for educational content tracking
+  - Added Organization collection for business and entity management
+- **System Types**
+  - Added new date, entry, parent, and visited property types
+  - Enhanced type system for better content organization
+- **View Configuration**
+  - Updated Obsidian views for notes and cities collections
+  - Improved collection file organization and naming consistency
+- **Maintenance**
+  - Removed unnecessary sample files and planning documents
+  - Cleaned up obsolete files and plugin configurations
+  - Updated core Obsidian configuration settings
+
 ## v0.8.0
 - **Major Configuration Updates**
   - Updated Obsidian configuration settings for improved user experience
