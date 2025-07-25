@@ -1,0 +1,25 @@
+filters:
+  and:
+    - kind == link("Organizations", "Organizations")
+formulas:
+  external link: link(source,source.replace(/^(?:https?:\/\/)?(?:www\.)?(?:.*\.)?([^.\/]+)\.(?:[a-z]{2,3}(?:\.[a-z]{2,3})?|[a-z]{2,6})(?:\/.*)?$/, "$1 ↗").title())
+  Untitled: source
+properties:
+  file.name:
+    displayName: organization
+  note.creator:
+    displayName: founded by
+  formula.external link:
+    displayName: source
+views:
+  - type: table
+    name: All organizations
+    order:
+      - file.name
+      - creator
+      - formula.external link
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.creator: 422
