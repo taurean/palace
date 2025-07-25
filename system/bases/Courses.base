@@ -1,0 +1,52 @@
+formulas:
+  link: link(source,source.replace(/^(?:https?:\/\/)?(?:www\.)?(?:.*\.)?([^.\/]+)\.(?:[a-z]{2,3}(?:\.[a-z]{2,3})?|[a-z]{2,6})(?:\/.*)?$/, "$1 ↗").title())
+  Untitled: source
+properties:
+  file.name:
+    displayName: title
+  note.entry:
+    displayName: lesson
+  note.finished:
+    displayName: done
+  formula.link:
+    displayName: source
+  note.end-date:
+    displayName: finished
+  note.start-date:
+    displayName: started
+views:
+  - type: table
+    name: All courses
+    filters:
+      and:
+        - kind == link("Courses", "Courses")
+    order:
+      - finished
+      - file.name
+      - start-date
+      - end-date
+      - formula.link
+    sort:
+      - property: formula.link
+        direction: ASC
+    columnSize:
+      file.name: 246
+      note.start-date: 135
+      note.end-date: 111
+  - type: table
+    name: Current course lessons
+    filters:
+      and:
+        - kind == link("Course Lessons Collection", "Course Lessons")
+        - parent == this.file
+    order:
+      - finished
+      - entry
+      - file.name
+      - formula.link
+    sort:
+      - property: entry
+        direction: ASC
+    columnSize:
+      note.finished: 70
+      file.name: 397
