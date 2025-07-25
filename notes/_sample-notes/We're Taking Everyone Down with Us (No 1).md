@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Comic Issues|Comic Issues]]"
+kind: "[[Comic Issues]]"
 parent: "[[We're Taking Everyone Down WIth Us]]"
 entry: 1
 creators:

@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Organizations|Organizations]]"
+kind: "[[Organizations]]"
 creators:
 source:
 ---

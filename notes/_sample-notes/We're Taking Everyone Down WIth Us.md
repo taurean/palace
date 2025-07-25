@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[collections/Comic Series|Comic Series]]"
+kind: "[[Comic Series]]"
 creators:
   - "[[Matthew Rosenberg]]"
   - "[[Stefano Landini]]"
@@ -13,7 +13,7 @@ rating: 4
 liked: true
 ---
 # We're Taking Everyone Down WIth Us
-[[collections/Comic Series|↖ Comic Series]]
+[[Comic Series|↖ Comic Series]]
 
 > [!abstract] details
 > | Writer(s) | Artist(s) | Publisher |

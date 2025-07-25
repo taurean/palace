@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Courses|Courses]]"
+kind: "[[Courses]]"
 creators:
   - "[[John teacherperson]]"
   - "[[Lesson corp]]"

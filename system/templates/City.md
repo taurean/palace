@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Cities|Cities]]"
+kind: "[[Cities]]"
 region:
 visited:
 liked:
@@ -14,7 +14,7 @@ liked:
 
 [map link]() • [view {{title}} on wikipedia]()
 
-## places 
+## places
 %%
 @TODO: INSERT BASE HERE
 

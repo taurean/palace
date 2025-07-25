@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Courses|Courses]]"
+kind: "[[Courses]]"
 creators:
 start-date:
 end-date:

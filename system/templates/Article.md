@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Articles|Articles]]"
+kind: "[[Articles]]"
 creators:
 publish-date:
 source:

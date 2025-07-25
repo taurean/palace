@@ -29,7 +29,7 @@ For tracking cities/towns and where they are located. By default, cities also in
 For tracking individual comic book issues, usually from a series. Record the creators, mark if you have finished it yet, and track what you like or not like.
 
 ### Comic Series
-[[system/templates/Comic Series|Template]] • [[We're Taking Everyone Down WIth Us|Demo]] • [[collections/Comic Series|Collection]]
+[[system/templates/Comic Series|Template]] • [[We're Taking Everyone Down WIth Us|Demo]] • [[Comic Series|Collection]]
 For tracking a comic book *series*. View the comic book issues filtered on that series, mark the series genre, rate, like, and review the series as a whole.
 
 ### Course Lessons

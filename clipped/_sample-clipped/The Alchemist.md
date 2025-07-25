@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Books|Books]]"
+kind: "[[Books]]"
 creators:
   - "[[Paulo Coelho]]"
 genres:

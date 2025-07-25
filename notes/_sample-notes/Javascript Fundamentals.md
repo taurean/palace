@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Course Lessons|Course Lessons]]"
+kind: "[[Course Lessons]]"
 parent: "[[Intro to Javascript]]"
 creators:
   - "[[John teacherperson]]"

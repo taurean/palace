@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Articles|Articles]]"
+kind: "[[Articles]]"
 creators:
   - "[[Alex Lauer]]"
 publish-date: 2021-07-29

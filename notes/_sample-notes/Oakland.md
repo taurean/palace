@@ -1,7 +1,7 @@
 ---
 aliases:
   - Oaktown
-kind: "[[Cities|Cities]]"
+kind: "[[Cities]]"
 region:
   - "[[California]]"
   - "[[United States]]"
@@ -18,7 +18,7 @@ liked: true
 
 [map link](https://maps.apple/p/9rx5ZxiEd0hRd~) • [view Oakland on wikipedia](https://en.wikipedia.org/wiki/Oakland,_California)
 
-## places 
+## places
 %%
 @TODO: INSERT BASE HERE
 

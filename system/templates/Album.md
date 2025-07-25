@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Albums|Albums]]"
+kind: "[[Albums]]"
 creators:
 genres: []
 publish-date:

@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[collections/Comic Series|Comic Series]]"
+kind: "[[Comic Series]]"
 creators:
 genres: []
 finished:
@@ -8,7 +8,7 @@ rating:
 liked:
 ---
 # {{Title}}
-[[collections/Comic Series|↖ Comic Series]]
+[[Comic Series|↖ Comic Series]]
 
 > [!abstract] details
 > | Writer(s) | Artist(s) | Publisher |

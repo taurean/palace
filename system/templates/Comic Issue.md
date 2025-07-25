@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Comic Issues|Comic Issues]]"
+kind: "[[Comic Issues]]"
 parent:
 entry:
 creators:

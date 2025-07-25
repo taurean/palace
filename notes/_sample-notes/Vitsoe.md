@@ -1,7 +1,7 @@
 ---
 aliases:
   - Vitsœ
-kind: "[[Organizations|Organizations]]"
+kind: "[[Organizations]]"
 creators:
   - "[[Niels Vitsoe]]"
   - "[[Otto Zapf]]"

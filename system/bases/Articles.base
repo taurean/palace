@@ -1,6 +1,6 @@
 filters:
   and:
-    - kind == link("Articles", "Articles")
+    - kind == link("Articles")
     - and:
         - '!file.path.contains("templates")'
 formulas:
