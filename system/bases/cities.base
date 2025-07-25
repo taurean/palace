@@ -1,13 +1,36 @@
+filters:
+  and:
+    - kind == link("Cities", "Cities")
+    - and:
+        - '!file.path.contains("templates")'
+properties:
+  note.region:
+    displayName: regions
 views:
   - type: table
-    name: Table
-    filters:
-      and:
-        - '!file.folder.startsWith("system")'
-        - '!file.folder.startsWith("collections")'
-        - kind == link("Cities Collection", "Cities")
+    name: All Cities
     order:
       - file.name
       - region
     columnSize:
-      file.name: 174
+      file.name: 142
+  - type: table
+    name: Visited
+    filters:
+      and:
+        - visited == true
+    order:
+      - file.name
+      - region
+    columnSize:
+      file.name: 142
+  - type: table
+    name: Not visited
+    filters:
+      and:
+        - visited != true
+    order:
+      - file.name
+      - region
+    columnSize:
+      file.name: 142

@@ -1,3 +1,10 @@
+formulas:
+  Note kind: if(kind, kind, "basic note")
+properties:
+  formula.Note kind:
+    displayName: kind
+  file.name:
+    displayName: note
 views:
   - type: table
     name: All Notes
@@ -8,15 +15,70 @@ views:
         - file.ext == "md"
     order:
       - file.name
-      - kind
+      - formula.Note kind
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: formula.Note kind
+        direction: ASC
+    columnSize:
+      file.name: 522
   - type: table
     name: Recent
+    filters:
+      and:
+        - file.ext == "md"
+        - '!file.path.startsWith("almanac")'
+        - '!file.path.startsWith("collections")'
+    order:
+      - file.name
+      - formula.Note kind
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: formula.Note kind
+        direction: ASC
+    limit: 6
+    columnSize:
+      file.name: 519
+  - type: table
+    name: Pinned
     filters:
       and:
         - '!file.folder.startsWith("system")'
         - '!file.folder.startsWith("collections")'
         - file.ext == "md"
+        - and:
+            - file.path.startsWith("notes/_pinned")
     order:
       - file.name
-      - kind
-    limit: 1
+      - formula.Note kind
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: formula.Note kind
+        direction: ASC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      file.name: 540
+  - type: table
+    name: Media
+    filters:
+      and:
+        - '!file.folder.startsWith("system")'
+        - '!file.folder.startsWith("collections")'
+        - file.ext == "md"
+        - or:
+            - kind == link("Albums", "Albums")
+            - kind == link("Books", "Books")
+    order:
+      - file.name
+      - formula.Note kind
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: formula.Note kind
+        direction: ASC
+    columnSize:
+      file.name: 522
