@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Comic Series
+aliases: []
 kind: "[[directory|Collection]]"
 description: comic series I have read, plan to read, or mentioned in other notes.
 ---

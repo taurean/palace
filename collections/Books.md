@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Books
+aliases: []
 kind: "[[directory|Collection]]"
 description: Books I have read or am interested in, sorted by genre and my ratings.
 ---

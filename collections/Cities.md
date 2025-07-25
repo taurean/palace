@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Cities
+aliases: []
 kind: "[[Directory|Collection]]"
 description: Cities I have visited, plant to visit, or mentioned in other notes.
 ---
