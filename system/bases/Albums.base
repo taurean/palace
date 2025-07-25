@@ -1,0 +1,114 @@
+filters:
+  and:
+    - kind == link("Albums", "Albums")
+    - and:
+        - '!file.path.contains("templates")'
+formulas:
+  rating: if(rating.isEmpty(), "", "★★★★★".slice(0, if(rating, rating, 0))+"☆☆☆☆☆".slice(if(rating, rating, 0)))
+  liked: if(liked, "♥", " ")
+properties:
+  note.release-date:
+    displayName: released
+  note.publish-date:
+    displayName: released
+  note.finished:
+    displayName: listened
+views:
+  - type: table
+    name: All Albums
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    sort:
+      - property: formula.rating
+        direction: DESC
+      - property: publish-date
+        direction: ASC
+      - property: release-date
+        direction: DESC
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Hall of Fame
+    filters:
+      and:
+        - liked == true
+        - formula.rating == "★★★★★"
+    order:
+      - formula.liked
+      - file.name
+      - creator
+      - formula.rating
+      - publish-date
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Genre › Electronic
+    filters:
+      and:
+        - genre.contains("electronic")
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Genre › Jazz
+    filters:
+      and:
+        - genre.contains("jazz")
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Genre › Soul
+    filters:
+      and:
+        - genre.contains("soul")
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Listen later
+    filters:
+      and:
+        - and:
+            - finished == false
+    order:
+      - finished
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    sort:
+      - property: formula.rating
+        direction: DESC
+      - property: publish-date
+        direction: ASC
+      - property: release-date
+        direction: DESC
+    columnSize:
+      file.name: 151
+      formula.rating: 100

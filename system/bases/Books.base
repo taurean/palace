@@ -1,0 +1,85 @@
+filters:
+  and:
+    - kind == link("Books", "Books")
+    - and:
+        - '!file.path.contains("templates")'
+formulas:
+  rating: if(rating.isEmpty(), "", "★★★★★".slice(0, if(rating, rating, 0))+"☆☆☆☆☆".slice(if(rating, rating, 0)))
+  liked: if(liked, "♥", " ")
+properties:
+  note.release-date:
+    displayName: released
+  note.publish-date:
+    displayName: published on
+  note.finished:
+    displayName: read
+views:
+  - type: table
+    name: All Books
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    sort:
+      - property: publish-date
+        direction: DESC
+      - property: formula.rating
+        direction: DESC
+      - property: release-date
+        direction: DESC
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Hall of Fame
+    filters:
+      and:
+        - liked == true
+        - formula.rating == "★★★★★"
+    order:
+      - formula.liked
+      - file.name
+      - creator
+      - formula.rating
+      - publish-date
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Genre › Fantasy
+    filters:
+      and:
+        - genre.contains("fantasy")
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    columnSize:
+      file.name: 151
+      formula.rating: 100
+  - type: table
+    name: Read later
+    filters:
+      and:
+        - finished == false
+    order:
+      - finished
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+      - publish-date
+    sort:
+      - property: publish-date
+        direction: DESC
+      - property: formula.rating
+        direction: DESC
+      - property: release-date
+        direction: DESC
+    columnSize:
+      file.name: 151
+      formula.rating: 100

@@ -1,0 +1,55 @@
+filters:
+  and:
+    - kind == link("Articles", "Articles")
+    - and:
+        - '!file.path.contains("templates")'
+formulas:
+  link: link(source,source.replace(/^(?:https?:\/\/)?(?:www\.)?(?:.*\.)?([^.\/]+)\.(?:[a-z]{2,3}(?:\.[a-z]{2,3})?|[a-z]{2,6})(?:\/.*)?$/, "$1 ↗").title())
+  Untitled: link(source,source.replace(/^(?:https?:\/\/)?(?:www\.)?(?:.*\.)?([^.\/]+)\.(?:[a-z]{2,3}(?:\.[a-z]{2,3})?|[a-z]{2,6})(?:\/.*)?$/, "$1 ↗"))
+properties:
+  note.creator:
+    displayName: author
+  note.finished:
+    displayName: read
+  note.publish-date:
+    displayName: published
+  formula.link:
+    displayName: source
+views:
+  - type: table
+    name: All Articles
+    order:
+      - finished
+      - file.name
+      - creator
+      - publish-date
+      - formula.link
+    sort:
+      - property: source
+        direction: DESC
+      - property: publish-date
+        direction: DESC
+      - property: creator
+        direction: DESC
+    columnSize:
+      file.name: 153
+      note.creator: 126
+  - type: table
+    name: Read later
+    filters:
+      and:
+        - finished == false
+    order:
+      - finished
+      - file.name
+      - creator
+      - publish-date
+      - source
+    sort:
+      - property: publish-date
+        direction: DESC
+      - property: creator
+        direction: DESC
+    columnSize:
+      file.name: 153
+      note.creator: 126
