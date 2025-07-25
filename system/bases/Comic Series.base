@@ -1,0 +1,48 @@
+filters:
+  and:
+    - kind == link("Comic Series", "Comic Series")
+    - and:
+        - '!file.path.contains("system")'
+formulas:
+  liked: if(liked, "♥", "")
+  rating: if(rating.isEmpty(), "", "★★★★★".slice(0, if(rating, rating, 0))+"☆☆☆☆☆".slice(if(rating, rating, 0)))
+views:
+  - type: table
+    name: All Series
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+  - type: table
+    name: Read later
+    filters:
+      and:
+        - finished != true
+    order:
+      - finished
+      - file.name
+      - creator
+    rowHeight: medium
+  - type: table
+    name: Hall of Fame
+    filters:
+      and:
+        - finished == true
+        - formula.rating == "★★★★★"
+        - liked == true
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator
+  - type: table
+    name: Genre › sci-fi
+    filters:
+      and:
+        - genre.contains("sci-fi")
+    order:
+      - formula.liked
+      - file.name
+      - formula.rating
+      - creator

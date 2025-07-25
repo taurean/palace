@@ -1,0 +1,59 @@
+filters:
+  and:
+    - '!file.path.contains("templates")'
+    - and:
+        - kind == link("Comic Issues", "Comic Issues")
+formulas:
+  Issue: file.asLink(parent.toString().slice(2, -2))
+  sub issue: file.asLink(note["publish-date"].format("MMMM Do, YYYY"))
+  liked: if(liked, "♥", " ")
+properties:
+  note.entry:
+    displayName: Issue №
+views:
+  - type: table
+    name: All Comics
+    order:
+      - finished
+      - formula.Issue
+      - entry
+      - formula.liked
+    sort:
+      - property: entry
+        direction: DESC
+      - property: liked
+        direction: ASC
+    columnSize:
+      formula.Issue: 308
+      note.entry: 109
+  - type: table
+    name: Series Issues
+    filters:
+      and:
+        - parent == this.file
+    order:
+      - entry
+      - formula.sub issue
+      - formula.liked
+    sort: []
+    columnSize:
+      note.entry: 109
+      formula.sub issue: 229
+  - type: table
+    name: Read later
+    filters:
+      and:
+        - finished != true
+    order:
+      - finished
+      - formula.Issue
+      - entry
+      - formula.liked
+    sort:
+      - property: entry
+        direction: DESC
+      - property: liked
+        direction: ASC
+    columnSize:
+      formula.Issue: 308
+      note.entry: 109
