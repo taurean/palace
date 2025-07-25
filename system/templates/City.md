@@ -1,14 +1,16 @@
 ---
 aliases:
-kind: "[[Cities Collection|Cities]]"
-region: 
+kind: "[[Cities|Cities]]"
+region:
+visited:
+liked:
 ---
 # {{title}}
-[[region]], [[country]]
+[[Cities|↖ Cities]] • [[region]], [[country]]
 
-| latitude | longitude | time zone | Population | Founded |
-| --- | --- | --- | --- | --- |
-|  |  | America/Los_Angeles | 440,646 | May 4, 1852 |
+| latitude | longitude | time zone           | Population | Founded     |
+| -------- | --------- | ------------------- | ---------- | ----------- |
+|          |           | America/Los_Angeles | 440,646    | May 4, 1852 |
 
 [map link]() • [view {{title}} on wikipedia]()
 
@@ -23,7 +25,7 @@ COLUMNS:
 - liked renamed "❤️", reformatted as either "❤️"  or " "
 
 %%
-![[_all.base]]
+![[Places.base]]
 
 ---
 %% add your "{{title}}" notes below %%

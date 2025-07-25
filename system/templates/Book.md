@@ -1,15 +1,16 @@
 ---
 aliases:
-kind: "[[Books Collection|Books]]"
-creator: 
+kind: "[[Books|Books]]"
+creator:
 genre: []
 publish-date:
-finished: 
+finished:
 rating:
-liked: 
-tags: 
+liked:
+tags:
 ---
 # {{title}}
+[[Books|↖ Books]]
 
 > [!abstract] details
 > | Author | Publisher | Release Date | # of Pages | ISBN | 

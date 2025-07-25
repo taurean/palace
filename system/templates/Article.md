@@ -1,10 +1,11 @@
 ---
-aliases: 
-kind: "[[Articles Collection|Articles]]"
-creator: 
-publish-date: 
-tags: 
-finished: 
+aliases:
+kind: "[[Articles|Articles]]"
+creator:
+publish-date:
+source:
+tags:
+finished:
 ---
 
 # {{title}}
@@ -13,15 +14,21 @@ by [[author]]
 > [!summary]
 > 
 
-**[Read this on Publisher](https://)**
+[[Articles|↖ Articles]] • **[Read this on Publisher](https://)**
 
 ## Topics
 %% add a comma separated list of topic tags below %%
 
 ## TLDR;
 -  
+### Recap
+> [!tip]- What resonates
+> 
 
-### Quotes
+> [!question]- following up
+> 
+
+#### Quotes
 
 #### [[Person]] on topic
 

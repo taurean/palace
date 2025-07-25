@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Albums Collection|Albums]]"
+kind: "[[Albums|Albums]]"
 creator:
 genre: []
 publish-date:
@@ -10,6 +10,7 @@ liked:
 ---
 
 # {{title}}
+[[Albums|↖ Albums]]
 
 > [!abstract] details 
 > | Artist | Label | Release Date | Run Time |
