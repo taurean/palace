@@ -1,0 +1,18 @@
+## Design decisions & opinions
+- ==you are writing for **you** to read this in three+ years. Write like you are excited to talk to your future self==.
+- [note properties](https://help.obsidian.md/properties) are for populating bases with data and filter results
+- all other data for people to read should be in the body of a note
+- most notes should have a "[[directory|kind]]" assigned to it in the properties
+- your obsidian vault should be structured for you to read it, not as an explicit database of information or as a comprehensive wikipedia dense with information.
+- This vault is designed in a way to limit the dependence on third-party plugins and make the vault as resilient to change in the future as possible.
+- keep "Kind"s simple. A note Kind should only have one parent level above it **_or_** one child level below it.
+- Keep kinds high level. You should (usually) avoid creating notes for specific songs or episodes, instead add them as sections to the album or season note.
+- [the graph](https://help.obsidian.md/plugins/graph) is for exploration, coupled with the [random note](https://help.obsidian.md/plugins/random-note) plugin you should periodically spend your time reflecting on old notes instead of doom scrolling.
+- star ratings should always be 1-5 with no half stars. Use the following rubric when rating content:
+	- **1 =  hall of fame bad.** This thing is cursed.
+	- **2 =  just bad.**  You won't go back to this or ever recommend it, but you're not actively trying to tell people unprompted that it's bad either.
+	- **3 =  Good!** This is exactly what you were expecting and it was worth your time. You may not bring it up yourself but you'll happily recommend it to most people.
+	- **4 =  Great.** This exceeded your expectations. One of your conversation starters for the next week is "did you see/read/hear/try this??"
+	- **5 =  hall of fame great.** You'll look back on this in 10 years and you might even make this media your whole personality for a few weeks.
+- something being great and something being great *for you* are two different questions. You can mark something as [[types#`liked`|liked]] with a 1 star rating. You can *not* mark something as liked with a 5 star rating. 
+- ==**Palace is made to be modified**==. If there is a template missing, add it. If there is a property your template should have, add it. Palace is a starting point but *make it yours*.
