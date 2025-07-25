@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[directory|Collection]]"
+kind: "[[Collection]]"
 description: comic series I have read, plan to read, or mentioned in other notes.
 ---
 # Comic Series
