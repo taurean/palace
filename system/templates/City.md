@@ -1,12 +1,12 @@
 ---
 aliases:
 kind: "[[Cities]]"
-region:
+regions:
 visited:
 liked:
 ---
 # {{title}}
-[[Cities|↖ Cities]] • [[region]], [[country]]
+[[Cities|↖ Cities]] • [[region]], [[region]]
 
 | latitude | longitude | time zone           | Population | Founded     |
 | -------- | --------- | ------------------- | ---------- | ----------- |

@@ -4,14 +4,14 @@ filters:
     - and:
         - '!file.path.contains("templates")'
 properties:
-  note.region:
+  note.regions:
     displayName: regions
 views:
   - type: table
     name: All Cities
     order:
       - file.name
-      - region
+      - regions
     columnSize:
       file.name: 142
   - type: table
@@ -21,7 +21,7 @@ views:
         - visited == true
     order:
       - file.name
-      - region
+      - regions
     columnSize:
       file.name: 142
   - type: table
@@ -31,6 +31,6 @@ views:
         - visited != true
     order:
       - file.name
-      - region
+      - regions
     columnSize:
       file.name: 142

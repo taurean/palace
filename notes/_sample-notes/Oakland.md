@@ -2,7 +2,7 @@
 aliases:
   - Oaktown
 kind: "[[Cities]]"
-region:
+regions:
   - "[[California]]"
   - "[[United States]]"
 visited: true

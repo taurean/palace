@@ -69,9 +69,9 @@ the `publish-date` property is used to indicate the official date that media was
 _type: **number**_
 the `rating` property is for you evaluating content, primarily media. The scale is always whole numbers between 1 and 5.
 
-## `region`
+## `regions`
 _type: **multitext**_
-`region` is both a  [[types#`kind`|kind]] of note for counties, states, countries, etc as well as a property for back-linking cities to the regions they exist in.
+`regions` is both a  [[types#`kind`|kind]] of note for counties, states, countries, etc as well as a property for back-linking cities to the regions they exist in.
 
 ## `source`
 _type: **text**_
