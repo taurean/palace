@@ -1,17 +1,18 @@
 ---
 aliases:
-kind: "[[Articles Collection|Articles]]"
+kind: "[[Articles|Articles]]"
 creator:
-  - "Alex Lauer"
+  - "[[Alex Lauer]]"
 publish-date: 2021-07-29
+source: https://www.insidehook.com/books/jrr-tolkien-sir-gawain-green-knight
 tags:
-  - "medieval-literature"
-  - "fantasy-writing"
-  - "arthurian-legend"
-  - "literary-history"
-  - "tolkien-studies"
+  - medieval-literature
+  - fantasy-writing
+  - arthurian-legend
+  - literary-history
+  - tolkien-studies
 contains:
-  - "clipping"
+  - clipping
 finished: false
 ---
 # Why J.R.R. Tolkien Fell in Love With "The Green Knight" a Century Ago
@@ -20,7 +21,7 @@ by [[Alex Lauer]]
 > [!summary]
 > An exploration of [[J.R.R. Tolkien]]'s lifelong fascination with the medieval poem [[Sir Gawain and the Green Knight]], and how this work influenced his literary career and the broader fantasy genre.
 
-**[Read this on InsideHook](https://www.insidehook.com/books/jrr-tolkien-sir-gawain-green-knight)**
+[[Articles|↖ Articles]] • **[Read this on InsideHook](https://www.insidehook.com/books/jrr-tolkien-sir-gawain-green-knight)**
 
 ## Topics
 #tolkien, #medieval-literature, #fantasy-writing, #arthurian-legend, #literary-history
@@ -32,6 +33,14 @@ by [[Alex Lauer]]
 - Discussing the enduring relevance of medieval storytelling in modern literature
 
 ### Recap
+
+> [!tip]- What resonated
+> one sentence takeaway here
+
+> [!question]- following up
+> one question goes here?
+
+
 #### Tolkien and Sir Gawain
 
 The article delves into [[J.R.R. Tolkien]]'s deep fascination with the medieval poem [[Sir Gawain and the Green Knight]]. Tolkien was not just a casual reader but a serious scholar who dedicated significant academic and creative energy to understanding and translating this work.

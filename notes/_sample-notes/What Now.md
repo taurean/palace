@@ -1,19 +1,20 @@
 ---
 aliases:
-kind: "[[Albums Collection|Albums]]"
+kind: "[[Albums|Albums]]"
 creator:
   - "[[Brittany Howard]]"
 genre:
   - soul
   - electronic
   - jazz
-release-date: 2024-02-09
+publish-date: 2024-02-09
 finished: true
 rating: 5
 liked: true
 ---
 
 # What Now
+[[Albums|↖ Albums]]
 
 > [!abstract] details 
 > | Artist     | Label     | Release Date | 

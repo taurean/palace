@@ -1,15 +1,16 @@
 ---
-aliases: 
+aliases:
   - Oaktown
-kind: "[[Cities Collection|Cities]]"
+kind: "[[Cities|Cities]]"
 region:
   - "[[California]]"
   - "[[United States]]"
-contains: 
-  - map
+visited: true
+liked: true
 ---
+
 # Oakland
-[[California]], [[United States]]
+[[Cities|↖ Cities]] • [[California]], [[United States]]
 
 | latitude | longitude | time zone | Population | Founded |
 | --- | --- | --- | --- | --- |
@@ -28,7 +29,7 @@ COLUMNS:
 - liked renamed "❤️", reformatted as either "❤️"  or " "
 
 %%
-![[_all.base]]
+![[Places.base]]
 
 ---
 %% add your "Oakland" notes below %%

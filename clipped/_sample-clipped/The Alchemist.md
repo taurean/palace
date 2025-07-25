@@ -1,6 +1,6 @@
 ---
 aliases:
-kind: "[[Books Collection|Books]]"
+kind: "[[Books|Books]]"
 creator:
   - "[[Paulo Coelho]]"
 genre:
@@ -8,6 +8,7 @@ genre:
   - Philosophical Fiction
   - Spiritual Fiction
   - Adventure Novel
+  - fantasy
 publish-date: 1988-01-01
 finished: true
 rating: 4
