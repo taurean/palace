@@ -49,7 +49,7 @@ views:
         - '!file.folder.startsWith("collections")'
         - file.ext == "md"
         - and:
-            - file.path.startsWith("notes/_pinned")
+            - file.tags.contains("#pinned")
     order:
       - file.name
       - formula.Note kind

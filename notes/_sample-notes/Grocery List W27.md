@@ -1,6 +1,7 @@
 ---
-aliases: 
-  
+aliases:
+tags:
+  - "#pinned"
 ---
 # Grocery List W27
 - [ ] bread
