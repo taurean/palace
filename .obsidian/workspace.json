@@ -10,7 +10,6 @@
           {
             "id": "e7a7b303c61786dc",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -19,7 +18,6 @@
                 "source": true,
                 "backlinks": false
               },
-              "pinned": true,
               "icon": "lucide-file",
               "title": "home"
             }
@@ -90,7 +88,7 @@
       {
         "id": "7981d4fd21923f7e",
         "type": "tabs",
-        "dimension": 45.75402635431918,
+        "dimension": 45.75402635431917,
         "children": [
           {
             "id": "438f120bc7634e65",
@@ -98,10 +96,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "home.md"
+                "file": "clipped/_sample-clipped/Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for home"
+              "title": "File properties for Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago"
             }
           },
           {
@@ -118,6 +116,20 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
+          },
+          {
+            "id": "6ea5ed551a7c3de6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
           }
         ],
         "currentTab": 1
@@ -125,7 +137,7 @@
       {
         "id": "450e262449d23af9",
         "type": "tabs",
-        "dimension": 54.24597364568082,
+        "dimension": 54.24597364568083,
         "children": [
           {
             "id": "47a8a3f2f18e72b1",
@@ -133,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
+                "file": "clipped/_sample-clipped/Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +155,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for home"
+              "title": "Backlinks for Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago"
             }
           },
           {
@@ -152,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home.md",
+                "file": "clipped/_sample-clipped/Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of home"
+              "title": "Outline of Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago"
             }
           },
           {
@@ -167,12 +179,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home.md",
+                "file": "clipped/_sample-clipped/Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from home"
+              "title": "Outgoing links from Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago"
             }
           },
           {
@@ -196,6 +208,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "homepage:Open homepage": false,
       "daily-notes:Open today's daily note": false,
       "audio-recorder:Start/stop recording": false,
@@ -212,42 +225,42 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "notes/Quests Collection.md",
     "home.md",
-    "View Later.md",
-    "notes/_sample-notes/Grocery List W27.md",
-    "notes/_sample-notes/Intro to Javascript.md",
-    "system/templates/Album.md",
-    "system/templates/Correspondence.md",
+    "system/bases/Albums.base",
     "system/templates/Article.md",
-    "collections/Albums.md",
+    "collections/Articles.md",
+    "clipped/_sample-clipped/Why J.R.R. Tolkien Fell in Love With \"The Green Knight\" a Century Ago.md",
     "collections/Organizations.md",
     "collections/Courses.md",
     "collections/Course Lessons.md",
     "collections/Correspondences.md",
-    "collections/Comic Series.md",
     "collections/Comic Issues.md",
     "collections/Cities.md",
+    "collections/Albums.md",
+    "notes/_sample-notes/The Internet Tidal Wave.md",
+    "system/bases/Correspondences.base",
+    "system/templates/Correspondence.md",
+    "notes/_sample-notes/We're Taking Everyone Down WIth Us.md",
+    "notes/_sample-notes/We're Taking Everyone Down with Us (No 1).md",
+    "system/bases/Organizations.base",
+    "notes/_sample-notes/Untitled.md",
+    "system/bases/Cities.base",
+    "collections/Comic Series.md",
     "collections/Books.md",
-    "collections/Articles.md",
+    "system/templates/Comic Issue.md",
+    "View Later.md",
+    "notes/_sample-notes/Grocery List W27.md",
+    "notes/_sample-notes/Intro to Javascript.md",
+    "system/templates/Album.md",
     "system/templates/Basic Note.md",
     "notes/_sample-notes/What Now.md",
-    "system/types.md",
-    "system/changelog.md",
-    "system/templates/Organization.md",
-    "system/bases/Organizations.base",
-    "notes/_sample-notes/Vitsoe.md",
-    "system/getting-started.md",
-    "README.md",
-    "system/road-to-prod.md",
     "system/bases/Courses.base",
     "system/bases/Course Lessons.base",
-    "system/bases/Untitled.base",
     "system/bases/Comic Series.base",
     "system/bases/Comic Issues.base",
-    "system/bases/Cities.base",
     "system/bases/Books.base",
     "system/bases/Articles.base",
-    "system/bases/Albums.base",
     "Note Relationship Structure.canvas"
   ]
 }
