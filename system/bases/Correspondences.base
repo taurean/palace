@@ -1,0 +1,21 @@
+filters:
+  and:
+    - kind == link("Correspondences")
+properties:
+  file.name:
+    displayName: message
+  note.creators:
+    displayName: authors
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - medium
+      - date
+      - creators
+    sort:
+      - property: medium
+        direction: ASC
+      - property: file.name
+        direction: ASC
