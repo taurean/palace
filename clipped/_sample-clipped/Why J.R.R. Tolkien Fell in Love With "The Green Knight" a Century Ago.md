@@ -5,14 +5,6 @@ creators:
   - "[[Alex Lauer]]"
 publish-date: 2021-07-29
 source: https://www.insidehook.com/books/jrr-tolkien-sir-gawain-green-knight
-tags:
-  - medieval-literature
-  - fantasy-writing
-  - arthurian-legend
-  - literary-history
-  - tolkien-studies
-contains:
-  - clipping
 finished: false
 ---
 # Why J.R.R. Tolkien Fell in Love With "The Green Knight" a Century Ago

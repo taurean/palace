@@ -13,12 +13,6 @@ publish-date: 1988-01-01
 finished: true
 rating: 4
 liked: true
-tags:
-  - personal-legend
-  - dream-pursuit
-  - spiritual-journey
-  - self-discovery
-  - universal-connection
 ---
 # The Alchemist
 

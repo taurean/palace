@@ -7,9 +7,6 @@ creators:
 start-date: 2025-07-19
 end-date:
 source: https://duckduckgo.com/?q=how+do+I+javascript&ia=web
-tags:
-  - javascript
-  - programming
 finished:
 rating:
 liked:

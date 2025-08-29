@@ -7,9 +7,6 @@ creators:
   - "[[Lesson corp]]"
 entry: 1
 source: https://duckduckgo.com/?q=how+do+I+javascript&ia=web
-tags:
-  - javascript
-  - programming
 finished: true
 ---
 # Javascript Fundamentals
