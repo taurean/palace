@@ -1,7 +1,7 @@
 ---
 aliases:
   - Organizations
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description:
 ---
 # Organizations

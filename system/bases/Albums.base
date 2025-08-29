@@ -23,8 +23,6 @@ views:
       - creators
       - publish-date
     sort:
-      - property: formula.rating
-        direction: DESC
       - property: publish-date
         direction: ASC
       - property: release-date

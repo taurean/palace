@@ -1,7 +1,7 @@
 ---
 aliases:
   - Courses
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description:
 ---
 # Courses

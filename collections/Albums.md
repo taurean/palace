@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description: My music and music I have talked about, sorted by genre and my ratings.
 ---
 # Albums

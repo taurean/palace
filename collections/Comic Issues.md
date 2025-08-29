@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description: Comic book issues I've read, plan to read, or talked about.
 ---
 # Comic Issues

@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description: Books I have read or am interested in, sorted by genre and my ratings.
 ---
 # Books

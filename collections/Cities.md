@@ -1,6 +1,6 @@
 ---
 aliases: []
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description: Cities I have visited, plant to visit, or mentioned in other notes.
 ---
 # Cities

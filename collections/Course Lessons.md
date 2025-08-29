@@ -1,7 +1,7 @@
 ---
 aliases:
   - Lessons
-kind: "[[Collection]]"
+kind: "[[Collections]]"
 description: Individual lessons from various classes, usually from web courses.
 ---
 # Course Lessons
