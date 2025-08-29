@@ -49,6 +49,10 @@ _type: **text**_
 _type: **checkbox**_
 sometimes you watch something you know is bad but you still really enjoyed it. Sometimes its something that you recognize as great but its just not for you. The `liked` property lets you capture that nuance, separating `rating` from what you enjoy.
 
+## `medium`
+_type: **text**_
+used for indicating the form factor a thing is in, such as email or physical letter with the Correspondence notes.
+
 ## `parent`
 _type: **text**_
 The `parent` property is used to indicate the parent note for this content. This could be a course, a tv series, a podcast, or a comic book series.

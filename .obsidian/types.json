@@ -12,6 +12,7 @@
         "genres": "multitext",
         "kind": "text",
         "liked": "checkbox",
+        "medium": "text",
         "parent": "text",
         "permalink": "text",
         "publish": "checkbox",
