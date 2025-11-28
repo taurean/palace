@@ -172,14 +172,38 @@ async function createPeriodicNote(tp) {
     const templatePath = getTemplate(parsed.type);
 
     // Check if note exists
-    const file = tp.file.find_tfile(notePath);
+    const existingFile = tp.file.find_tfile(notePath);
 
-    if (file) {
+    if (existingFile) {
         // Note exists, open it
-        await app.workspace.getLeaf().openFile(file);
+        await app.workspace.getLeaf().openFile(existingFile);
     } else {
+        // Get the template file
+        const templateFile = tp.file.find_tfile(templatePath);
+        if (!templateFile) {
+            throw new Error(`Template not found: ${templatePath}`);
+        }
+
+        // Extract folder and filename from notePath
+        const pathParts = notePath.split('/');
+        const filename = pathParts.pop().replace('.md', '');
+        const folderPath = pathParts.join('/');
+
+        // Get or create the target folder
+        let targetFolder = app.vault.getAbstractFileByPath(folderPath);
+        if (!targetFolder) {
+            // Create folder if it doesn't exist
+            await app.vault.createFolder(folderPath);
+            targetFolder = app.vault.getAbstractFileByPath(folderPath);
+        }
+
         // Create new note from template
-        await tp.file.create_new(templatePath, notePath.replace('.md', ''), false, tp.file.folder(true));
+        const newFile = await tp.file.create_new(templateFile, filename, false, targetFolder);
+
+        // Open the newly created file
+        if (newFile) {
+            await app.workspace.getLeaf().openFile(newFile);
+        }
     }
 
     return "";
