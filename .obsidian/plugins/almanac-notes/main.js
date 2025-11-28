@@ -32,7 +32,6 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
 
             // Get active file or create a temp one
             let activeFile = this.app.workspace.getActiveFile();
-            let createdTemp = false;
 
             if (!activeFile) {
                 // Create a temporary file if no file is open
@@ -40,7 +39,6 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
                     `Untitled.md`,
                     ''
                 );
-                createdTemp = true;
 
                 // Open it
                 const leaf = this.app.workspace.getLeaf(false);
@@ -51,20 +49,14 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
             const templateContent = await this.app.vault.read(templateFile);
 
             // Execute the template using Templater
-            const content = await templaterPlugin.templater.parse_template(
+            // This runs the user script which handles file creation and cleanup
+            await templaterPlugin.templater.parse_template(
                 {file: templateFile},
                 templateContent
             );
 
-            // If we created a temp file and the script handled cleanup, we're done
-            // Otherwise clean up
-            if (createdTemp) {
-                const currentFile = this.app.workspace.getActiveFile();
-                // If we're still on the temp file, delete it
-                if (currentFile && currentFile.path === activeFile.path) {
-                    await this.app.vault.delete(activeFile);
-                }
-            }
+            // The user script (periodicNotes.js) handles all cleanup
+            // No need to delete temp files here - it's already done
 
         } catch (error) {
             console.error('Almanac Notes error:', error);
