@@ -97,18 +97,13 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
                             return window.moment().format(format || 'YYYY-MM-DD');
                         },
                         create_new: async (templateFile, filename, openFile, folder) => {
-                            // Read the template content
-                            const templateContent = await this.app.vault.read(templateFile);
-
-                            // Parse the template using Templater
-                            const parsedContent = await templaterPlugin.templater.parse_template(
-                                { file: templateFile },
-                                templateContent
+                            // Use Templater's built-in template creation
+                            // This will properly parse all template syntax
+                            const newFile = await templaterPlugin.templater.create_new_note_from_template(
+                                templateFile,
+                                folder,
+                                filename
                             );
-
-                            // Create the file
-                            const filePath = folder.path + '/' + filename + '.md';
-                            const newFile = await this.app.vault.create(filePath, parsedContent);
 
                             return newFile;
                         }
