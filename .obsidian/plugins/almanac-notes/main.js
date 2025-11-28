@@ -1,4 +1,4 @@
-const { Plugin, Notice } = require('obsidian');
+const { Plugin, Notice, TFile } = require('obsidian');
 
 module.exports = class AlmanacNotesPlugin extends Plugin {
     async onload() {
@@ -21,19 +21,50 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
         }
 
         try {
-            // Load the periodic notes user script
-            const periodicNotesScript = templaterPlugin.templater.current_functions_object.user.periodicNotes;
+            // Get the Open Periodic Note template file
+            const templatePath = 'system/templater-templates/Open Periodic Note.md';
+            const templateFile = this.app.vault.getAbstractFileByPath(templatePath);
 
-            if (!periodicNotesScript) {
-                new Notice('Periodic notes script not found. Please check Templater user scripts configuration.');
+            if (!templateFile || !(templateFile instanceof TFile)) {
+                new Notice(`Template not found: ${templatePath}`);
                 return;
             }
 
-            // Create a minimal tp object with what the script needs
-            const tp = templaterPlugin.templater.current_functions_object;
+            // Get active file or create a temp one
+            let activeFile = this.app.workspace.getActiveFile();
+            let createdTemp = false;
 
-            // Execute the periodic notes script
-            await periodicNotesScript(tp);
+            if (!activeFile) {
+                // Create a temporary file if no file is open
+                activeFile = await this.app.vault.create(
+                    `Untitled.md`,
+                    ''
+                );
+                createdTemp = true;
+
+                // Open it
+                const leaf = this.app.workspace.getLeaf(false);
+                await leaf.openFile(activeFile);
+            }
+
+            // Read the template content
+            const templateContent = await this.app.vault.read(templateFile);
+
+            // Execute the template using Templater
+            const content = await templaterPlugin.templater.parse_template(
+                {file: templateFile},
+                templateContent
+            );
+
+            // If we created a temp file and the script handled cleanup, we're done
+            // Otherwise clean up
+            if (createdTemp) {
+                const currentFile = this.app.workspace.getActiveFile();
+                // If we're still on the temp file, delete it
+                if (currentFile && currentFile.path === activeFile.path) {
+                    await this.app.vault.delete(activeFile);
+                }
+            }
 
         } catch (error) {
             console.error('Almanac Notes error:', error);
