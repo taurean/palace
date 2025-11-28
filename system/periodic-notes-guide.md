@@ -5,15 +5,17 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 ## Quick Start
 
 1. **Open Command Palette:** `Cmd/Ctrl + P`
-2. **Search for:** "Templater: Open Periodic Note"
-3. **Enter natural language:** Type any date expression (see examples below)
-4. **Done!** The note opens instantly (created from template if new)
+2. **Search for:** "Templater: Insert Template"
+3. **Select:** "Open Periodic Note" from the template list
+4. **Enter natural language:** Type any date expression (see examples below)
+5. **Done!** The note opens instantly (created from template if new)
 
 ### Recommended: Assign a Hotkey
 
 1. Go to **Settings → Hotkeys**
-2. Search for **"Templater: Open Periodic Note"**
+2. Search for **"Templater: Insert Template"**
 3. Assign your preferred shortcut (e.g., `Cmd/Ctrl + Shift + D`)
+4. When pressed, select "Open Periodic Note" from the template picker
 
 ---
 

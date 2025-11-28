@@ -46,14 +46,16 @@ After restart:
    - ✅ User Scripts folder: `system/templater-scripts`
 3. If these don't match, update them manually
 
-### 3. (Optional) Assign Hotkey
+### 3. (Recommended) Assign Hotkey
 
 For fastest access:
 1. Go to **Settings → Hotkeys**
-2. Search: `Templater: Open Periodic Note`
+2. Search: `Templater: Insert Template`
 3. Click the **+** icon
 4. Press your preferred shortcut (e.g., `Cmd/Ctrl + Shift + D`)
 5. Save
+
+This will let you quickly open the template picker, then select "Open Periodic Note"
 
 ---
 
@@ -62,8 +64,9 @@ For fastest access:
 ### Test the System
 
 1. **Open Command Palette:** `Cmd/Ctrl + P`
-2. **Search:** "Templater: Open Periodic Note"
-3. **Try these inputs:**
+2. **Search:** "Templater: Insert Template" or "Templater: Create new note from template"
+3. **Select:** "Open Periodic Note"
+4. **Try these inputs:**
    - `today` → Creates/opens today's daily note
    - `this quarter` → Creates/opens current quarter note
    - `next month` → Creates/opens next month note
@@ -91,7 +94,9 @@ For fastest access:
 
 ### "Template not found" Error
 
-**Fix:** Restart Obsidian after updating Templater settings.
+**Fix:**
+1. Verify the templates folder: Settings → Templater → Template folder location = `system/templater-templates`
+2. Restart Obsidian
 
 ### "User script not found" Error
 
@@ -100,12 +105,13 @@ For fastest access:
 2. Set to: `system/templater-scripts`
 3. Restart Obsidian
 
-### Command doesn't appear in palette
+### "Templater: Insert Template" shows no templates
 
 **Fix:**
 1. Check that `Open Periodic Note.md` exists in `system/templater-templates/`
 2. Verify Templater is enabled (Settings → Community plugins)
-3. Restart Obsidian
+3. Check templates folder path in Templater settings
+4. Restart Obsidian
 
 ### Note created in wrong location
 
