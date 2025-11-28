@@ -145,21 +145,26 @@ function getNotePath(type, date) {
 
 function getTemplate(type) {
     const templates = {
-        'daily': 'system/templater-templates/Daily Note.md',
-        'weekly': 'system/templater-templates/Weekly Note.md',
-        'monthly': 'system/templater-templates/Monthly Note.md',
-        'quarterly': 'system/templater-templates/Quarterly Note.md',
-        'yearly': 'system/templater-templates/Yearly Note.md'
+        'daily': 'system/templater-templates/_periodic/Daily Note.md',
+        'weekly': 'system/templater-templates/_periodic/Weekly Note.md',
+        'monthly': 'system/templater-templates/_periodic/Monthly Note.md',
+        'quarterly': 'system/templater-templates/_periodic/Quarterly Note.md',
+        'yearly': 'system/templater-templates/_periodic/Yearly Note.md'
     };
 
     return templates[type];
 }
 
 async function createPeriodicNote(tp) {
+    // Save reference to the current file (might be untitled)
+    const currentFile = app.workspace.getActiveFile();
+    const isUntitled = currentFile && (currentFile.basename === 'Untitled' || currentFile.basename === '');
+
     const input = await tp.system.prompt("Enter date (e.g., 'today', 'next quarter', 'February', 'Q3', '2024-03-15'):");
 
     if (!input) {
-        throw new Error("No input provided");
+        // User cancelled, don't create anything
+        return "";
     }
 
     const parsed = parseNaturalLanguage(input, tp);
@@ -175,8 +180,14 @@ async function createPeriodicNote(tp) {
     const existingFile = tp.file.find_tfile(notePath);
 
     if (existingFile) {
-        // Note exists, open it
-        await app.workspace.getLeaf().openFile(existingFile);
+        // Note exists, open it in the current leaf
+        const leaf = app.workspace.getLeaf(false);
+        await leaf.openFile(existingFile);
+
+        // Delete the untitled file if we came from one
+        if (isUntitled && currentFile && currentFile.path !== existingFile.path) {
+            await app.vault.delete(currentFile);
+        }
     } else {
         // Get the template file
         const templateFile = tp.file.find_tfile(templatePath);
@@ -200,9 +211,15 @@ async function createPeriodicNote(tp) {
         // Create new note from template
         const newFile = await tp.file.create_new(templateFile, filename, false, targetFolder);
 
-        // Open the newly created file
+        // Open the newly created file in the current leaf
         if (newFile) {
-            await app.workspace.getLeaf().openFile(newFile);
+            const leaf = app.workspace.getLeaf(false);
+            await leaf.openFile(newFile);
+
+            // Delete the untitled file if we came from one and it's different from the new file
+            if (isUntitled && currentFile && currentFile.path !== newFile.path) {
+                await app.vault.delete(currentFile);
+            }
         }
     }
 
