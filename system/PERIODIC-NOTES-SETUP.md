@@ -4,6 +4,9 @@ This vault now includes a complete periodic notes system with full quarterly sup
 
 ## What's Included
 
+### Plugin
+- **Almanac Notes** — Custom plugin that registers the "Create Almanac Note" command ⭐
+
 ### Folder Structure
 - `almanac/day/` — Daily notes (YYYY-MM-DD.md)
 - `almanac/week/` — Weekly notes (YYYY-Www.md)
@@ -12,12 +15,12 @@ This vault now includes a complete periodic notes system with full quarterly sup
 - `almanac/year/` — Yearly notes (YYYY.md)
 
 ### Templates (in `system/templater-templates/`)
-- `Daily Note.md` — Daily template with navigation
-- `Weekly Note.md` — Weekly template with 7 days breakdown
-- `Monthly Note.md` — Monthly template with weeks list
-- `Quarterly Note.md` — Quarterly template with 3 months ⭐
-- `Yearly Note.md` — Yearly template with 4 quarters
-- `Open Periodic Note.md` — Command entry point ⭐
+- `_periodic/Daily Note.md` — Daily template with navigation
+- `_periodic/Weekly Note.md` — Weekly template with 7 days breakdown
+- `_periodic/Monthly Note.md` — Monthly template with weeks list
+- `_periodic/Quarterly Note.md` — Quarterly template with 3 months ⭐
+- `_periodic/Yearly Note.md` — Yearly template with 4 quarters
+- `Open Periodic Note.md` — Template entry point (fallback) ⭐
 
 ### Scripts (in `system/templater-scripts/`)
 - `periodicNotes.js` — Natural language parser ⭐
@@ -48,14 +51,15 @@ After restart:
 
 ### 3. (Recommended) Assign Hotkey
 
-For fastest access:
+For fastest access, assign a hotkey directly to the almanac notes command:
+
 1. Go to **Settings → Hotkeys**
-2. Search: `Templater: Insert Template`
+2. Search: `Create Almanac Note`
 3. Click the **+** icon
 4. Press your preferred shortcut (e.g., `Cmd/Ctrl + Shift + D`)
 5. Save
 
-This will let you quickly open the template picker, then select "Open Periodic Note"
+Now pressing your hotkey will directly prompt you for a date - no template picker needed!
 
 ---
 
@@ -63,13 +67,21 @@ This will let you quickly open the template picker, then select "Open Periodic N
 
 ### Test the System
 
+**Method 1: Direct Command (Recommended)**
+
 1. **Open Command Palette:** `Cmd/Ctrl + P`
-2. **Search:** "Templater: Insert Template" or "Templater: Create new note from template"
-3. **Select:** "Open Periodic Note"
-4. **Try these inputs:**
+2. **Search:** "Create Almanac Note"
+3. **Try these inputs:**
    - `today` → Creates/opens today's daily note
    - `this quarter` → Creates/opens current quarter note
    - `next month` → Creates/opens next month note
+
+**Method 2: Via Template Picker (Alternative)**
+
+1. **Open Command Palette:** `Cmd/Ctrl + P`
+2. **Search:** "Templater: Insert Template"
+3. **Select:** "Open Periodic Note"
+4. **Enter date:** Same as above
 
 ### Expected Behavior
 

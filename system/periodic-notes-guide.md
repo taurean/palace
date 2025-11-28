@@ -4,18 +4,26 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 
 ## Quick Start
 
+**Method 1: Direct Command (Recommended)**
+
+1. **Open Command Palette:** `Cmd/Ctrl + P`
+2. **Search for:** "Create Almanac Note"
+3. **Enter natural language:** Type any date expression (see examples below)
+4. **Done!** The note opens instantly (created from template if new)
+
+**Method 2: Via Template (Alternative)**
+
 1. **Open Command Palette:** `Cmd/Ctrl + P`
 2. **Search for:** "Templater: Insert Template"
-3. **Select:** "Open Periodic Note" from the template list
-4. **Enter natural language:** Type any date expression (see examples below)
-5. **Done!** The note opens instantly (created from template if new)
+3. **Select:** "Open Periodic Note"
+4. **Enter date:** Same as above
 
 ### Recommended: Assign a Hotkey
 
 1. Go to **Settings → Hotkeys**
-2. Search for **"Templater: Insert Template"**
+2. Search for **"Create Almanac Note"**
 3. Assign your preferred shortcut (e.g., `Cmd/Ctrl + Shift + D`)
-4. When pressed, select "Open Periodic Note" from the template picker
+4. Now pressing your hotkey directly prompts for a date - instant access!
 
 ---
 
