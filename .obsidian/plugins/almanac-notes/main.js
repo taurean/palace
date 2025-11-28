@@ -78,13 +78,6 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
 
                 const scriptContent = await this.app.vault.read(scriptFile);
 
-                // Create a minimal tp object with the required functions
-                const tp = templaterPlugin.templater.create_running_config(
-                    undefined,
-                    scriptFile,
-                    0
-                );
-
                 // Execute the script module
                 const createPeriodicNote = Function('module', 'require', 'app', 'moment', scriptContent + '; return module.exports;')(
                     {exports: {}},
@@ -93,8 +86,39 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
                     window.moment
                 );
 
-                // Override tp.system.prompt to return our input directly
-                tp.system.prompt = async () => input;
+                // Build a minimal tp object with the required APIs
+                const tp = {
+                    system: {
+                        prompt: async () => input
+                    },
+                    file: {
+                        find_tfile: (path) => this.app.vault.getAbstractFileByPath(path),
+                        creation_date: (format) => {
+                            return window.moment().format(format || 'YYYY-MM-DD');
+                        },
+                        create_new: async (templateFile, filename, openFile, folder) => {
+                            // Read the template content
+                            const templateContent = await this.app.vault.read(templateFile);
+
+                            // Parse the template using Templater
+                            const parsedContent = await templaterPlugin.templater.parse_template(
+                                { file: templateFile },
+                                templateContent
+                            );
+
+                            // Create the file
+                            const filePath = folder.path + '/' + filename + '.md';
+                            const newFile = await this.app.vault.create(filePath, parsedContent);
+
+                            return newFile;
+                        }
+                    },
+                    date: {
+                        now: (format, offset, reference) => {
+                            return window.moment(reference).add(offset || 0, 'days').format(format);
+                        }
+                    }
+                };
 
                 // Execute the function
                 await createPeriodicNote(tp);
