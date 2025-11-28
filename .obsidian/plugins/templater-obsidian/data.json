@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "system/Templater Templates",
+  "templates_folder": "system/templater-templates",
   "templates_pairs": [
     [
       "",
@@ -11,7 +11,7 @@
   "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
-  "user_scripts_folder": "",
+  "user_scripts_folder": "system/templater-scripts",
   "enable_folder_templates": false,
   "folder_templates": [
     {
