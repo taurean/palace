@@ -173,6 +173,11 @@ async function createPeriodicNote(tp) {
         throw new Error(`Could not parse: "${input}"\n\nTry: today, next quarter, February, Q3 2024, week 32, 2024-03-15`);
     }
 
+    // Set the target date so templates use this date instead of current date
+    if (tp._setTargetDate) {
+        tp._setTargetDate(parsed.date);
+    }
+
     const notePath = getNotePath(parsed.type, parsed.date);
     const templatePath = getTemplate(parsed.type);
 

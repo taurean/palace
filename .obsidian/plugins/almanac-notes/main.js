@@ -88,29 +88,64 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
 
                 // Build a minimal tp object with the required APIs
                 const tp = {
+                    _targetDate: null, // Will be set by the script after parsing
+                    _setTargetDate: function(date) {
+                        this._targetDate = date;
+                    },
                     system: {
                         prompt: async () => input
                     },
                     file: {
                         find_tfile: (path) => this.app.vault.getAbstractFileByPath(path),
                         creation_date: (format) => {
-                            return window.moment().format(format || 'YYYY-MM-DD');
+                            // Use target date for creation date if available
+                            const dateToUse = tp._targetDate || window.moment();
+                            return window.moment(dateToUse).format(format || 'YYYY-MM-DD');
                         },
                         create_new: async (templateFile, filename, openFile, folder) => {
-                            // Use Templater's built-in template creation
-                            // This will properly parse all template syntax
-                            const newFile = await templaterPlugin.templater.create_new_note_from_template(
-                                templateFile,
-                                folder,
-                                filename
-                            );
+                            // Read the template content
+                            const templateContent = await this.app.vault.read(templateFile);
+
+                            let processedContent = templateContent;
+
+                            // Process execution blocks: <%* code %>
+                            processedContent = processedContent.replace(/<%\*\s*([\s\S]+?)\s*%>/g, (match, code) => {
+                                try {
+                                    const output = Function('tp', 'moment', `
+                                        let tR = '';
+                                        ${code}
+                                        return tR;
+                                    `)(tp, window.moment);
+                                    return output;
+                                } catch (e) {
+                                    console.error('Error executing template code:', code, e);
+                                    return match;
+                                }
+                            });
+
+                            // Process inline expressions: <% expression %>
+                            processedContent = processedContent.replace(/<% (.+?) %>/g, (match, expr) => {
+                                try {
+                                    const result = Function('tp', 'moment', `return ${expr}`)(tp, window.moment);
+                                    return result;
+                                } catch (e) {
+                                    console.error('Error evaluating template expression:', expr, e);
+                                    return match;
+                                }
+                            });
+
+                            // Create the file with processed content
+                            const filePath = `${folder.path}/${filename}.md`;
+                            const newFile = await this.app.vault.create(filePath, processedContent);
 
                             return newFile;
                         }
                     },
                     date: {
                         now: (format, offset, reference) => {
-                            return window.moment(reference).add(offset || 0, 'days').format(format);
+                            // Use reference if provided, otherwise use target date, otherwise use current date
+                            const baseDate = reference || tp._targetDate || window.moment();
+                            return window.moment(baseDate).add(offset || 0, 'days').format(format);
                         }
                     }
                 };
