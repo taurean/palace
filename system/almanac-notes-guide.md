@@ -36,6 +36,12 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 - `tomorrow` → Tomorrow's daily note
 - `yesterday` → Yesterday's daily note
 
+**Day of Week (nearest occurrence):**
+- `Monday` → Nearest Monday (past or future)
+- `Wednesday` → Nearest Wednesday
+- `Friday` → Nearest Friday
+- `mon`, `wed`, `fri` → Abbreviated forms also work
+
 **Weekly:**
 - `this week` → Current week note
 - `next week` → Next week note
@@ -58,26 +64,26 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 
 ### Absolute Dates
 
-**Quarterly Notes (flexible formats):**
-- `Q3` → Q3 of current year
+**Quarterly Notes (flexible formats, nearest when ambiguous):**
+- `Q3` → Nearest Q3 (past or future)
 - `Q1 2024` → Q1 2024
 - `2027 Q3` → Q3 2027
-- `quarter 2` → Q2 of current year
+- `quarter 2` → Nearest Q2
 - `quarter 3 2025` → Q3 2025
 - `2026 quarter 4` → Q4 2026
 - `Q2 of 2024` → Q2 2024
 
-**Monthly Notes:**
-- `February` → February of next occurrence
+**Monthly Notes (nearest when ambiguous):**
+- `February` → Nearest February (past or future)
 - `March 2024` → March 2024
 - `2024 March` → March 2024
-- `Feb` → February (abbreviated)
+- `Feb` → Nearest February (abbreviated)
 - `feb 2024` → February 2024
 - `2024 feb` → February 2024
 
-**Weekly Notes:**
-- `week 32` → Week 32 of current year
-- `W15` → Week 15 of current year
+**Weekly Notes (nearest when ambiguous):**
+- `week 32` → Nearest week 32 (past or future)
+- `W15` → Nearest week 15
 - `W15 2024` → Week 15 of 2024
 - `week 15 2024` → Week 15 of 2024
 - `2024 week 15` → Week 15 of 2024

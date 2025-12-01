@@ -52,6 +52,40 @@ function parseNaturalLanguage(input, tp) {
         return relativePatterns[cleaned];
     }
 
+    // === DAY OF WEEK PATTERNS ===
+    // Formats: Monday, mon, Wednesday, etc. → nearest occurrence
+    const dayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    const dayAbbr = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+
+    let dayIndex = dayNames.indexOf(cleaned);
+    if (dayIndex === -1) {
+        dayIndex = dayAbbr.indexOf(cleaned);
+    }
+
+    if (dayIndex !== -1) {
+        // Find nearest occurrence of this day of week
+        const currentDay = now.day();
+        const targetDay = dayIndex;
+
+        // Calculate days forward and backward
+        let daysForward = (targetDay - currentDay + 7) % 7;
+        if (daysForward === 0) daysForward = 7; // Next week if it's today
+        const daysBackward = (currentDay - targetDay + 7) % 7;
+
+        // Choose nearest (prefer future if equidistant)
+        let targetDate;
+        if (daysBackward === 0) {
+            // It's today
+            targetDate = moment(now);
+        } else if (daysForward <= daysBackward) {
+            targetDate = moment(now).add(daysForward, 'days');
+        } else {
+            targetDate = moment(now).subtract(daysBackward, 'days');
+        }
+
+        return { type: 'daily', date: targetDate };
+    }
+
     // === QUARTERLY PATTERNS ===
     // Formats: Q3, Q3 2027, 2027 Q3, quarter 3, quarter 3 2027, 2027 quarter 3, Q3 of 2027
     let quarterMatch = cleaned.match(/^(?:(\d{4})\s+)?(?:q|quarter)\s*([1-4])(?:\s+of)?(?:\s+(\d{4}))?$/);
@@ -59,8 +93,32 @@ function parseNaturalLanguage(input, tp) {
         const yearBefore = quarterMatch[1];
         const quarter = parseInt(quarterMatch[2]);
         const yearAfter = quarterMatch[3];
-        const year = yearBefore || yearAfter || now.year();
-        const targetDate = moment().year(year).quarter(quarter);
+
+        let targetDate;
+        if (yearBefore || yearAfter) {
+            // Year specified - use it
+            const year = yearBefore || yearAfter;
+            targetDate = moment().year(year).quarter(quarter);
+        } else {
+            // No year specified - find nearest quarter
+            const thisYearQ = moment().year(now.year()).quarter(quarter);
+            const lastYearQ = moment().year(now.year() - 1).quarter(quarter);
+            const nextYearQ = moment().year(now.year() + 1).quarter(quarter);
+
+            const daysToThisYear = Math.abs(now.diff(thisYearQ, 'days'));
+            const daysToLastYear = Math.abs(now.diff(lastYearQ, 'days'));
+            const daysToNextYear = Math.abs(now.diff(nextYearQ, 'days'));
+
+            // Find nearest (prefer future if equidistant)
+            if (daysToThisYear <= daysToLastYear && daysToThisYear <= daysToNextYear) {
+                targetDate = thisYearQ;
+            } else if (daysToLastYear < daysToNextYear) {
+                targetDate = lastYearQ;
+            } else {
+                targetDate = nextYearQ;
+            }
+        }
+
         return { type: 'quarterly', date: targetDate };
     }
 
@@ -74,8 +132,32 @@ function parseNaturalLanguage(input, tp) {
 
         // Only treat as week if week number is valid (1-53) or has explicit "week"/"W" prefix
         if (week >= 1 && week <= 53 && (cleaned.includes('week') || cleaned.includes('w') || yearBefore || yearAfter)) {
-            const year = yearBefore || yearAfter || now.year();
-            const targetDate = moment().year(year).isoWeek(week);
+            let targetDate;
+
+            if (yearBefore || yearAfter) {
+                // Year specified - use it
+                const year = yearBefore || yearAfter;
+                targetDate = moment().year(year).isoWeek(week);
+            } else {
+                // No year specified - find nearest week
+                const thisYearWeek = moment().year(now.year()).isoWeek(week);
+                const lastYearWeek = moment().year(now.year() - 1).isoWeek(week);
+                const nextYearWeek = moment().year(now.year() + 1).isoWeek(week);
+
+                const daysToThisYear = Math.abs(now.diff(thisYearWeek, 'days'));
+                const daysToLastYear = Math.abs(now.diff(lastYearWeek, 'days'));
+                const daysToNextYear = Math.abs(now.diff(nextYearWeek, 'days'));
+
+                // Find nearest (prefer future if equidistant)
+                if (daysToThisYear <= daysToLastYear && daysToThisYear <= daysToNextYear) {
+                    targetDate = thisYearWeek;
+                } else if (daysToLastYear < daysToNextYear) {
+                    targetDate = lastYearWeek;
+                } else {
+                    targetDate = nextYearWeek;
+                }
+            }
+
             return { type: 'weekly', date: targetDate };
         }
     }
@@ -131,25 +213,40 @@ function parseNaturalLanguage(input, tp) {
         const monthIndex = findMonthIndex(monthStr);
 
         if (monthIndex !== -1) {
-            let targetDate = moment();
             const year = yearBefore || yearAfter;
 
-            if (year) {
-                targetDate.year(year);
-            } else if (!day) {
-                // Ambiguous month without year: if month has passed, assume next year
-                const currentMonth = now.month();
-                if (monthIndex < currentMonth) {
-                    targetDate.add(1, 'year');
-                }
-            }
-
-            targetDate.month(monthIndex);
-
             if (day) {
-                targetDate.date(day);
+                // Day specified - it's a daily note
+                const targetYear = year || now.year();
+                const targetDate = moment().year(targetYear).month(monthIndex).date(day);
                 return { type: 'daily', date: targetDate };
             } else {
+                // Month only - find nearest occurrence
+                let targetDate;
+
+                if (year) {
+                    // Year specified - use it
+                    targetDate = moment().year(year).month(monthIndex).startOf('month');
+                } else {
+                    // No year specified - find nearest month
+                    const thisYearMonth = moment().year(now.year()).month(monthIndex).startOf('month');
+                    const lastYearMonth = moment().year(now.year() - 1).month(monthIndex).startOf('month');
+                    const nextYearMonth = moment().year(now.year() + 1).month(monthIndex).startOf('month');
+
+                    const daysToThisYear = Math.abs(now.diff(thisYearMonth, 'days'));
+                    const daysToLastYear = Math.abs(now.diff(lastYearMonth, 'days'));
+                    const daysToNextYear = Math.abs(now.diff(nextYearMonth, 'days'));
+
+                    // Find nearest (prefer future if equidistant)
+                    if (daysToThisYear <= daysToLastYear && daysToThisYear <= daysToNextYear) {
+                        targetDate = thisYearMonth;
+                    } else if (daysToLastYear < daysToNextYear) {
+                        targetDate = lastYearMonth;
+                    } else {
+                        targetDate = nextYearMonth;
+                    }
+                }
+
                 return { type: 'monthly', date: targetDate };
             }
         }
