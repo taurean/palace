@@ -4,10 +4,23 @@
  */
 
 function parseNaturalLanguage(input, tp) {
-    const cleaned = input.toLowerCase().trim();
+    const cleaned = input.toLowerCase().trim().replace(/\s+/g, ' '); // Normalize whitespace
     const now = moment();
 
-    // Relative expressions
+    // Month names for matching
+    const monthNames = ['january', 'february', 'march', 'april', 'may', 'june',
+                       'july', 'august', 'september', 'october', 'november', 'december'];
+    const monthAbbr = ['jan', 'feb', 'mar', 'apr', 'may', 'jun',
+                      'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+
+    // Helper function to find month index
+    const findMonthIndex = (monthStr) => {
+        let idx = monthNames.indexOf(monthStr);
+        if (idx === -1) idx = monthAbbr.indexOf(monthStr);
+        return idx;
+    };
+
+    // Relative expressions (most specific, check first)
     const relativePatterns = {
         // Daily
         'today': { type: 'daily', date: now },
@@ -35,54 +48,96 @@ function parseNaturalLanguage(input, tp) {
         'last year': { type: 'yearly', date: moment(now).subtract(1, 'year') },
     };
 
-    // Check relative patterns first
     if (relativePatterns[cleaned]) {
         return relativePatterns[cleaned];
     }
 
-    // Quarter patterns: Q1, Q3 2024, etc.
-    const quarterMatch = cleaned.match(/^q([1-4])(?:\s+(\d{4}))?$/);
+    // === QUARTERLY PATTERNS ===
+    // Formats: Q3, Q3 2027, 2027 Q3, quarter 3, quarter 3 2027, 2027 quarter 3, Q3 of 2027
+    let quarterMatch = cleaned.match(/^(?:(\d{4})\s+)?(?:q|quarter)\s*([1-4])(?:\s+of)?(?:\s+(\d{4}))?$/);
     if (quarterMatch) {
-        const quarter = parseInt(quarterMatch[1]);
-        const year = quarterMatch[2] ? parseInt(quarterMatch[2]) : now.year();
-        // Determine if it's future or past for ambiguous "Q3" input
+        const yearBefore = quarterMatch[1];
+        const quarter = parseInt(quarterMatch[2]);
+        const yearAfter = quarterMatch[3];
+        const year = yearBefore || yearAfter || now.year();
         const targetDate = moment().year(year).quarter(quarter);
         return { type: 'quarterly', date: targetDate };
     }
 
-    // Week patterns: week 32, W15, W15 2024, etc.
-    const weekMatch = cleaned.match(/^(?:week\s+)?w?(\d{1,2})(?:\s+(\d{4}))?$/);
+    // === WEEKLY PATTERNS ===
+    // Formats: week 15, W15, week 15 2024, 2024 week 15, 2024 W15, W15 2024
+    let weekMatch = cleaned.match(/^(?:(\d{4})\s+)?(?:week\s+|w)?(\d{1,2})(?:\s+(\d{4}))?$/);
     if (weekMatch) {
-        const week = parseInt(weekMatch[1]);
-        const year = weekMatch[2] ? parseInt(weekMatch[2]) : now.year();
-        const targetDate = moment().year(year).isoWeek(week);
-        return { type: 'weekly', date: targetDate };
+        const yearBefore = weekMatch[1];
+        const week = parseInt(weekMatch[2]);
+        const yearAfter = weekMatch[3];
+
+        // Only treat as week if week number is valid (1-53) or has explicit "week"/"W" prefix
+        if (week >= 1 && week <= 53 && (cleaned.includes('week') || cleaned.includes('w') || yearBefore || yearAfter)) {
+            const year = yearBefore || yearAfter || now.year();
+            const targetDate = moment().year(year).isoWeek(week);
+            return { type: 'weekly', date: targetDate };
+        }
     }
 
-    // Month name patterns: February, March 2024, mar, etc.
-    const monthNames = ['january', 'february', 'march', 'april', 'may', 'june',
-                       'july', 'august', 'september', 'october', 'november', 'december'];
-    const monthAbbr = ['jan', 'feb', 'mar', 'apr', 'may', 'jun',
-                      'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
+    // === ISO DATE PATTERNS ===
+    // Formats: 2024-03-15, 2024-03, 2024
+    const isoDateMatch = cleaned.match(/^(\d{4})-(\d{1,2})(?:-(\d{1,2}))?$/);
+    if (isoDateMatch) {
+        const year = parseInt(isoDateMatch[1]);
+        const month = parseInt(isoDateMatch[2]);
+        const day = isoDateMatch[3] ? parseInt(isoDateMatch[3]) : null;
 
-    const monthMatch = cleaned.match(/^(\w+)(?:\s+(\d{1,2}))?(?:\s+(\d{4}))?$/);
-    if (monthMatch) {
-        const monthInput = monthMatch[1];
-        const day = monthMatch[2] ? parseInt(monthMatch[2]) : null;
-        const year = monthMatch[3] ? parseInt(monthMatch[3]) : null;
-
-        let monthIndex = monthNames.indexOf(monthInput);
-        if (monthIndex === -1) {
-            monthIndex = monthAbbr.indexOf(monthInput);
+        if (day) {
+            return { type: 'daily', date: moment(`${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`) };
+        } else {
+            return { type: 'monthly', date: moment(`${year}-${String(month).padStart(2, '0')}-01`) };
         }
+    }
+
+    // === YEAR ONLY PATTERNS ===
+    // Formats: 2024, year 2024
+    const yearOnlyMatch = cleaned.match(/^(?:year\s+)?(\d{4})$/);
+    if (yearOnlyMatch) {
+        const year = parseInt(yearOnlyMatch[1]);
+        return { type: 'yearly', date: moment(`${year}-01-01`) };
+    }
+
+    // === DAY-MONTH-YEAR PATTERNS ===
+    // Formats: 15 March 2024, 15 Mar 2024, 15 March, 2024 March 15
+    const dayMonthYearMatch = cleaned.match(/^(?:(\d{4})\s+)?(\d{1,2})\s+(\w+)(?:\s+(\d{4}))?$/);
+    if (dayMonthYearMatch) {
+        const yearBefore = dayMonthYearMatch[1];
+        const day = parseInt(dayMonthYearMatch[2]);
+        const monthStr = dayMonthYearMatch[3];
+        const yearAfter = dayMonthYearMatch[4];
+        const monthIndex = findMonthIndex(monthStr);
+
+        if (monthIndex !== -1) {
+            const year = yearBefore || yearAfter || now.year();
+            const targetDate = moment().year(year).month(monthIndex).date(day);
+            return { type: 'daily', date: targetDate };
+        }
+    }
+
+    // === MONTH-DAY-YEAR PATTERNS ===
+    // Formats: March 15, March 15 2024, 2024 March 15, February, Feb 2024, 2024 Feb
+    const monthDayYearMatch = cleaned.match(/^(?:(\d{4})\s+)?(\w+)(?:\s+(\d{1,2}))?(?:\s+(\d{4}))?$/);
+    if (monthDayYearMatch) {
+        const yearBefore = monthDayYearMatch[1];
+        const monthStr = monthDayYearMatch[2];
+        const day = monthDayYearMatch[3] ? parseInt(monthDayYearMatch[3]) : null;
+        const yearAfter = monthDayYearMatch[4];
+        const monthIndex = findMonthIndex(monthStr);
 
         if (monthIndex !== -1) {
             let targetDate = moment();
+            const year = yearBefore || yearAfter;
 
             if (year) {
                 targetDate.year(year);
-            } else {
-                // Ambiguous month resolution: if month has passed, assume next year
+            } else if (!day) {
+                // Ambiguous month without year: if month has passed, assume next year
                 const currentMonth = now.month();
                 if (monthIndex < currentMonth) {
                     targetDate.add(1, 'year');
@@ -100,30 +155,24 @@ function parseNaturalLanguage(input, tp) {
         }
     }
 
-    // ISO date patterns: 2024-03-15, 2024-03, 2024
-    const isoDateMatch = cleaned.match(/^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$/);
-    if (isoDateMatch) {
-        const year = parseInt(isoDateMatch[1]);
-        const month = isoDateMatch[2] ? parseInt(isoDateMatch[2]) : null;
-        const day = isoDateMatch[3] ? parseInt(isoDateMatch[3]) : null;
+    // === NUMERIC DATE PATTERNS ===
+    // Formats: 3/15/2024, 15/3/2024 (ambiguous - try both)
+    const slashDateMatch = cleaned.match(/^(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?$/);
+    if (slashDateMatch) {
+        const first = parseInt(slashDateMatch[1]);
+        const second = parseInt(slashDateMatch[2]);
+        const yearPart = slashDateMatch[3] ? parseInt(slashDateMatch[3]) : null;
 
-        if (day) {
-            return { type: 'daily', date: moment(`${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`) };
-        } else if (month) {
-            return { type: 'monthly', date: moment(`${year}-${String(month).padStart(2, '0')}-01`) };
-        } else {
-            return { type: 'yearly', date: moment(`${year}-01-01`) };
+        // Assume MM/DD/YYYY format (US style)
+        if (first <= 12) {
+            const month = first;
+            const day = second;
+            const year = yearPart ? (yearPart < 100 ? 2000 + yearPart : yearPart) : now.year();
+            const targetDate = moment().year(year).month(month - 1).date(day);
+            if (targetDate.isValid()) {
+                return { type: 'daily', date: targetDate };
+            }
         }
-    }
-
-    // Try moment.js natural language parsing as fallback
-    const parsed = moment(input, ['YYYY-MM-DD', 'MMMM D YYYY', 'MMM D YYYY', 'MMMM YYYY'], true);
-    if (parsed.isValid()) {
-        // Determine type based on input specificity
-        if (input.match(/\d{4}-\d{2}-\d{2}/)) {
-            return { type: 'daily', date: parsed };
-        }
-        return { type: 'daily', date: parsed };
     }
 
     return null;

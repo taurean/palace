@@ -58,23 +58,48 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 
 ### Absolute Dates
 
-**Month Names:**
-- `February` → February 2026 (future month, current year)
-- `March 2024` → March 2024
-- `mar 23` → March 23, 2026
-
-**Quarters:**
-- `Q3` → Q3 of current/relevant year
+**Quarterly Notes (flexible formats):**
+- `Q3` → Q3 of current year
 - `Q1 2024` → Q1 2024
+- `2027 Q3` → Q3 2027
+- `quarter 2` → Q2 of current year
+- `quarter 3 2025` → Q3 2025
+- `2026 quarter 4` → Q4 2026
+- `Q2 of 2024` → Q2 2024
 
-**Weeks:**
+**Monthly Notes:**
+- `February` → February of next occurrence
+- `March 2024` → March 2024
+- `2024 March` → March 2024
+- `Feb` → February (abbreviated)
+- `feb 2024` → February 2024
+- `2024 feb` → February 2024
+
+**Weekly Notes:**
 - `week 32` → Week 32 of current year
+- `W15` → Week 15 of current year
 - `W15 2024` → Week 15 of 2024
+- `week 15 2024` → Week 15 of 2024
+- `2024 week 15` → Week 15 of 2024
+- `2024 W15` → Week 15 of 2024
 
-**ISO Dates:**
+**Daily Notes:**
+- `March 15` → March 15 of current/next year
+- `March 15 2024` → March 15, 2024
+- `2024 March 15` → March 15, 2024
+- `15 March` → March 15 of current/next year
+- `15 March 2024` → March 15, 2024
+- `15 mar 2024` → March 15, 2024 (abbreviated)
+- `3/15/2024` → March 15, 2024 (US format)
+
+**Yearly Notes:**
+- `2024` → Year 2024
+- `year 2024` → Year 2024
+
+**ISO Date Formats:**
 - `2024-03-15` → Daily note for March 15, 2024
 - `2024-03` → Monthly note for March 2024
-- `2024` → Yearly note for 2024
+- `2024-3-15` → Daily note for March 15, 2024 (flexible)
 
 ---
 
