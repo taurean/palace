@@ -1,4 +1,4 @@
-[# Palace Obsidian Vault Template [![GitHub Release](https://img.shields.io/github/v/release/taurean/palace?include_prereleases&style=flat-square)](https://github.com/taurean/palace/tags)
+# Palace Obsidian Vault Template [![GitHub Release](https://img.shields.io/github/v/release/taurean/palace?include_prereleases&style=flat-square)](https://github.com/taurean/palace/tags)
 
 **Palace** is a system and set of starter files to create a vault in [Obsidian]() with staying power. It's designed to be thorough, opinionated, and most importantly to be a start point for you to modify it how you need obsidian to work. 
 
