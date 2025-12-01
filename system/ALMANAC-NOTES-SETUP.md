@@ -1,6 +1,6 @@
-# Periodic Notes Setup Instructions
+# Almanac Notes Setup Instructions
 
-This vault now includes a complete periodic notes system with full quarterly support and natural language input.
+This vault now includes a complete almanac notes system with full quarterly support and natural language input.
 
 ## What's Included
 
@@ -15,18 +15,18 @@ This vault now includes a complete periodic notes system with full quarterly sup
 - `almanac/year/` — Yearly notes (YYYY.md)
 
 ### Templates (in `system/templater-templates/`)
-- `_periodic/Daily Note.md` — Daily template with navigation
-- `_periodic/Weekly Note.md` — Weekly template with 7 days breakdown
-- `_periodic/Monthly Note.md` — Monthly template with weeks list
-- `_periodic/Quarterly Note.md` — Quarterly template with 3 months ⭐
-- `_periodic/Yearly Note.md` — Yearly template with 4 quarters
-- `Open Periodic Note.md` — Template entry point (fallback) ⭐
+- `_almanac/Daily Note.md` — Daily template with navigation
+- `_almanac/Weekly Note.md` — Weekly template with 7 days breakdown
+- `_almanac/Monthly Note.md` — Monthly template with weeks list
+- `_almanac/Quarterly Note.md` — Quarterly template with 3 months ⭐
+- `_almanac/Yearly Note.md` — Yearly template with 4 quarters
+- `Open Almanac Note.md` — Template entry point (fallback) ⭐
 
 ### Scripts (in `system/templater-scripts/`)
-- `periodicNotes.js` — Natural language parser ⭐
+- `almanacNotes.js` — Natural language parser ⭐
 
 ### Documentation
-- `system/periodic-notes-guide.md` — Complete user guide
+- `system/almanac-notes-guide.md` — Complete user guide
 
 ---
 
@@ -80,7 +80,7 @@ Now pressing your hotkey will directly prompt you for a date - no template picke
 
 1. **Open Command Palette:** `Cmd/Ctrl + P`
 2. **Search:** "Templater: Insert Template"
-3. **Select:** "Open Periodic Note"
+3. **Select:** "Open Almanac Note"
 4. **Enter date:** Same as above
 
 ### Expected Behavior
@@ -95,7 +95,7 @@ Now pressing your hotkey will directly prompt you for a date - no template picke
 
 - [ ] Obsidian restarted
 - [ ] Templater settings verified
-- [ ] Command appears in palette: "Templater: Open Periodic Note"
+- [ ] Command appears in palette: "Create Almanac Note"
 - [ ] Test note created successfully in `almanac/` folder
 - [ ] Template includes navigation links
 - [ ] (Optional) Hotkey assigned
@@ -120,7 +120,7 @@ Now pressing your hotkey will directly prompt you for a date - no template picke
 ### "Templater: Insert Template" shows no templates
 
 **Fix:**
-1. Check that `Open Periodic Note.md` exists in `system/templater-templates/`
+1. Check that `Open Almanac Note.md` exists in `system/templater-templates/`
 2. Verify Templater is enabled (Settings → Community plugins)
 3. Check templates folder path in Templater settings
 4. Restart Obsidian
@@ -136,7 +136,7 @@ Now pressing your hotkey will directly prompt you for a date - no template picke
 ## Usage
 
 Once setup is complete, see the **full user guide** at:
-- `system/periodic-notes-guide.md`
+- `system/almanac-notes-guide.md`
 
 Or jump straight in by running the command and typing natural language dates like:
 - `tomorrow`
@@ -152,7 +152,7 @@ Or jump straight in by running the command and typing natural language dates lik
 This implementation replaces the need for:
 - ❌ Calendar plugin (unmaintained)
 - ❌ Periodic Notes plugin (unmaintained)
-- ❌ Custom quarterly note hacks
+- ❌ Custom quarterly almanac note hacks
 
 Instead, it uses:
 - ✅ Templater (actively maintained)
@@ -167,8 +167,8 @@ Instead, it uses:
 
 1. Complete the setup checklist above
 2. Test with `today` and `this quarter`
-3. Read the user guide: `system/periodic-notes-guide.md`
+3. Read the user guide: `system/almanac-notes-guide.md`
 4. Customize templates to fit your workflow
 5. Assign a hotkey for daily use
 
-Enjoy your seamless periodic notes system!
+Enjoy your seamless almanac notes system!

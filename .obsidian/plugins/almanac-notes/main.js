@@ -68,7 +68,7 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
 
             try {
                 // Load the user script
-                const scriptPath = 'system/templater-scripts/periodicNotes.js';
+                const scriptPath = 'system/templater-scripts/almanacNotes.js';
                 const scriptFile = this.app.vault.getAbstractFileByPath(scriptPath);
 
                 if (!(scriptFile instanceof TFile)) {
@@ -79,7 +79,7 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
                 const scriptContent = await this.app.vault.read(scriptFile);
 
                 // Execute the script module
-                const createPeriodicNote = Function('module', 'require', 'app', 'moment', scriptContent + '; return module.exports;')(
+                const createAlmanacNote = Function('module', 'require', 'app', 'moment', scriptContent + '; return module.exports;')(
                     {exports: {}},
                     require,
                     this.app,
@@ -151,7 +151,7 @@ module.exports = class AlmanacNotesPlugin extends Plugin {
                 };
 
                 // Execute the function
-                await createPeriodicNote(tp);
+                await createAlmanacNote(tp);
 
             } catch (error) {
                 console.error('Almanac Notes error:', error);

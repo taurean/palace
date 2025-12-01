@@ -3,7 +3,7 @@
   "name": "Almanac Notes",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "Create periodic notes (daily, weekly, monthly, quarterly, yearly) with natural language input",
+  "description": "Create almanac notes (daily, weekly, monthly, quarterly, yearly) with natural language input",
   "author": "Palace Vault",
   "authorUrl": "https://github.com/taurean/palace",
   "isDesktopOnly": false

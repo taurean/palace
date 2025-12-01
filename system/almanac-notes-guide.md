@@ -1,4 +1,4 @@
-# Periodic Notes System — User Guide
+# Almanac Notes System — User Guide
 
 A seamless natural language system for creating and navigating daily, weekly, monthly, quarterly, and yearly notes in Obsidian.
 
@@ -15,7 +15,7 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 
 1. **Open Command Palette:** `Cmd/Ctrl + P`
 2. **Search for:** "Templater: Insert Template"
-3. **Select:** "Open Periodic Note"
+3. **Select:** "Open Almanac Note"
 4. **Enter date:** Same as above
 
 ### Recommended: Assign a Hotkey
@@ -82,7 +82,7 @@ A seamless natural language system for creating and navigating daily, weekly, mo
 
 ### File Locations
 
-All periodic notes are stored in the `almanac/` folder:
+All almanac notes are stored in the `almanac/` folder:
 
 ```
 almanac/
@@ -180,13 +180,13 @@ If a note appears elsewhere, ensure these folders exist.
 
 ### Architecture
 
-1. **User Script:** `system/templater-scripts/periodicNotes.js`
+1. **User Script:** `system/templater-scripts/almanacNotes.js`
    - Parses natural language input
    - Determines note type (daily/weekly/monthly/quarterly/yearly)
    - Calculates target date using moment.js
    - Returns file path and template
 
-2. **Entry Point:** `system/templater-templates/Open Periodic Note.md`
+2. **Entry Point:** `system/templater-templates/Open Almanac Note.md`
    - Single-command trigger
    - Prompts for input
    - Calls the user script
@@ -209,12 +209,12 @@ You can create notes for any date without opening them by modifying the script. 
 
 ### Batch Creation
 
-To create multiple periodic notes at once, run the command multiple times or modify the script to accept multiple inputs.
+To create multiple almanac notes at once, run the command multiple times or modify the script to accept multiple inputs.
 
 ### Integration with Other Plugins
 
 This system works alongside:
-- **Dataview** — Query periodic notes by type, date range, etc.
+- **Dataview** — Query almanac notes by type, date range, etc.
 - **Calendar** — Visual navigation (though Calendar plugin is unmaintained)
 - **Daily Notes** core plugin — Can coexist if you prefer it for daily notes only
 
@@ -249,7 +249,7 @@ This system works alongside:
 For issues or questions:
 - Check the troubleshooting section above
 - Review the templates in `system/templater-templates/`
-- Examine the script in `system/templater-scripts/periodicNotes.js`
+- Examine the script in `system/templater-scripts/almanacNotes.js`
 
 ---
 

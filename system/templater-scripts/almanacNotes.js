@@ -1,5 +1,5 @@
 /**
- * Periodic Notes - Natural Language Date Parser
+ * Almanac Notes - Natural Language Date Parser
  * Handles creation and navigation of daily, weekly, monthly, quarterly, and yearly notes
  */
 
@@ -145,17 +145,17 @@ function getNotePath(type, date) {
 
 function getTemplate(type) {
     const templates = {
-        'daily': 'system/templater-templates/_periodic/Daily Note.md',
-        'weekly': 'system/templater-templates/_periodic/Weekly Note.md',
-        'monthly': 'system/templater-templates/_periodic/Monthly Note.md',
-        'quarterly': 'system/templater-templates/_periodic/Quarterly Note.md',
-        'yearly': 'system/templater-templates/_periodic/Yearly Note.md'
+        'daily': 'system/templater-templates/_almanac/Daily Note.md',
+        'weekly': 'system/templater-templates/_almanac/Weekly Note.md',
+        'monthly': 'system/templater-templates/_almanac/Monthly Note.md',
+        'quarterly': 'system/templater-templates/_almanac/Quarterly Note.md',
+        'yearly': 'system/templater-templates/_almanac/Yearly Note.md'
     };
 
     return templates[type];
 }
 
-async function createPeriodicNote(tp) {
+async function createAlmanacNote(tp) {
     // Save reference to the current file (might be untitled)
     const currentFile = app.workspace.getActiveFile();
     const isUntitled = currentFile && (currentFile.basename === 'Untitled' || currentFile.basename === '');
@@ -231,4 +231,4 @@ async function createPeriodicNote(tp) {
     return "";
 }
 
-module.exports = createPeriodicNote;
+module.exports = createAlmanacNote;
