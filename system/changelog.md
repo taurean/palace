@@ -1,5 +1,43 @@
 # Changelog
 
+## v0.10.0
+
+- **New Almanac Notes System (Preview)**
+  - Added comprehensive almanac notes system with support for daily, weekly, monthly, and quarterly notes
+  - Implemented 'Almanac Notes' plugin with direct hotkey support for quick note creation
+  - Added natural language date parsing for flexible date input
+  - Implemented 'nearest instance' logic and day-of-week support for smart date navigation
+  - Fixed various UX issues including cleanup of untitled notes and template visibility
+  - Integrated with Templater for seamless template execution and note creation
+  - **Note:** This is a preview feature. Templates, bases, and collections for almanac notes will be finalized in a future release.
+
+- **New Content Type: Correspondence**
+  - Added new Correspondence note kind for tracking letters, emails, and other communications
+  - Added new medium type support for correspondence tracking
+
+- **Property Standardization**
+  - Renamed property fields from singular to plural for consistency:
+    - `creator` → `creators`
+    - `region` → `regions`
+  - Renamed 'periodic' to 'almanac' throughout codebase for clearer terminology
+  - Pluralized kinds across templates and collections
+
+- **Content Management Improvements**
+  - Updated Article Clipper template with enhanced features and adjustments
+  - Changed pinning system: now use `#pinned` tag anywhere in a note instead of dedicated property
+  - Removed tags from sample notes and clippings for cleaner examples
+
+- **System Cleanup**
+  - Removed Calendar plugin from default plugin set
+  - Removed legacy "directory" references from collection files
+  - Removed default aliases from collection index files
+  - Removed extraneous wiki-link pipe separators for cleaner syntax
+  - Updated Obsidian workspace configuration
+
+- **Template Fixes**
+  - Fixed template to use target date instead of current date for accurate context
+  - Improved Templater integration and workflow
+
 ## v0.9.0
 - **File Switcher Enhancement**
   - Added Obsidian file switcher configuration for improved navigation

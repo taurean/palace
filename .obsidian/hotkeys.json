@@ -153,15 +153,6 @@
       "key": "D"
     }
   ],
-  "daily-notes:goto-prev": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "D"
-    }
-  ],
   "webviewer:open": [
     {
       "modifiers": [
@@ -169,21 +160,6 @@
         "Shift"
       ],
       "key": "B"
-    }
-  ],
-  "templater-obsidian:create-new-note-from-template": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "n"
-    },
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "N"
     }
   ],
   "workspace:undo-close-pane": [
@@ -223,13 +199,13 @@
       "key": "T"
     }
   ],
-  "templater-obsidian:replace-in-file-templater": [
+  "almanac-notes:create-almanac-note": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
-      "key": "R"
+      "key": "D"
     }
   ]
 }
