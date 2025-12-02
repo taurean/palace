@@ -10,5 +10,6 @@
   "textFontFamily": "",
   "monospaceFontFamily": "",
   "baseFontSize": 18,
-  "showRibbon": false
+  "showRibbon": false,
+  "accentColor": "#0000ee"
 }
