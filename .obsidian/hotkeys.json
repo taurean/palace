@@ -188,6 +188,12 @@
         "Mod"
       ],
       "key": "T"
+    },
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "T"
     }
   ],
   "templater-obsidian:insert-templater": [
@@ -195,6 +201,13 @@
       "modifiers": [
         "Alt",
         "Mod"
+      ],
+      "key": "T"
+    },
+    {
+      "modifiers": [
+        "Alt",
+        "Ctrl"
       ],
       "key": "T"
     }
