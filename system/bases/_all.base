@@ -46,7 +46,6 @@ views:
     filters:
       and:
         - '!file.folder.startsWith("system")'
-        - '!file.folder.startsWith("collections")'
         - file.ext == "md"
         - and:
             - file.tags.contains("#pinned")
