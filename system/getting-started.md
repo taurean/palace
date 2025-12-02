@@ -1,7 +1,15 @@
 # Getting started
 [[changelog]] • [[Directory]]
 
-Obsidian is an incredibly powerful tool but it can feel daunting to get started. Palace is an _opinionated_ vault template that can hopefully provide some structure. 
+Obsidian is powerful, but that power comes with a lot of decisions. Where do notes go? How should you organize them? What plugins are worth using? Palace is an opinionated starter system that answers those questions so you can focus on actually using your vault.
+
+Before diving into folders and files, it's worth understanding the thinking behind how Palace is structured.
+
+[[make the most of palace|Read: How to think about Palace →]]
+
+---
+
+## Folders & files
 
 > [!info]- folder structure
 > ```bash
@@ -11,6 +19,8 @@ palace/
 │   │   └── 2025-12-31.md
 │   ├── month/
 │   │   └── 2025-12.md
+│   ├── quarter/
+│   │   └── 2025-Q4.md
 │   ├── week/
 │   │   └── 2025-W52.md
 │   └── year/
@@ -24,7 +34,6 @@ palace/
 │   ├── Albums Collection.md
 │   └── Articles Collection.md
 ├── notes/
-│   ├── _pinned/
 │   ├── _sample-notes/
 │   │   └── example-note.md
 │   ├── note1.md
@@ -33,8 +42,16 @@ palace/
 │   ├── attachments/
 │   ├── bases/
 │   ├── clipper-templates/
-│   ├── templates/
+│   ├── templater-scripts/
 │   ├── templater-templates/
+│   │   ├── _almanac/
+│   │   │   ├── Daily Note.md
+│   │   │   ├── Monthly Note.md
+│   │   │   ├── Quarterly Note.md
+│   │   │   ├── Weekly Note.md
+│   │   │   └── Yearly Note.md
+│   │   └── Open Alamanac Note.md
+│   ├── templates/
 │   ├── changelog.md
 │   ├── getting-started.md
 │   ├── hotkeys.md
@@ -48,62 +65,61 @@ palace/
 └── view-later.md
 > ```
 
-## How to think about Palace
-Palace is designed to help you take your unstructured thoughts, memories, and references, and give it just a bit of form. You shouldn't use this to build a perfect database or a comprehensive wiki. With anything that you write, you should keep in mind who will be reading it and Palace is no different. Write with you as the reader in mind, a few years down the road. 
+### almanac/
+Notes anchored to a specific date live here. Daily notes, weekly notes, monthly notes, and so on. If a note is _about_ a period of time, it belongs in almanac. If a note is about an event that happened on a date (like a concert or a trip), it belongs in `notes/` instead.
 
-[[Palace decisions and opinions|Keep reading →]]
+### clipped/
+Notes created by the [Obsidian Web Clipper](https://obsidian.md/clipper) go here. This keeps a clear line between notes you wrote and notes generated from outside content. Palace includes clipper templates you can import to create notes that match your internal templates.
 
+### collections/
+Palace includes 30+ templates for different kinds of notes: albums, books, movies, people, places, recipes, and more. Each **Kind** gets a collection file that lists every note of that type. This folder holds those collection files so you can browse all your albums or all your books in one place.
 
+### notes/
+This is where your notes live. When you create a new note, it lands here by default. The only exceptions are date-based notes (which go to `almanac/`) and clipped content (which goes to `clipped/`). 
 
-## Sections
-### Almanac
-The almanac folder is specifically for housing notes that are anchored to a specific date. By default, notes created using the calendar plugin such as daily or weekly notes are automatically added to `almanac/`. This would also be a good place to put notes for quarters, years, or decades if the note is _about_ that date or time. If the note is about an event associated with a date (eg. 9/11), it should instead be in the `notes/` folder. 
+### system/
+Everything that makes Palace work lives here: templates, bases, clipper templates, and documentation. You generally won't need to touch this folder day-to-day, but it's where you'll go when you want to customize how Palace behaves.
 
-### Clipped
-The clipped folder is for notes created by the [Obsidian Clipper](https://obsidian.md/clipper) browser extension. This makes a clear delineation between notes that *you* wrote vs notes that were generated from outside content. Palace comes with a few templates you can import into the extension for easily creating notes that align with internally-drafted counterparts. 
+---
 
-### Collections
-At the core of Palace is a suite of templates for drafting different kinds of notes (30-40 in total). Those notes all get a specific type identifier with the `kind` property. The Collection folder is a directory of note files that are themselves a directory for each kind. This way, you can easily see all of your albums or books all in one place. 
+### Key files
 
-### Notes
-This folder is where all of the notes that you created and wrote in live. When you create a new note it will automatically be added to this folder. The only exception are daily/weekly notes going to almanac and clipped content going to clipped. If you create new collections you will have to manually move them to the collections folder. For notes that you want to have easy access to, you can drag them into `notes/_pinned`.
+#### home.md
+Your home note opens every time you launch Obsidian. It surfaces pinned notes, recently created notes, active quests, drafts, recent media, and journal entries. Modify it however you want. You'll use this note constantly.
 
-### System
-System houses almost everything that makes Palace, palace. The only exception is the hidden `.obsidian` directory that comes with every obsidian vault. That folder keeps your setting configuration files, themes, plugin configurations, etc. To view and edit those files you will need a different text editor like [VS Code](https://code.visualstudio.com) or [Zed](https://zed.dev). I don't recommend editing those files unless you know what you are doing.
+#### directory.md
+A directory of directories. It lists every **Kind** of note Palace supports, what each kind is for, links to templates, and links to sample notes so you can see what filled-out versions look like.
 
-#### attachments
-If you attach files to a note such as audio or images, they will get automatically added to this folder. You can read more about [attachments in the obsidian docs](https://help.obsidian.md/attachments).
-#### bases
-Bases are a new feature in Obsidian, in fact at the time of this being written the feature has not been officially released yet. Bases are a new file type that lets you save filtered lists of your notes with lots of controls for configuration. Read more about them in the [Obsidian bases docs](https://help.obsidian.md/bases).
-#### clipper-templates
-To align with the way templates are structured for Palace, there are also some sister-templates you can import into the [Obsidian Clipper]() browser extension. Although they are not visible in Obsidian since they are `.json` files, you should be able to [import them in your clipper settings](https://help.obsidian.md/web-clipper/templates#Import+and+export+Web+Clipper+templates) by navigating to the `palace/system/clipper-templates` folder. These clipper templates rely on the interpreter feature which means you will also need to enable interpreter with your own API key from Open AI, Anthropic, or one of the other supported AI providers.
+#### view-later.md
+A running list of media you haven't marked as finished yet. Your watch/read/listen queue.
 
-#### templates
-Templates are at the heart of how Palace works, with 30-40 templates available to you at the start. Some of these templates are also solid baselines for creating *new* templates that might fit your use-case. For example, if you collect fragrances, you might want to duplicate the `object.md` template and create a new `fragrance.md` so you can include formatting for scent notes or tagging the designer/brand.
+#### system/templates/*
+The heart of Palace. 30+ templates for different note types. These are also good starting points for creating your own. If you collect fragrances, for example, you might duplicate `object.md` and create a `fragrance.md` with fields for scent notes and houses. These can be added to a note by using `cmd + t` or `ctrl + t`.
 
-#### templater-templates
-These templates are specifically for being used with [Templater](https://github.com/SilentVoid13/Templater). Currently, this is only used to format the week note so you can prefill the days of the week with tags to those specific days. 
+#### system/bases/*
+[Bases](https://help.obsidian.md/bases) are a newer Obsidian feature that let you save filtered, sortable views of your notes. Palace uses these to power collections and surface notes in different ways.
 
-#### changelog.md
-the [[changelog]] file is used to track the changes between Palace versions. There, you can see what was added, removed, or changed (at least at a high level, tracking changes is hard 😅).
-#### getting-started.md
-you're reading that note now!
-#### hotkeys.md
-the [[hotkeys]] note documents all of the modified hotkey combinations that is configured in Palace.
-#### plugins.md
-the [[plugins]] note documents all of the plugins that Palace depends on and usually some guidance on how you should use them or why.
-#### types.md
-[Props](https://help.obsidian.md/properties) are a really useful feature built into obsidian that you can use to store metadata and even configure [bases](https://help.obsidian.md/bases). To keep things organized, I have tried to find the right balance of unique props for organizing all of that data. the [[types]] note file documents every type, why you might use it, and what kind of data is entered into it.
-### directory.md
-the [[directory]] file is basically a directory of directories. It lists every `kind` of note, a description of what that note kind is for, a link to the template, a link to the collection of that kind, and lastly a link to a demo of what those notes look like when filled out. Sample notes are kept in `clipped/_sample-clipped` and `notes/_sample-notes`. You can delete both folders once you feel like you don't need them.
-### home.md
-Whenever you open Obsidian, your home note will open in a pinned state. Your home note will include links to recently created notes, pinned notes, [[directory#Quests|quests]] and quest lines, drafts you are writing, recent media notes, and journal entries. Feel free to add/remove/modify as you see fit, you should be using this note a ton.
-### publish.css
-If you use [Obsidian Publish](https://obsidian.md/publish), this CSS file can be used to change some of the styling decisions that come by default. You can read more about how to do this in the [Obsidian docs](https://help.obsidian.md/publish/customize).
-### publish.js
-Similar to `publish.css`, the `publish.js` file also runs whenever your published Obsidian site is loaded. One common use-case for this is using analytics that aren't supported by Obsidian by default, eg. [Pirsch](https://pirsch.io).
-### public.md
-the [[public]] note is very similar to your [[public|Home]] note, except this is what you can use as your "home" page if you publish via Obsidian Publish. If you know that you will never publish anything from your vault with Obsidian Publish, you can remove this file.
+#### system/clipper-templates/*
+JSON templates you can import into the [Obsidian Web Clipper](https://obsidian.md/clipper). They're designed to create clipped notes that match Palace's internal structure. These use the interpreter feature, so you'll need to add your own API key from OpenAI, Anthropic, or another supported provider.
 
-### view-later.md
-this [[View Later|note]] contains a list of all media that you haven't marked as finished yet. 
+#### system/templater-templates/*
+Templates specifically for use with the [Templater](https://github.com/SilentVoid13/Templater) plugin. Currently used to format various almanac notes such as weekly notes with links to each day. If you need templates that execute some scripting in order to populate your note, templater is how you do it. These can be added to a note by using `cmd + alt + t` or `ctrl + alt + t.`
+
+#### files for publishing
+- **publish.css / publish.js** – Only relevant if you use [Obsidian Publish](https://obsidian.md/publish)
+- **public.md** – A public-facing home page for Obsidian Publish. Delete it if you won't publish.
+
+---
+
+## Further documentation
+- [[make the most of palace]] • Practical advice and philosophical thoughts to make the most out of palace
+- [[First steps]] • A checklist of things to try to get used to Palace
+- [[changelog]] • What changed between Palace versions
+- [[hotkeys]] • Modified keyboard shortcuts configured in Palace
+- [[plugins]] – Which plugins Palace uses and why
+- [[types]] – Every property type, what it's for, and what data goes in it
+
+### Next steps
+- Explore the [[directory]] to see every kind of note available
+- Open your [[home]] note and start from there
+- Check [[hotkeys]] to learn the shortcuts that'll save you time
