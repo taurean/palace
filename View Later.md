@@ -20,8 +20,9 @@ A list of content that I have yet to finish.
 ## Comic Series
 ![[Comic Series.base#Read later]]
 
-## Movies
 %%
+## Movies
+
 @TODO: INSERT BASE HERE
 all notes with kind = movies
 **AND** finished = false
@@ -29,12 +30,12 @@ all notes with kind = movies
 COLUMNS:
 - title as "Title"
 - publish-date as "released on"
-
-%%
 ![[_all.base]]
-
-## Podcast Episodes
 %%
+
+%%
+## Podcast Episodes
+
 @TODO: INSERT BASE HERE
 all notes with kind = podcast episodes
 **AND** finished = false
@@ -43,11 +44,12 @@ COLUMNS:
 - title as "Title"
 - publish-date as "released on"
 
-%%
 ![[_all.base]]
-
-## Show Seasons
 %%
+
+%%
+## Show Seasons
+
 @TODO: INSERT BASE HERE
 all notes with kind = show season
 **AND** finished = false
@@ -56,11 +58,13 @@ COLUMNS:
 - title as "Title"
 - publish-date as "released on"
 
-%%
-![[_all.base]]
 
-## Video Games
+![[_all.base]]
 %%
+
+%%
+## Video Games
+
 @TODO: INSERT BASE HERE
 all notes with kind = video games
 **AND** finished = false
@@ -69,5 +73,6 @@ COLUMNS:
 - title as "Title"
 - publish-date as "released on"
 
-%%
+
 ![[_all.base]]
+%%
