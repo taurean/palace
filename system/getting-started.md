@@ -66,7 +66,7 @@ palace/
 > ```
 
 ### almanac/
-Notes anchored to a specific date live here. Daily notes, weekly notes, monthly notes, and so on. If a note is _about_ a period of time, it belongs in almanac. If a note is about an event that happened on a date (like a concert or a trip), it belongs in `notes/` instead.
+Your personal log tied to the calendar: daily notes, weekly notes, monthly notes, and so on. These are your journal entries for a given day or time range. What happened, what you were thinking, how you felt. If something deserves more than a passing mention, give it its own note and link to it from here.
 
 ### clipped/
 Notes created by the [Obsidian Web Clipper](https://obsidian.md/clipper) go here. This keeps a clear line between notes you wrote and notes generated from outside content. Palace includes clipper templates you can import to create notes that match your internal templates.
@@ -78,7 +78,7 @@ Palace includes 30+ templates for different kinds of notes: albums, books, movie
 This is where your notes live. When you create a new note, it lands here by default. The only exceptions are date-based notes (which go to `almanac/`) and clipped content (which goes to `clipped/`). 
 
 ### system/
-Everything that makes Palace work lives here: templates, bases, clipper templates, and documentation. You generally won't need to touch this folder day-to-day, but it's where you'll go when you want to customize how Palace behaves.
+Templates, bases, clipper templates, and documentation all live here. You won't need to open this folder often, but when you want to add a new template or tweak how Palace is structured, this is where you'll do it. Obsidian's actual config files live in the hidden `.obsidian` folder, which you'll need a separate text editor like [VS Code](https://code.visualstudio.com) or [Zed](https://zed.dev) to access. I don't recommend editing those unless you know what you're doing.
 
 ---
 
@@ -113,13 +113,13 @@ Templates specifically for use with the [Templater](https://github.com/SilentVoi
 
 ## Further documentation
 - [[make the most of palace]] • Practical advice and philosophical thoughts to make the most out of palace
-- [[First steps]] • A checklist of things to try to get used to Palace
 - [[changelog]] • What changed between Palace versions
 - [[hotkeys]] • Modified keyboard shortcuts configured in Palace
 - [[plugins]] – Which plugins Palace uses and why
 - [[types]] – Every property type, what it's for, and what data goes in it
 
 ### Next steps
+- Complete the [[First steps]] checklist, a checklist of things to get you acclimated.
 - Explore the [[directory]] to see every kind of note available
 - Open your [[home]] note and start from there
 - Check [[hotkeys]] to learn the shortcuts that'll save you time
