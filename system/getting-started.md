@@ -5,7 +5,7 @@ Obsidian is powerful, but that power comes with a lot of decisions. Where do not
 
 Before diving into folders and files, it's worth understanding the thinking behind how Palace is structured.
 
-[[make the most of palace|Read: How to think about Palace →]]
+[[how-to-think-about-palace|Read: How to think about Palace →]]
 
 ---
 
@@ -112,14 +112,14 @@ Templates specifically for use with the [Templater](https://github.com/SilentVoi
 ---
 
 ## Further documentation
-- [[make the most of palace]] • Practical advice and philosophical thoughts to make the most out of palace
+- [[how-to-think-about-palace]] • Practical advice and philosophical thoughts to make the most out of palace
 - [[changelog]] • What changed between Palace versions
 - [[hotkeys]] • Modified keyboard shortcuts configured in Palace
 - [[plugins]] – Which plugins Palace uses and why
 - [[types]] – Every property type, what it's for, and what data goes in it
 
 ### Next steps
-- Complete the [[First steps]] checklist, a checklist of things to get you acclimated.
+- Complete the [[first-steps]] checklist, a checklist of things to get you acclimated.
 - Explore the [[directory]] to see every kind of note available
 - Open your [[home]] note and start from there
 - Check [[hotkeys]] to learn the shortcuts that'll save you time
