@@ -3,8 +3,8 @@ aliases: "<% tp.date.now('gggg') %>-W<% tp.date.now('ww') %>"
 creationDate: "<% tp.file.creation_date('YYYY-MM-DDTHH:mm') %>"
 entityIs: "[[Weekly Notes]]"
 weekNumber: "[[<% tp.date.now('gggg') %>-W<% tp.date.now('ww') %>]]"
-weekStart: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).startOf('week')) %>]]"
-weekEnd: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('week')) %>]]"
+startDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).startOf('week')) %>]]"
+endDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('week')) %>]]"
 month: "[[<% tp.date.now('YYYY-MM') %>]]"
 quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
@@ -47,4 +47,4 @@ for (let i = 0; i < 7; i++) {
 
 ---
 ## Notes from this week
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Items Created]]

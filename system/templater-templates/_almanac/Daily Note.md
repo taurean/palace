@@ -2,7 +2,8 @@
 aliases: "<% tp.date.now('YYYY-MM-DD') %>"
 creationDate: "<% tp.file.creation_date('YYYY-MM-DDTHH:mm') %>"
 entityIs: "[[Daily Notes]]"
-date: "[[<% tp.date.now('YYYY-MM-DD') %>]]"
+startDate: "[[<% tp.date.now('YYYY-MM-DD') %>]]"
+endDate: "[[<% tp.date.now('YYYY-MM-DD') %>]]"
 week: "[[<% tp.date.now('gggg') %>-W<% tp.date.now('ww') %>]]"
 month: "[[<% tp.date.now('YYYY-MM') %>]]"
 quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
@@ -16,4 +17,4 @@ year: "[[<% tp.date.now('YYYY') %>]]"
 ---
 ## notes from this day
 
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Items Created]]

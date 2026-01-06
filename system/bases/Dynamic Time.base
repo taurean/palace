@@ -1,0 +1,89 @@
+filters:
+  and:
+    - '!file.folder.contains("system")'
+formulas:
+  Day: file.asLink(date(startDate).format("dddd, Do"))
+  Week: file.asLink(date(startDate).format("[Week] w"))
+  kind: if(entityIs, entityIs, "basic note")
+  created: date(file.ctime).format("Do")
+  Untitled: date(file.ctime)
+  Month: file.asLink(date(startDate).format("MMMM"))
+  Quarter: file.asLink(date(startDate).format("YYYY [Q]Q"))
+  Untitled 2: ""
+properties:
+  file.mtime:
+    displayName: modified
+  note.entityIs:
+    displayName: kind
+  formula.created:
+    displayName: Day created
+views:
+  - type: table
+    name: Items Created
+    filters:
+      and:
+        - file.ctime >= date(this.startDate)
+        - file.ctime < date(this.endDate) + "1d"
+        - and:
+            - '!file.folder.contains("almanac")'
+    order:
+      - formula.created
+      - file.name
+      - formula.kind
+    sort:
+      - property: file.ctime
+        direction: ASC
+    columnSize:
+      file.name: 370
+  - type: table
+    name: Days
+    filters:
+      and:
+        - file.folder == "almanac/day"
+        - and:
+            - date(startDate) >= date(this.startDate)
+            - date(startDate) <= date(this.endDate)
+    order:
+      - formula.Day
+      - description
+    columnSize:
+      formula.Day: 255
+  - type: table
+    name: Weeks
+    filters:
+      and:
+        - file.folder == "almanac/week"
+        - and:
+            - date(startDate) >= date(this.startDate)
+            - date(startDate) <= date(this.endDate)
+    order:
+      - formula.Week
+      - description
+    columnSize:
+      formula.Week: 97
+  - type: table
+    name: Months
+    filters:
+      and:
+        - file.folder == "almanac/month"
+        - and:
+            - date(startDate) >= date(this.startDate)
+            - date(startDate) <= date(this.endDate)
+    order:
+      - formula.Month
+      - description
+    columnSize:
+      formula.Month: 86
+  - type: table
+    name: Quarters
+    filters:
+      and:
+        - file.folder == "almanac/quarter"
+        - and:
+            - date(startDate) >= date(this.startDate)
+            - date(startDate) <= date(this.endDate)
+    order:
+      - formula.Quarter
+      - description
+    columnSize:
+      formula.Quarter: 223

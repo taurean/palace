@@ -3,8 +3,8 @@ aliases: "<% tp.date.now('YYYY') %>"
 creationDate: "<% tp.file.creation_date('YYYY-MM-DDTHH:mm') %>"
 entityIs: "[[Yearly Notes]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
-yearStart: "[[<% tp.date.now('YYYY') %>-01-01]]"
-yearEnd: "[[<% tp.date.now('YYYY') %>-12-31]]"
+startDate: "[[<% tp.date.now('YYYY') %>-01-01]]"
+endDate: "[[<% tp.date.now('YYYY') %>-12-31]]"
 ---
 # <% tp.date.now('YYYY') %>
 
@@ -26,10 +26,10 @@ yearEnd: "[[<% tp.date.now('YYYY') %>-12-31]]"
 ## Notes
 
 ### Quarters
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Quarters]]
 
 ### Months
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Months]]
 
 ### from this year
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Items Created]]

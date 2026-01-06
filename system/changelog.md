@@ -1,8 +1,17 @@
 # Changelog
 
+## v0.12.0
+- **Almanac Property Standardization**
+  - Standardized all almanac templates (Daily, Weekly, Monthly, Quarterly, Yearly) to use `startDate` and `endDate` properties
+  - Migrated `Dynamic Time.base` to use these standard properties for consistent views
+- **Dynamic Time Base Improvements**
+  - Added dedicated views for **Items Created**, **Days**, **Weeks**, **Months**, and **Quarters**
+  - Fixed formula errors for "Day" formatting and "Quarter" display
+  - Improved filters to correctly handle full-day queries (including the end date)
+  - Fixed syntax errors in duration calculations and link handling
+
 ## v0.11.0
 - **Daily Note Template Refinement**
-  - Simplified navigation header with compact Previous/Next links
   - Simplified navigation header with compact Previous/Next links
   - Added placeholder for base content
 - **Almanac System Improvements**

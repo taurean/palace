@@ -4,8 +4,8 @@ creationDate: "<% tp.file.creation_date('YYYY-MM-DDTHH:mm') %>"
 entityIs: "[[Quarterly Notes]]"
 quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
-quarterStart: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).startOf('quarter')) %>]]"
-quarterEnd: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('quarter')) %>]]"
+startDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).startOf('quarter')) %>]]"
+endDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('quarter')) %>]]"
 ---
 # Q<% tp.date.now('Q') %> <% tp.date.now('YYYY') %>
 
@@ -32,10 +32,10 @@ tR += `← [[${prev.y}-Q${prev.q}|Previous Quarter]] • [[${currentYear}]] • 
 ---
 ## Notes
 ### Months
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Months]]
 
 ### Weeks
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Weeks]]
 
 ### from this quarter
-%% placeholder for where base will go %%
+![[Dynamic Time.base#Items Created]]
