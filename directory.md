@@ -10,40 +10,59 @@ This is an exhaustive list of every note type in [[Palace]] along with a link to
 
 ### Albums
 [[Album|Template]] • [[What Now|Demo]] • [[Albums|Collection]]
+
 Document complete musical works as unified artistic statements. Track listening experiences, note standout tracks, and organize music discovery by full album rather than individual songs.
 
 ### Articles
 [[Article|Template]] • [[Why J.R.R. Tolkien Fell in Love With "The Green Knight" a Century Ago|Demo]] • [[Articles|Collection]]
+
 For capturing notes on written content across digital and print media, including periodicals, websites, magazines, newspapers, blogs, and essays. Use this template for documenting insights and reflections on any published long-form written work.
 
 ### Books
 [[Book|Template]] • [[The Alchemist|Demo]] • [[Books|Collection]]
+
 For capturing comprehensive notes on literary works, including novels, short stories, novellas, anthologies, and other book-length or collected written narratives across fiction and non-fiction genres.
 
 ### Cities
 [[City|Template]] • [[Oakland|Demo]] • [[Cities|Collection]]
+
 For tracking cities/towns and where they are located. By default, cities also include a list of places that are tagged inside of that city.
 
 ### Comic Issues
 [[Comic Issue|Template]] • [[We're Taking Everyone Down with Us (No 1)|Demo]] • [[Comic Issues|Collection]]
+
 For tracking individual comic book issues, usually from a series. Record the creators, mark if you have finished it yet, and track what you like or not like.
 
 ### Comic Series
 [[system/templates/Comic Series|Template]] • [[We're Taking Everyone Down WIth Us|Demo]] • [[Comic Series|Collection]]
+
 For tracking a comic book *series*. View the comic book issues filtered on that series, mark the series genre, rate, like, and review the series as a whole.
 
 ### Course Lessons
 [[Course Lesson|Template]] • [[Javascript Fundamentals|Demo]] • [[Course Lessons|Collection]]
+
 For tracking individual lessons from courses. Track the instructors teaching, topics, and if a lesson has been finished yet.
 
 ### Courses
 [[Course Lesson|Template]] • [[Intro to Javascript|Demo]] • [[Courses|Collection]]
+
 For tracking courses, each representing a collection of lessons. Track the organizations producing courses, the teachers, topics, rating, finished state, and if you liked them or not.
 
+### Correspondences
+[[Correspondence|Template]] • [[The Internet Tidal Wave|Demo]] • [[Correspondences|Collection]]
 
+For preserving any message worth keeping—personal correspondence you've written or received, significant memos, and historic letters. Track the creator, recipients, medium (email, letter, memo), and date to organize meaningful communication.
+
+### Organization
+[[Organizations|Template]] • [[Vitsoe|Demo]] • [[Organizations|Collection]]
+
+Companies, institutions, and formal groups that exist as distinct entities. This includes businesses and corporations, non-profits and NGOs, government agencies, universities and schools, sports teams, bands and musical groups, religious institutions, political parties, and any other collective that operates under a shared name and identity. For informal groupings of people without institutional structure, see [[Person Groups]].
+
+---
 
 ## Alt groupings
 *alt groupings are variations of other note kinds, expanding on them with more information*
+
 ### Example
 Template • Demo
 Description

@@ -82,11 +82,11 @@
 - [x] sample: "We're Taking Everyone Down with Us"
 - [x] description
 #### Correspondence
-- [ ] collection
-- [ ] base
+- [x] collection
+- [x] base
 - [x] template
 - [x] sample: "The Internet Tidal Wave"
-- [ ] description
+- [x] description
 #### Course Lessons
 - [x] collection
 - [x] base
@@ -104,7 +104,7 @@
 - [x] base
 - [x] template
 - [x] sample: "Vitsoe"
-- [ ] description
+- [x] description
 #### People
 - [ ] collection
 - [ ] base

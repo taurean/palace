@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.11.0
+- **Daily Note Template Refinement**
+  - Simplified navigation header with compact Previous/Next links
+  - Added placeholder for base content
+- **Collection Updates**
+  - **Correspondences**: Added detailed views for Email, Letter, and Memo; updated collection page with table of contents
+  - **Organizations**: Added description and directory entry
+- **Documentation & Directory**
+  - Updated `directory.md` with new entries and formatting improvements
+  - Updated Roadmap progress
+
 ## v0.10.0
 
 - **New Almanac Notes System (Preview)**

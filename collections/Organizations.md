@@ -2,7 +2,7 @@
 aliases:
   - Organizations
 kind: "[[Collections]]"
-description:
+description: Companies, institutions, and formal groups that exist as distinct entities.
 ---
 # Organizations
 

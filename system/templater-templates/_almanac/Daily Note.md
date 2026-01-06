@@ -9,16 +9,11 @@ quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
 ---
 # <% tp.date.now('dddd, MMMM D, YYYY') %>
+← [[<% tp.date.now('YYYY-MM-DD', -1) %>|Previous Day]] • [[<% tp.date.now('YYYY') %>-W<% tp.date.now('ww') %>|Week <% tp.date.now('ww') %>]] • [[<% tp.date.now('YYYY-MM-DD', 1) %>|Next Day]] →
 
-## Navigation
-← [[<% tp.date.now('YYYY-MM-DD', -1) %>|Previous Day]] | [[<% tp.date.now('YYYY-MM-DD', 1) %>|Next Day]] →
 
-**Weekly:** [[<% tp.date.now('YYYY') %>-W<% tp.date.now('ww') %>|Week <% tp.date.now('ww') %>]]
-**Monthly:** [[<% tp.date.now('YYYY-MM') %>|<% tp.date.now('MMMM YYYY') %>]]
-**Quarterly:** [[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>|Q<% tp.date.now('Q') %> <% tp.date.now('YYYY') %>]]
-**Yearly:** [[<% tp.date.now('YYYY') %>]]
 
 ---
+## notes from this day
 
-## Notes
-
+%% placeholder for where base will go %%

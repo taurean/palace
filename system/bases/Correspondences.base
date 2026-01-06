@@ -5,17 +5,66 @@ properties:
   file.name:
     displayName: message
   note.creators:
-    displayName: authors
+    displayName: from
 views:
   - type: table
-    name: Table
+    name: All
     order:
       - file.name
       - medium
       - date
       - creators
     sort:
-      - property: medium
-        direction: ASC
+      - property: date
+        direction: DESC
       - property: file.name
         direction: ASC
+    columnSize:
+      file.name: 200
+      medium: 100
+      date: 100
+  - type: table
+    name: Medium › Email
+    filters:
+      and:
+        - medium == "email"
+    order:
+      - file.name
+      - date
+      - creators
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      file.name: 200
+      date: 100
+  - type: table
+    name: Medium › Letter
+    filters:
+      and:
+        - medium == "letter"
+    order:
+      - file.name
+      - date
+      - creators
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      file.name: 200
+      date: 100
+  - type: table
+    name: Medium › Memo
+    filters:
+      and:
+        - medium == "memo"
+    order:
+      - file.name
+      - date
+      - creators
+    sort:
+      - property: date
+        direction: DESC
+    columnSize:
+      file.name: 200
+      date: 100
