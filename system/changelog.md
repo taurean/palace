@@ -3,7 +3,13 @@
 ## v0.11.0
 - **Daily Note Template Refinement**
   - Simplified navigation header with compact Previous/Next links
+  - Simplified navigation header with compact Previous/Next links
   - Added placeholder for base content
+- **Almanac System Improvements**
+  - **Weekly Notes**: Updated to Sunday-start logic with Week Year (`gggg`) support
+  - **Daily Notes**: Aligned week properties with new Sunday-start logic
+  - **Templates**: Standardized navigation and structure across Monthly, Quarterly, and Yearly notes
+  - **Scripts**: Enhanced `almanacNotes.js` week parsing for better locale support
 - **Collection Updates**
   - **Correspondences**: Added detailed views for Email, Letter, and Memo; updated collection page with table of contents
   - **Organizations**: Added description and directory entry

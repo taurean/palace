@@ -137,12 +137,12 @@ function parseNaturalLanguage(input, tp) {
             if (yearBefore || yearAfter) {
                 // Year specified - use it
                 const year = yearBefore || yearAfter;
-                targetDate = moment().year(year).isoWeek(week);
+                targetDate = moment().year(year).week(week);
             } else {
                 // No year specified - find nearest week
-                const thisYearWeek = moment().year(now.year()).isoWeek(week);
-                const lastYearWeek = moment().year(now.year() - 1).isoWeek(week);
-                const nextYearWeek = moment().year(now.year() + 1).isoWeek(week);
+                const thisYearWeek = moment().year(now.year()).week(week);
+                const lastYearWeek = moment().year(now.year() - 1).week(week);
+                const nextYearWeek = moment().year(now.year() + 1).week(week);
 
                 const daysToThisYear = Math.abs(now.diff(thisYearWeek, 'days'));
                 const daysToLastYear = Math.abs(now.diff(lastYearWeek, 'days'));
@@ -278,7 +278,7 @@ function parseNaturalLanguage(input, tp) {
 function getNotePath(type, date) {
     const formats = {
         'daily': { folder: 'almanac/day', format: 'YYYY-MM-DD' },
-        'weekly': { folder: 'almanac/week', format: 'YYYY-[W]ww' },
+        'weekly': { folder: 'almanac/week', format: 'gggg-[W]ww' },
         'monthly': { folder: 'almanac/month', format: 'YYYY-MM' },
         'quarterly': { folder: 'almanac/quarter', format: 'YYYY-[Q]Q' },
         'yearly': { folder: 'almanac/year', format: 'YYYY' }

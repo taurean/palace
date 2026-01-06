@@ -13,40 +13,29 @@ quarterEnd: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('quar
 <%*
 const currentQuarter = parseInt(tp.date.now('Q'));
 const currentYear = parseInt(tp.date.now('YYYY'));
-
-// Calculate previous quarter
-let prevQ = currentQuarter - 1;
-let prevYear = currentYear;
-if (prevQ === 0) {
-    prevQ = 4;
-    prevYear = currentYear - 1;
-}
-
-// Calculate next quarter
-let nextQ = currentQuarter + 1;
-let nextYear = currentYear;
-if (nextQ === 5) {
-    nextQ = 1;
-    nextYear = currentYear + 1;
-}
-
-tR += `← [[${prevYear}-Q${prevQ}|Previous Quarter]] | [[${nextYear}-Q${nextQ}|Next Quarter]] →\n`;
+const normalize = (q, y) => {
+    if (q < 1) return { q: 4, y: y - 1 };
+    if (q > 4) return { q: 1, y: y + 1 };
+    return { q, y };
+};
+const prev = normalize(currentQuarter - 1, currentYear);
+const next = normalize(currentQuarter + 1, currentYear);
+tR += `← [[${prev.y}-Q${prev.q}|Previous Quarter]] • [[${currentYear}]] • [[${next.y}-Q${next.q}|Next Quarter]] →`;
 %>
 
-**Yearly:** [[<% tp.date.now('YYYY') %>]]
+> [!summary]
+>
+
+## Todo
+- [ ] 
 
 ---
+## Notes
+### Months
+%% placeholder for where base will go %%
 
-## Months
-<%*
-const quarterStart = moment(tp.date.now()).startOf('quarter');
-for (let i = 0; i < 3; i++) {
-    const month = moment(quarterStart).add(i, 'months');
-    const monthCode = month.format('YYYY-MM');
-    const monthName = month.format('MMMM YYYY');
-    tR += `- [[${monthCode}|${monthName}]]\n`;
-}
-%>
+### Weeks
+%% placeholder for where base will go %%
 
-## Summary
-
+### from this quarter
+%% placeholder for where base will go %%

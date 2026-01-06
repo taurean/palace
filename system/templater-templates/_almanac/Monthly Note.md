@@ -5,34 +5,25 @@ entityIs: "[[Monthly Notes]]"
 month: "[[<% tp.date.now('YYYY-MM') %>]]"
 quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
-monthStart: "[[<% tp.date.now('YYYY-MM-DD', 0, tp.date.now('YYYY-MM-01')) %>]]"
-monthEnd: "[[<% tp.date.now('YYYY-MM-DD', 0, tp.date.now('YYYY-MM-') + moment(tp.date.now('YYYY-MM-01')).daysInMonth()) %>]]"
+monthStart: "[[<% tp.date.now('YYYY-MM-01') %>]]"
+monthEnd: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now('YYYY-MM-01')).endOf('month')) %>]]"
 ---
 # <% tp.date.now('MMMM YYYY') %>
+← [[<% tp.date.now('YYYY-MM', 0, moment(tp.date.now('YYYY-MM-01')).subtract(1, 'month')) %>|<% tp.date.now('MMMM', 0, moment(tp.date.now('YYYY-MM-01')).subtract(1, 'month')) %>]] • [[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>|<% tp.date.now('Qo') %> Quarter]] • [[<% tp.date.now('YYYY-MM', 0, moment(tp.date.now('YYYY-MM-01')).add(1, 'month')) %>|<% tp.date.now('MMMM', 0, moment(tp.date.now('YYYY-MM-01')).add(1, 'month')) %>]] →
 
-## Navigation
-← [[<% tp.date.now('YYYY-MM', 0, moment(tp.date.now('YYYY-MM-01')).subtract(1, 'month')) %>|Previous Month]] | [[<% tp.date.now('YYYY-MM', 0, moment(tp.date.now('YYYY-MM-01')).add(1, 'month')) %>|Next Month]] →
+> [!summary]
+>
 
-**Quarterly:** [[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>|Q<% tp.date.now('Q') %> <% tp.date.now('YYYY') %>]]
-**Yearly:** [[<% tp.date.now('YYYY') %>]]
+## Todo
+- [ ] 
 
 ---
+## Notes
+### Weeks
+%% placeholder for where base will go %%
 
-## Weeks
-<%*
-const monthStart = moment(tp.date.now('YYYY-MM-01'));
-const monthEnd = moment(monthStart).endOf('month');
-let current = moment(monthStart).startOf('isoWeek');
+### Days
+%% placeholder for where base will go %%
 
-while (current.isSameOrBefore(monthEnd)) {
-    const weekNum = current.format('ww');
-    const year = current.format('YYYY');
-    const weekStart = current.format('MMM D');
-    const weekEnd = moment(current).endOf('isoWeek').format('MMM D');
-    tR += `- [[${year}-W${weekNum}|Week ${weekNum}]] (${weekStart} – ${weekEnd})\n`;
-    current.add(1, 'week');
-}
-%>
-
-## Summary
-
+### from this month
+%% placeholder for where base will go %%

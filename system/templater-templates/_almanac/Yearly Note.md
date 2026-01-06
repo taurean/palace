@@ -9,15 +9,27 @@ yearEnd: "[[<% tp.date.now('YYYY') %>-12-31]]"
 # <% tp.date.now('YYYY') %>
 
 ## Navigation
-← [[<% tp.date.now('YYYY', 0, moment(tp.date.now('YYYY-01-01')).subtract(1, 'year')) %>|Previous Year]] | [[<% tp.date.now('YYYY', 0, moment(tp.date.now('YYYY-01-01')).add(1, 'year')) %>|Next Year]] →
+← [[<% tp.date.now('YYYY', 0, moment(tp.date.now('YYYY-01-01')).subtract(1, 'year')) %>|Previous Year]] • [[<% tp.date.now('YYYY', 0, moment(tp.date.now('YYYY-01-01')).add(1, 'year')) %>|Next Year]] →
+
+
+> [!summary]- review
+> %% at the end of the year, remove the `-` and add a recap of the year you had %%
+> 
+
+## Resolutions
+
+
+## Recap
+%% list backlinks to important dates in the year %%
 
 ---
+## Notes
 
-## Quarters
-- [[<% tp.date.now('YYYY') %>-Q1|Q1 <% tp.date.now('YYYY') %>]] (Jan – Mar)
-- [[<% tp.date.now('YYYY') %>-Q2|Q2 <% tp.date.now('YYYY') %>]] (Apr – Jun)
-- [[<% tp.date.now('YYYY') %>-Q3|Q3 <% tp.date.now('YYYY') %>]] (Jul – Sep)
-- [[<% tp.date.now('YYYY') %>-Q4|Q4 <% tp.date.now('YYYY') %>]] (Oct – Dec)
+### Quarters
+%% placeholder for where base will go %%
 
-## Summary
+### Months
+%% placeholder for where base will go %%
 
+### from this year
+%% placeholder for where base will go %%
