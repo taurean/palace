@@ -10,13 +10,18 @@ class DatePromptModal extends Modal {
         const {contentEl} = this;
         contentEl.createEl('h2', {text: 'Create Almanac Note'});
 
+        const now = window.moment();
+        const currentMonth = now.format('MMMM');
+        const currentQuarter = 'Q' + now.quarter();
+        const dateExample = now.format('YYYY-MM-DD');
+
         contentEl.createEl('p', {
-            text: "Enter a date (e.g., 'today', 'next quarter', 'February', 'Q3', '2024-03-15'):"
+            text: `Enter a date (e.g., 'today', '${currentQuarter}', '${currentMonth}', '${dateExample}'):`
         });
 
         const inputEl = contentEl.createEl('input', {
             type: 'text',
-            placeholder: 'today, next quarter, February, etc.'
+            placeholder: `today, ${currentQuarter}, ${currentMonth}, etc.`
         });
         inputEl.style.width = '100%';
         inputEl.style.marginTop = '10px';
