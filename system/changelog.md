@@ -1,5 +1,52 @@
 # Changelog
 
+## v1.0.0
+
+**First Stable Release - Palace 1.0**
+
+This is the first production-ready release of Palace, marking it as a stable, comprehensive Obsidian vault starter template. Palace now provides a complete foundation for personal knowledge management with 40+ collections, extensive templates, and powerful organizational tools.
+
+**Almanac System Enhancements**
+- Added contextual examples in almanac modal for better user guidance
+- Standardized almanac properties across all templates (Daily, Weekly, Monthly, Quarterly, Yearly) using `startDate` and `endDate`
+- Updated almanac templates with improved week logic and Sunday-start support
+- Enhanced almanac notes plugin with better date parsing and navigation
+
+**Documentation & Onboarding**
+- Added comprehensive roadmap for Palace 1.0 release showing all phases and planned features
+- Created new "First Steps" checklist for new users
+- Completely revised Getting Started guide with clearer structure and comprehensive guidance
+- Renamed and rewrote "Palace Decisions" guide for better clarity ("How to Think About Palace")
+- Updated README with improved content, formatting, and clearer instructions
+- Improved system documentation throughout
+
+**Collections & Content Management**
+- Enabled pinning for collection notes using `#pinned` tag
+- Enhanced Correspondences collection with detailed views
+- Added Organizations collection with comprehensive structure
+- Updated collection formatting and presentation
+
+**System Configuration**
+- Updated Obsidian hotkey configurations for improved workflow
+- Standardized wikilinks to use hyphenated slugs for consistency
+- Cleaned up file naming conventions (lowercase, hyphenated)
+- Refined view configurations across collections
+- Reverted accent color to default for better compatibility
+
+**Templates & Bases**
+- Refined Daily Note template structure and navigation
+- Updated Dynamic Time base with dedicated views for Days, Weeks, Months, and Quarters
+- Fixed formula errors in almanac bases for better date handling
+- Improved template consistency across all note types
+
+**Quality & Polish**
+- Fixed various typos and formatting issues
+- Cleaned up unnecessary documentation files
+- Standardized file naming throughout the vault
+- Improved overall vault organization and structure
+
+This release represents the culmination of extensive refinement and testing, providing users with a mature, well-documented starting point for their Obsidian vaults.
+
 ## v0.12.0
 - **Almanac Property Standardization**
   - Standardized all almanac templates (Daily, Weekly, Monthly, Quarterly, Yearly) to use `startDate` and `endDate` properties

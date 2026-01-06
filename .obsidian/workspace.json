@@ -23,8 +23,24 @@
               "icon": "lucide-file",
               "title": "home"
             }
+          },
+          {
+            "id": "7af69ef7d0e6a0d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.local.md",
+                "mode": "preview",
+                "source": true,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE.local"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,14 +242,17 @@
       "templater-obsidian:Templater": true
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "7af69ef7d0e6a0d1",
   "lastOpenFiles": [
+    "CLAUDE.md",
+    "README.md",
+    "home.md",
     "almanac/day/2026-01-06.md",
+    "almanac/week/2026-W03.md",
     "almanac/week/2026-W02.md",
     "almanac/month/2026-01.md",
     "almanac/quarter/2026-Q1.md",
     "almanac/year/2026.md",
-    "home.md",
     "notes/test.md",
     "almanac/day/2026-01-05.md",
     "notes/testing.md",
@@ -247,15 +266,12 @@
     "almanac/month/2026-03.md",
     "almanac/month/2027-04.md",
     "system/templater-templates/_almanac/Monthly Note.md",
-    "almanac/week/2026-W03.md",
     "system/templater-templates/_almanac/Daily Note.md",
     "CLAUDE.local.md",
     "clipped/Stateful Agents Meetup AT Protocol as Infrastructure for AI Collective Intelligence.md",
     "system/roadmap.md",
     "directory.md",
     "collections/Organizations.md",
-    "collections/Correspondences.md",
-    "README.md",
     "system/bases/Albums.base",
     "system/bases/Correspondences.base",
     "system/bases/Organizations.base",
