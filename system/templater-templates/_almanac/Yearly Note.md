@@ -5,10 +5,9 @@ entityIs: "[[Yearly Notes]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
 startDate: "[[<% tp.date.now('YYYY') %>-01-01]]"
 endDate: "[[<% tp.date.now('YYYY') %>-12-31]]"
+description: ""
 ---
 # <% tp.date.now('YYYY') %>
-
-## Navigation
 ← [[<% tp.date.now('YYYY', 0, moment(tp.date.now('YYYY-01-01')).subtract(1, 'year')) %>|Previous Year]] • [[<% tp.date.now('YYYY', 0, moment(tp.date.now('YYYY-01-01')).add(1, 'year')) %>|Next Year]] →
 
 

@@ -125,37 +125,37 @@
 ### Almanac Note Kinds
 #### Daily Notes
 - [ ] collection
-- [ ] base
-- [ ] template
-- [ ] sample: "2025-01-15"
+- [x] base
+- [x] template
+- [x] sample: "2025-01-15"
 - [ ] description
     - [ ] include callout for using correct command
 #### Week Notes
 - [ ] collection
-- [ ] base
-- [ ] template
-- [ ] sample: "2025-W03"
+- [x] base
+- [x] template
+- [x] sample: "2025-W03"
 - [ ] description
     - [ ] include callout for using correct command
 #### Month Notes
 - [ ] collection
-- [ ] base
-- [ ] template
-- [ ] sample: "2025-01"
+- [x] base
+- [x] template
+- [x] sample: "2025-01"
 - [ ] description
     - [ ] include callout for using correct command
 #### Quarter Notes
 - [ ] collection
-- [ ] base
-- [ ] template
-- [ ] sample: "2025-Q2"
+- [x] base
+- [x] template
+- [x] sample: "2025-Q2"
 - [ ] description
     - [ ] include callout for using correct command
 #### Year Notes
 - [ ] collection
-- [ ] base
-- [ ] template
-- [ ] sample: "2025"
+- [x] base
+- [x] template
+- [x] sample: "2025"
 - [ ] description
     - [ ] include callout for using correct command
 

@@ -8,6 +8,7 @@ endDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('week'))
 month: "[[<% tp.date.now('YYYY-MM') %>]]"
 quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
+description: ""
 ---
 # Week of <% tp.date.now('MMMM D, YYYY', 0, moment(tp.date.now()).startOf('week')) %>
 <%*

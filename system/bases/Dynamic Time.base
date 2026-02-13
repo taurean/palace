@@ -24,8 +24,7 @@ views:
       and:
         - file.ctime >= date(this.startDate)
         - file.ctime < date(this.endDate) + "1d"
-        - and:
-            - '!file.folder.contains("almanac")'
+        - '!file.folder.contains("almanac")'
     order:
       - formula.created
       - file.name
