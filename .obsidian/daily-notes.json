@@ -1,4 +1,4 @@
 {
-  "folder": "almanac/",
-  "template": "system/templates/Daily Note"
+  "folder": "almanac/day",
+  "template": "system/templater-templates/_almanac/Daily Note"
 }
