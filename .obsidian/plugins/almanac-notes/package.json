@@ -1,6 +1,6 @@
 {
   "name": "almanac-notes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Obsidian plugin for creating almanac notes with natural language date parsing",
   "main": "main.js",
   "scripts": {

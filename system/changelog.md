@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.1.0
+
+**Almanac Notes Natural Language Enhancement**
+
+This release significantly improves the almanac notes system with more powerful and flexible natural language date parsing.
+
+**Natural Language Parsing**
+- Integrated chrono-node library for robust natural language date parsing
+- Enhanced date input flexibility - now accepts a much wider variety of date formats and natural expressions
+- Improved resilience in handling different date input styles and edge cases
+- Bundled chrono-node for distribution with the almanac notes plugin
+
+**Bug Fixes & Improvements**
+- Fixed daily notes JSON configuration issues
+- Updated almanac templates for better consistency and functionality
+
+This release makes creating almanac notes significantly more intuitive by understanding natural language date inputs more reliably.
+
 ## v1.0.0
 
 **First Stable Release - Palace 1.0**
