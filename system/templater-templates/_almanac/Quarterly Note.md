@@ -6,10 +6,9 @@ quarter: "[[<% tp.date.now('YYYY') %>-Q<% tp.date.now('Q') %>]]"
 year: "[[<% tp.date.now('YYYY') %>]]"
 startDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).startOf('quarter')) %>]]"
 endDate: "[[<% tp.date.now('YYYY-MM-DD', 0, moment(tp.date.now()).endOf('quarter')) %>]]"
+description: ""
 ---
 # Q<% tp.date.now('Q') %> <% tp.date.now('YYYY') %>
-
-## Navigation
 <%*
 const currentQuarter = parseInt(tp.date.now('Q'));
 const currentYear = parseInt(tp.date.now('YYYY'));
