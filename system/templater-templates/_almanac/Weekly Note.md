@@ -26,6 +26,11 @@ const nextWeekYear = nextWeek.format('gggg');
 tR += `← [[${prevWeekYear}-W${prevWeekNum}|Previous Week]] • [[${tp.date.now('YYYY-MM')}|${tp.date.now('MMMM')}]] • [[${nextWeekYear}-W${nextWeekNum}|Next Week]] →\n`;
 %>
 
+> [!summary]
+>
+
+## Todo
+- [ ] 
 
 ---
 ## Notes from this week
