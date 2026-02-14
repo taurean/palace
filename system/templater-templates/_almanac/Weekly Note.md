@@ -26,25 +26,6 @@ const nextWeekYear = nextWeek.format('gggg');
 tR += `← [[${prevWeekYear}-W${prevWeekNum}|Previous Week]] • [[${tp.date.now('YYYY-MM')}|${tp.date.now('MMMM')}]] • [[${nextWeekYear}-W${nextWeekNum}|Next Week]] →\n`;
 %>
 
-%% Weekly summary below this line %%
-> [!summary]
->
-
-## Daily Highlights
-<%*
-// Start of week (Sunday)
-const weekStart = moment(tp.date.now()).startOf('week');
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-for (let i = 0; i < 7; i++) {
-    const day = moment(weekStart).add(i, 'days');
-    const dayName = days[i];
-    const dayDate = day.format('YYYY-MM-DD');
-    const dayShort = day.format('MMM D');
-
-    tR += `### ${dayName} • [[${dayDate}|${dayShort}]]\n- \n\n`;
-}
-%>
 
 ---
 ## Notes from this week
