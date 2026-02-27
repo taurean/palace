@@ -1,0 +1,5 @@
+---
+aliases:
+kind: "[[Podcasts]]"
+---
+# {{title}}
