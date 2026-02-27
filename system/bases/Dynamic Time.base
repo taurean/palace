@@ -4,7 +4,7 @@ filters:
 formulas:
   Day: file.asLink(date(startDate).format("dddd, Do"))
   Week: file.asLink(date(startDate).format("[Week] w"))
-  kind: if(entityIs, entityIs, "basic note")
+  kind: if(kind, kind, "basic note")
   created: date(file.ctime).format("Do")
   Untitled: date(file.ctime)
   Month: file.asLink(date(startDate).format("MMMM"))
