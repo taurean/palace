@@ -1,5 +1,60 @@
 # Changelog
 
+## v1.2.0
+
+**Template Foundation Expansion**
+
+This release establishes a foundation for Palace's template library by adding 20+ new template types across entertainment, professional, personal, and organizational content. The new templates (except Publish) are currently basic variants of the core note template, providing structure that will be enhanced with specialized properties and functionality in future releases.
+
+**Note:** These templates serve as starting points that users can customize immediately, with more specific features coming in future updates.
+
+**New Foundational Templates**
+
+*Entertainment & Media*
+- Movie, Video, and Video Game templates for tracking entertainment experiences
+- Show and Show Season templates for serialized content
+- Podcast and Podcast Episode templates for audio content
+- Playlist template for music and media organization
+
+*People & Social*
+- Person template for individual contact and relationship tracking
+- Person Group template for teams and organizations
+
+*Location & Geography*
+- Place template for specific locations with coordinates and notes
+- Region template for broader geographic areas
+
+*Work & Professional*
+- Meeting template for meeting notes with attendees and decisions
+- Protocol template for standard procedures and processes
+- Software template for tracking software projects and tools
+- Website template for web project management
+
+*Personal Wellness & Development*
+- Health Record template for medical and wellness tracking
+- Reflection template for introspection and personal growth
+- Trip template for travel experiences and itineraries
+- Quest template for personal goals and objectives
+- Milestone template for significant life events
+
+*Food & Culinary*
+- Food template for ingredients and food items
+- Recipe template for cooking instructions and variations
+
+*System & Organizational*
+- MOC (Map of Content) template for organizing related notes
+- Draft template for works-in-progress
+- Object template for generic reference materials
+
+*Publishing*
+- Publish template for content publication workflows (fully developed)
+
+**Property Standardization**
+- Updated Dynamic Time base to use `kind` property instead of `entityIs` for better consistency
+
+**Looking Ahead**
+This foundational release brings the total template count to 39, establishing structure for a comprehensive content type system. Future releases will enhance these templates with specialized properties, custom fields, and tailored functionality for each content type.
+
 ## v1.1.0
 
 **Almanac Notes Natural Language Enhancement**
