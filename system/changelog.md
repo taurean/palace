@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2.1
+
+**Template Additions**
+
+This patch release adds a new concept placeholder template to the Palace template library.
+
+**New Templates**
+- Concept template for capturing abstract ideas and theoretical frameworks
+
 ## v1.2.0
 
 **Template Foundation Expansion**
